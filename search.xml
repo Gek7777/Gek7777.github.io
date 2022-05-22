@@ -15,9 +15,7 @@
 </ol>
 </blockquote>
 <p>&emsp;&emsp;从自己接触Java到现在，也已经七个月了。也曾经想过去参加培训班，但是那时候还是大三，课程还是有点紧，所以就开始了自己的自学之路。当时到B站搜索Java教程，最新的，于是从千峰教育老刘的视频入的门，然后加入了老刘的学生的群，也算是认识老刘了吧。下面是老刘的最新视频：</p>
-<blockquote><p>千锋最新JavaSE基础，最适合初学者的视频</p>
-<footer><strong>老刘</strong><cite><a href="https://www.bilibili.com/video/av21995605">www.bilibili.com/video/av21995605</a></cite></footer></blockquote>
-<p>&emsp;&emsp;老刘的课，讲的很慢，我建议是用1.5倍速看，如果有其他的编程基础的话，2倍速食用更佳。但是，他讲的确实很仔细，基本上知识点都讲到了。所以，作为入门实在是合适不过了。注意：看完以后一定要自己敲一遍，笔记也是，要自己写一遍，不要以为看了就记住了。作为一个好的Coder，敲坏一把键盘，是一个java工程师的必经之路。</p>
+<p><a href="https://www.bilibili.com/video/av21995605">千锋18年JavaSE基础，适合初学者的视频_哔哩哔哩_bilibili</a><br>&emsp;&emsp;老刘的课，讲的很慢，我建议是用1.5倍速看，如果有其他的编程基础的话，2倍速食用更佳。但是，他讲的确实很仔细，基本上知识点都讲到了。所以，作为入门实在是合适不过了。注意：看完以后一定要自己敲一遍，笔记也是，要自己写一遍，不要以为看了就记住了。作为一个好的Coder，敲坏一把键盘，是一个java工程师的必经之路。</p>
 <p>&emsp;&emsp;把老刘的课看完，基本上也就掌握了JavaSE、Web基础、Mysql数据库这些基础的知识。到这里，已经可以做一一些小的网站demo了。甚至可以建立自己的动态博客，不是现在这种静态的，只不过很复杂，也很繁琐。</p>
 <p>&emsp;&emsp;那么，还需要更深层次的技术，那么就是框架了。框架的好处简单地说就是：不需要重复的造轮子。别人有的东西拿来用就好了，之前什么都需要自己造，现在可以直接用了，就很苏胡。这也是Java的封装机制的好处，我管你怎么实现呢，我拿来用先。不过，既然用别人的东西，那么你就必须遵守别人的规则，不过好在，规则几乎是统一的，毕竟大家都在用。so，Web框架部分，主要就是学习规则，例如：Spring、SpringMVC、MyBatis、Struts2、Hibernate等主流框架，每一个都自己的使用规范，那么学习它们的规范，就成了最基础的要求了。最后就是深入学习这些框架，这些可以在以后的工作中慢慢深入研究。</p>
 <p>&emsp;&emsp;接下来Web框架的进阶学习，那就是SpringBoot、还有SpringCloud，并发编程等知识我还没有学完，以后再总结吧。以我的经验，学完上面的知识，那么找工作应该是不成问题了。(大神勿喷)</p>
@@ -41,6 +39,20 @@
       </categories>
       <tags>
         <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Eclipse-默认浏览器修改</title>
+    <url>/2020/07/05/Eclipse-%E9%BB%98%E8%AE%A4%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[<img src="/2020/07/05/Eclipse-%E9%BB%98%E8%AE%A4%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BF%AE%E6%94%B9/1552545620249.png">
+
+<p>关于eclipse默认浏览器的配置，如图。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Eclipse</tag>
       </tags>
   </entry>
   <entry>
@@ -138,20 +150,6 @@
       </categories>
       <tags>
         <tag>Song</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Eclipse-默认浏览器修改</title>
-    <url>/2020/07/05/Eclipse-%E9%BB%98%E8%AE%A4%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BF%AE%E6%94%B9/</url>
-    <content><![CDATA[<img src="/2020/07/05/Eclipse-%E9%BB%98%E8%AE%A4%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BF%AE%E6%94%B9/1552545620249.png">
-
-<p>关于eclipse默认浏览器的配置，如图。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Eclipse</tag>
       </tags>
   </entry>
   <entry>
@@ -1194,49 +1192,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-单例模式</title>
-    <url>/2019/04/10/Java-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="设计流程"><a href="#设计流程" class="headerlink" title="设计流程"></a>设计流程</h2><p>需求：</p>
-<p>​    这个类在程序中有且只有一个类对象。</p>
-<p>方案：</p>
-<p>​    程序中只调用一构造函数。</p>
-<p>问题：</p>
-<p>​    构造函数不能去约束用户使用，只调用一次的构造函数，很不安全，无法限制别人调用次数。</p>
-<p>方案：</p>
-<p>​    构造函数私有化，用 private 修饰</p>
-<p>问题：</p>
-<p>​    构造函数是私有化了，安全了，但是类外却无法调用了。</p>
-<p>方案1：</p>
-<p>​    给函数加上 static 修饰</p>
-<p>问题：</p>
-<p>​    这里的  static 不能用来修饰构造函数，违背了构造函数的原理【没有对象】</p>
-<p>方案2：</p>
-<p>​    只需新建一个方法，用 static 修饰，方法中调用构造方法，返回值就是需要的对象。</p>
-<p>问题：</p>
-<p>​    发现封装了，创建的对象还是不一样。</p>
-<p>方案：</p>
-<ul>
-<li>使用一个静态的成员变量来保存  <strong>创建过的对象的首地址</strong></li>
-<li>是不在类外使用的，所以直接 private 修饰</li>
-<li>需要保存类对象的地址，持久化数据，用 static 修饰</li>
-<li>数据类型就是对象，初始值设置为 null</li>
-</ul>
-<p>问题：</p>
-<p>​    成员变量私有化了，静态也用了，数据类型没错，但是每次还是两个对象</p>
-<p>方案：</p>
-<p>​    对于保存的地址进行判断，如果为 null ，创建对象，返回保存的地址，如果不是 null ，返回保存的地址。</p>
-<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> id;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Single s = <span class="keyword">null</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="title">Single</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Single <span class="title">getInstance</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(s == <span class="keyword">null</span>) &#123;</span><br><span class="line">			s = <span class="keyword">new</span> Single(id);	</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">return</span> s;</span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo6</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Single single = Single.getInstance(<span class="number">5</span>);</span><br><span class="line">		System.out.println(single);</span><br><span class="line">		</span><br><span class="line">		Single single2 = Single.getInstance(<span class="number">59</span>);</span><br><span class="line">		System.out.println(single2);</span><br><span class="line">		</span><br><span class="line">		Single single3 = Single.getInstance(<span class="number">5</span>);</span><br><span class="line">		System.out.println(single3);</span><br><span class="line">		</span><br><span class="line">		Single single4 = Single.getInstance(<span class="number">59</span>);</span><br><span class="line">		System.out.println(single4);</span><br><span class="line">		</span><br><span class="line">		System.out.print(single4.id);		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Design Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-变量类型</title>
     <url>/2019/04/08/Java-%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<h2 id="Java变量类型"><a href="#Java变量类型" class="headerlink" title="Java变量类型"></a>Java变量类型</h2><p>在 Java 中，所有的变量在使用前必须声明。声明变量的基本格式如下：</p>
@@ -1297,78 +1252,46 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-基础知识</title>
-    <url>/2019/04/01/Java-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h2 id="一、原码，反码和补码"><a href="#一、原码，反码和补码" class="headerlink" title="一、原码，反码和补码"></a>一、原码，反码和补码</h2><p>计算机内存中，都是二进制的形式来存储数据。</p>
+    <title>Java-单例模式</title>
+    <url>/2019/04/10/Java-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="设计流程"><a href="#设计流程" class="headerlink" title="设计流程"></a>设计流程</h2><p>需求：</p>
+<p>​    这个类在程序中有且只有一个类对象。</p>
+<p>方案：</p>
+<p>​    程序中只调用一构造函数。</p>
+<p>问题：</p>
+<p>​    构造函数不能去约束用户使用，只调用一次的构造函数，很不安全，无法限制别人调用次数。</p>
+<p>方案：</p>
+<p>​    构造函数私有化，用 private 修饰</p>
+<p>问题：</p>
+<p>​    构造函数是私有化了，安全了，但是类外却无法调用了。</p>
+<p>方案1：</p>
+<p>​    给函数加上 static 修饰</p>
+<p>问题：</p>
+<p>​    这里的  static 不能用来修饰构造函数，违背了构造函数的原理【没有对象】</p>
+<p>方案2：</p>
+<p>​    只需新建一个方法，用 static 修饰，方法中调用构造方法，返回值就是需要的对象。</p>
+<p>问题：</p>
+<p>​    发现封装了，创建的对象还是不一样。</p>
+<p>方案：</p>
 <ul>
-<li>正整数的原码、补码、反码是一样的。</li>
-<li>负整数的原码，最高位是符号位，1为负，0为正数。反码是原码按位取反，符号位不变。补码是反码加1。</li>
+<li>使用一个静态的成员变量来保存  <strong>创建过的对象的首地址</strong></li>
+<li>是不在类外使用的，所以直接 private 修饰</li>
+<li>需要保存类对象的地址，持久化数据，用 static 修饰</li>
+<li>数据类型就是对象，初始值设置为 null</li>
 </ul>
-<h2 id="二、计算机中数据存储单位"><a href="#二、计算机中数据存储单位" class="headerlink" title="二、计算机中数据存储单位"></a>二、计算机中数据存储单位</h2><ul>
-<li><h2 id="8-bit-1-Byte-一个字节-【操作内存的最小单元】"><a href="#8-bit-1-Byte-一个字节-【操作内存的最小单元】" class="headerlink" title="8 bit = 1 Byte 一个字节 【操作内存的最小单元】"></a>8 bit = 1 Byte 一个字节 【操作内存的最小单元】</h2></li>
-<li>1024 Byte = 1 KB</li>
-<li>1024 KB = 1 MB</li>
-<li>1024 MB = 1 GB</li>
-<li>1024 GB = 1 TB</li>
-<li>1024 TB = 1 PB</li>
-</ul>
-<h2 id="三、标识符"><a href="#三、标识符" class="headerlink" title="三、标识符"></a>三、标识符</h2><p>Java中，自定义标识符需要<strong>注意事项</strong>：</p>
-<ol>
-<li>标识符的组成是字母、数字和下划线。</li>
-<li>标识符不能用数字开头。</li>
-<li>在Java中严格区分大小写。</li>
-<li>在发开中没有长度限制。</li>
-<li>尽量做到见名知意。</li>
-<li>Java内部已有的 关键字 和 保留字 不能用于自定义标识符。Byte 、int 、long  、this 、main</li>
-</ol>
-<p><strong>规范</strong>：</p>
-<ul>
-<li>方法名，变量名，按照小驼峰命名法。</li>
-<li>类名，接口名，按照大驼峰命名法。</li>
-<li>包名：必须全部小写。</li>
-</ul>
-<h2 id="四、变量"><a href="#四、变量" class="headerlink" title="四、变量"></a>四、变量</h2><p>定义：变量就是在程序运行中可以发生改变的量</p>
-<p>变量就是一个存储数据的<strong>容器</strong></p>
-<p><strong>容器</strong>的特点：</p>
-<ol>
-<li>占据一定的空间—电脑内存中的空间</li>
-<li>存储一定格式的数据</li>
-<li>名字–标识符</li>
-</ol>
-<p><strong>Java中八大基本数据类型：</strong></p>
-<ul>
-<li>byte 1字节 8位有符号的整数类型：-128~127</li>
-<li>short 2字节 16位有符号的整数类型：-32768~32767</li>
-<li>int 4字节 32位有符号的整数类型：大概-20亿~20亿</li>
-<li>long 8字节 64位有符号的整数类型：-2^63~2^63-1  很多很多。。</li>
-<li>float 4字节 小数类型：10^-38<del>10^38   和  -10^-38</del>-10^38</li>
-<li>double 8字节 小数类型：10^-308<del>10^308 和  -10^-308</del>-10^308</li>
-<li>boolean  两个值：false 、true</li>
-<li>char 2字节 字符类型</li>
-</ul>
-<h2 id="五、运算符"><a href="#五、运算符" class="headerlink" title="五、运算符"></a>五、运算符</h2><h3 id="1、算术运算符"><a href="#1、算术运算符" class="headerlink" title="1、算术运算符"></a>1、算术运算符</h3><p>​            % 取余操作能够使用的是整数数据类型。/ 是除以。</p>
-<h3 id="2、关系运算符"><a href="#2、关系运算符" class="headerlink" title="2、关系运算符"></a>2、关系运算符</h3><p>​            &lt;  、&gt; 、 &gt;=、  &lt;= 、 ==、 != 等。</p>
-<h3 id="3、逻辑运算符"><a href="#3、逻辑运算符" class="headerlink" title="3、逻辑运算符"></a>3、逻辑运算符</h3><p>​            &amp; 和 &amp;&amp; 、| 和 || 、！</p>
-<p>​            &amp; 左右都需要判断，&amp;&amp; 短路与，左边满足就不判断右边了。| 和 || 短路或同理。</p>
-<p>​            ！ 取非，取反。</p>
-<h3 id="4、三目运算符"><a href="#4、三目运算符" class="headerlink" title="4、三目运算符"></a>4、三目运算符</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//条件？ 语句 1 ：语句 2 ；</span></span><br><span class="line">a &gt; b ? x = <span class="number">1</span>: x = <span class="number">2</span>;</span><br><span class="line"><span class="comment">//分析，如果 a 大于 b ，那么 x 赋值为1，否者赋值为2</span></span><br></pre></td></tr></table></figure>
+<p>问题：</p>
+<p>​    成员变量私有化了，静态也用了，数据类型没错，但是每次还是两个对象</p>
+<p>方案：</p>
+<p>​    对于保存的地址进行判断，如果为 null ，创建对象，返回保存的地址，如果不是 null ，返回保存的地址。</p>
+<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> id;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Single s = <span class="keyword">null</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="title">Single</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Single <span class="title">getInstance</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(s == <span class="keyword">null</span>) &#123;</span><br><span class="line">			s = <span class="keyword">new</span> Single(id);	</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">return</span> s;</span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo6</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Single single = Single.getInstance(<span class="number">5</span>);</span><br><span class="line">		System.out.println(single);</span><br><span class="line">		</span><br><span class="line">		Single single2 = Single.getInstance(<span class="number">59</span>);</span><br><span class="line">		System.out.println(single2);</span><br><span class="line">		</span><br><span class="line">		Single single3 = Single.getInstance(<span class="number">5</span>);</span><br><span class="line">		System.out.println(single3);</span><br><span class="line">		</span><br><span class="line">		Single single4 = Single.getInstance(<span class="number">59</span>);</span><br><span class="line">		System.out.println(single4);</span><br><span class="line">		</span><br><span class="line">		System.out.print(single4.id);		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-<h2 id="六、分支与循环"><a href="#六、分支与循环" class="headerlink" title="六、分支与循环"></a>六、分支与循环</h2><h3 id="1、分支"><a href="#1、分支" class="headerlink" title="1、分支"></a>1、分支</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//if判断</span></span><br><span class="line"><span class="keyword">if</span>  () &#123;</span><br><span class="line">	<span class="comment">//语句</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	<span class="comment">//语句</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="comment">//语句</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//switch -case </span></span><br><span class="line"><span class="keyword">switch</span> () &#123;</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">1</span>:</span><br><span class="line">        处理方式<span class="number">1</span>；</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>:         </span><br><span class="line">        处理方式<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        最终处理方式；</span><br><span class="line">     	<span class="keyword">break</span> ；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、循环结构"><a href="#2、循环结构" class="headerlink" title="2、循环结构"></a>2、循环结构</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//while</span></span><br><span class="line"><span class="keyword">while</span>(条件)&#123;</span><br><span class="line">    <span class="comment">//循环体</span></span><br><span class="line">    （循环条件变更）</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//do</span></span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">   <span class="comment">//循环体</span></span><br><span class="line">    （条件变更）</span><br><span class="line">&#125; <span class="keyword">while</span> (条件);</span><br><span class="line"></span><br><span class="line"><span class="comment">//for</span></span><br><span class="line"><span class="keyword">for</span>(循环条件初始化；循环条件判断；循环条件变更) &#123;</span><br><span class="line">    <span class="comment">//循环体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3、break-关键字-与-continue-关键字的区别"><a href="#3、break-关键字-与-continue-关键字的区别" class="headerlink" title="3、break 关键字 与 continue 关键字的区别"></a>3、break 关键字 与 continue 关键字的区别</h3><p>break 是在循环中跳出循环，在 if 判断中，跳出上一层级的循环结构</p>
-<p>continue 是结束本次循环，continue 后面的代码不再执行，执行新的依次循环。<strong>并且在 for 循环中，第三个条件–循环条件的变更可以认为不是循环体，是必须运行的语句，可以不受 continue 的影响。</strong></p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>Java</tag>
+        <tag>Design Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1575,6 +1498,81 @@
 <li><p>浮点型不存在这种情况，因为在定义 float 类型时，必须在数字后面跟上 F 或者 f 。</p>
 </li>
 </ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-基础知识</title>
+    <url>/2019/04/01/Java-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="一、原码，反码和补码"><a href="#一、原码，反码和补码" class="headerlink" title="一、原码，反码和补码"></a>一、原码，反码和补码</h2><p>计算机内存中，都是二进制的形式来存储数据。</p>
+<ul>
+<li>正整数的原码、补码、反码是一样的。</li>
+<li>负整数的原码，最高位是符号位，1为负，0为正数。反码是原码按位取反，符号位不变。补码是反码加1。</li>
+</ul>
+<h2 id="二、计算机中数据存储单位"><a href="#二、计算机中数据存储单位" class="headerlink" title="二、计算机中数据存储单位"></a>二、计算机中数据存储单位</h2><ul>
+<li><h2 id="8-bit-1-Byte-一个字节-【操作内存的最小单元】"><a href="#8-bit-1-Byte-一个字节-【操作内存的最小单元】" class="headerlink" title="8 bit = 1 Byte 一个字节 【操作内存的最小单元】"></a>8 bit = 1 Byte 一个字节 【操作内存的最小单元】</h2></li>
+<li>1024 Byte = 1 KB</li>
+<li>1024 KB = 1 MB</li>
+<li>1024 MB = 1 GB</li>
+<li>1024 GB = 1 TB</li>
+<li>1024 TB = 1 PB</li>
+</ul>
+<h2 id="三、标识符"><a href="#三、标识符" class="headerlink" title="三、标识符"></a>三、标识符</h2><p>Java中，自定义标识符需要<strong>注意事项</strong>：</p>
+<ol>
+<li>标识符的组成是字母、数字和下划线。</li>
+<li>标识符不能用数字开头。</li>
+<li>在Java中严格区分大小写。</li>
+<li>在发开中没有长度限制。</li>
+<li>尽量做到见名知意。</li>
+<li>Java内部已有的 关键字 和 保留字 不能用于自定义标识符。Byte 、int 、long  、this 、main</li>
+</ol>
+<p><strong>规范</strong>：</p>
+<ul>
+<li>方法名，变量名，按照小驼峰命名法。</li>
+<li>类名，接口名，按照大驼峰命名法。</li>
+<li>包名：必须全部小写。</li>
+</ul>
+<h2 id="四、变量"><a href="#四、变量" class="headerlink" title="四、变量"></a>四、变量</h2><p>定义：变量就是在程序运行中可以发生改变的量</p>
+<p>变量就是一个存储数据的<strong>容器</strong></p>
+<p><strong>容器</strong>的特点：</p>
+<ol>
+<li>占据一定的空间—电脑内存中的空间</li>
+<li>存储一定格式的数据</li>
+<li>名字–标识符</li>
+</ol>
+<p><strong>Java中八大基本数据类型：</strong></p>
+<ul>
+<li>byte 1字节 8位有符号的整数类型：-128~127</li>
+<li>short 2字节 16位有符号的整数类型：-32768~32767</li>
+<li>int 4字节 32位有符号的整数类型：大概-20亿~20亿</li>
+<li>long 8字节 64位有符号的整数类型：-2^63~2^63-1  很多很多。。</li>
+<li>float 4字节 小数类型：10^-38<del>10^38   和  -10^-38</del>-10^38</li>
+<li>double 8字节 小数类型：10^-308<del>10^308 和  -10^-308</del>-10^308</li>
+<li>boolean  两个值：false 、true</li>
+<li>char 2字节 字符类型</li>
+</ul>
+<h2 id="五、运算符"><a href="#五、运算符" class="headerlink" title="五、运算符"></a>五、运算符</h2><h3 id="1、算术运算符"><a href="#1、算术运算符" class="headerlink" title="1、算术运算符"></a>1、算术运算符</h3><p>​            % 取余操作能够使用的是整数数据类型。/ 是除以。</p>
+<h3 id="2、关系运算符"><a href="#2、关系运算符" class="headerlink" title="2、关系运算符"></a>2、关系运算符</h3><p>​            &lt;  、&gt; 、 &gt;=、  &lt;= 、 ==、 != 等。</p>
+<h3 id="3、逻辑运算符"><a href="#3、逻辑运算符" class="headerlink" title="3、逻辑运算符"></a>3、逻辑运算符</h3><p>​            &amp; 和 &amp;&amp; 、| 和 || 、！</p>
+<p>​            &amp; 左右都需要判断，&amp;&amp; 短路与，左边满足就不判断右边了。| 和 || 短路或同理。</p>
+<p>​            ！ 取非，取反。</p>
+<h3 id="4、三目运算符"><a href="#4、三目运算符" class="headerlink" title="4、三目运算符"></a>4、三目运算符</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//条件？ 语句 1 ：语句 2 ；</span></span><br><span class="line">a &gt; b ? x = <span class="number">1</span>: x = <span class="number">2</span>;</span><br><span class="line"><span class="comment">//分析，如果 a 大于 b ，那么 x 赋值为1，否者赋值为2</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="六、分支与循环"><a href="#六、分支与循环" class="headerlink" title="六、分支与循环"></a>六、分支与循环</h2><h3 id="1、分支"><a href="#1、分支" class="headerlink" title="1、分支"></a>1、分支</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//if判断</span></span><br><span class="line"><span class="keyword">if</span>  () &#123;</span><br><span class="line">	<span class="comment">//语句</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	<span class="comment">//语句</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="comment">//语句</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//switch -case </span></span><br><span class="line"><span class="keyword">switch</span> () &#123;</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">1</span>:</span><br><span class="line">        处理方式<span class="number">1</span>；</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>:         </span><br><span class="line">        处理方式<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        最终处理方式；</span><br><span class="line">     	<span class="keyword">break</span> ；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、循环结构"><a href="#2、循环结构" class="headerlink" title="2、循环结构"></a>2、循环结构</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//while</span></span><br><span class="line"><span class="keyword">while</span>(条件)&#123;</span><br><span class="line">    <span class="comment">//循环体</span></span><br><span class="line">    （循环条件变更）</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//do</span></span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">   <span class="comment">//循环体</span></span><br><span class="line">    （条件变更）</span><br><span class="line">&#125; <span class="keyword">while</span> (条件);</span><br><span class="line"></span><br><span class="line"><span class="comment">//for</span></span><br><span class="line"><span class="keyword">for</span>(循环条件初始化；循环条件判断；循环条件变更) &#123;</span><br><span class="line">    <span class="comment">//循环体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3、break-关键字-与-continue-关键字的区别"><a href="#3、break-关键字-与-continue-关键字的区别" class="headerlink" title="3、break 关键字 与 continue 关键字的区别"></a>3、break 关键字 与 continue 关键字的区别</h3><p>break 是在循环中跳出循环，在 if 判断中，跳出上一层级的循环结构</p>
+<p>continue 是结束本次循环，continue 后面的代码不再执行，执行新的依次循环。<strong>并且在 for 循环中，第三个条件–循环条件的变更可以认为不是循环体，是必须运行的语句，可以不受 continue 的影响。</strong></p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -1959,63 +1957,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-工厂模式</title>
-    <url>/2019/04/22/Java-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><p>Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。</p>
-<p>在工厂模式中，我们在创建对象的时候不会对客户端暴露创建逻辑，并且通过使用一个公用的接口来指向新创建的对象。</p>
-<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><strong>目的：</strong>定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。</p>
-<p><strong>主要解决：</strong>主要解决接口选择的问题。</p>
-<p><strong>何时使用：</strong>我们明确地计划不同条件下创建不同实例时。</p>
-<p><strong>如何解决：</strong>让其子类实现工厂类接口，返回的也是一个抽象的产品。</p>
-<p><strong>关键代码：</strong>创建过程在其子类执行。</p>
-<p><strong>应用实例：</strong>您需要一辆汽车，可以直接从工厂里面提货，而不用去管这辆汽车是怎么做出来的，以及这个汽车里面的具体实现。 2、Hibernate 换数据库只需换方言和驱动就可以。</p>
-<p><strong>优点：</strong></p>
-<ol>
-<li>一个调用者想创建一个对象，只要知道其名称就可以了。</li>
-<li>扩展性高，如果想增加一个产品，只要扩展一个工厂类就可以。</li>
-<li>屏蔽产品的具体实现，调用者只关心产品的接口。</li>
-</ol>
-<p><strong>缺点：</strong>每次增加一个产品时，都需要增加一个具体类和对象实现工厂，使得系统中类的个数成倍增加，在一个程度上增加了系统的复杂度，同时也增加了系统具体的依赖。</p>
-<p><strong>使用场景：</strong></p>
-<ol>
-<li>日志记录器：记录可能记录到本机硬盘、系统事件、远程服务器等，用户可以选择记录日志到什么地方。</li>
-<li>数据库访问，当用户不知道最后系统采用哪一类数据库，以及数据库可能变化时。</li>
-<li>设计一个连接服务器的框架，需要三个协议，“POP3”、“IMAP”、“HTTP”，可以把三个作为产品类，共同实现一个接口。</li>
-</ol>
-<p><strong>注意事项：</strong>作为一种创建类模式，在任何需要生成复杂对象的地方，都可以使用工厂方法模式。有一点需要注意的地方是复杂对象适合使用工厂模式，而简单对象，特别是只需要通过 new 就可以完成创建的对象，无需使用工厂模式。如果使用工厂模式，就需要引入一个工厂类，会增加系统的复杂度。</p>
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>创建一个Shape 接口和实现 Shape接口的实体类。下一步是定义工厂类ShapeFactory 。</p>
-<p>FactoryPatternDemo，我们演示类使用ShapeFactory 来获取 Shape 对象。它将向 ShapeFactory 传递信息，以便获取它所需对象的类型。</p>
-<img src="/2019/04/22/Java-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/20190422-1.jpg">
-
-<h4 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤 1"></a>步骤 1</h4><p>创建一个接口：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> inteface Shape &#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="步骤-2"><a href="#步骤-2" class="headerlink" title="步骤 2"></a>步骤 2</h4><p>创建实现接口的实体类：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//三角类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Inside Rectangle :: draw() method.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//正方形</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Square</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Inside Square :: draw() method.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//圆形</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Circle</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out/println(<span class="string">&quot;Inside Circle :: draw() method.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="步骤-3"><a href="#步骤-3" class="headerlink" title="步骤 3"></a>步骤 3</h4><p>创建一个工厂，生产基于给定信息的实体类的对象。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ShapeFactory</span> </span>&#123;</span><br><span class="line">    <span class="comment">//使用 getShape 方法获取形状类型的对象</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Shape <span class="title">getShape</span><span class="params">(String shapeType)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(shapeType == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> nunll;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(shapeType.equalsIgnoreCase(<span class="string">&quot;CIRCLE&quot;</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Circle();</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span> (shapeType.equalsIgnoreCase(<span class="string">&quot;RECTANGLE&quot;</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Rectangle();</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(shapeType.equalsIgnoreCase(<span class="string">&quot;SQUARE&quot;</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Square();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="步骤-4"><a href="#步骤-4" class="headerlink" title="步骤 4"></a>步骤 4</h4><p>使用该工厂，通过传递类型信息来获取实体类的对象。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FactoryPatternDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">        ShapeFactory shapeFactory = <span class="keyword">new</span> ShapeFactory();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//获取 Circle 对象，并调用他的draw方法</span></span><br><span class="line">        Shape shape1 = shapeFactory.getShape(<span class="string">&quot;CIRCLE&quot;</span>);</span><br><span class="line">    	</span><br><span class="line">    	<span class="comment">//调用 Circle 的 draw 方法</span></span><br><span class="line">        shape1.draw():</span><br><span class="line">        </span><br><span class="line">      	<span class="comment">//获取 Rectangle 的对象，并调用它的 draw 方法</span></span><br><span class="line">     	 Shape shape2 = shapeFactory.getShape(<span class="string">&quot;RECTANGLE&quot;</span>);</span><br><span class="line"> </span><br><span class="line">      	<span class="comment">//调用 Rectangle 的 draw 方法</span></span><br><span class="line">     	 shape2.draw();</span><br><span class="line"> </span><br><span class="line">      	<span class="comment">//获取 Square 的对象，并调用它的 draw 方法</span></span><br><span class="line">      	Shape shape3 = shapeFactory.getShape(<span class="string">&quot;SQUARE&quot;</span>);</span><br><span class="line"> </span><br><span class="line">     	 <span class="comment">//调用 Square 的 draw 方法</span></span><br><span class="line">      	shape3.draw();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="步骤-5"><a href="#步骤-5" class="headerlink" title="步骤 5"></a>步骤 5</h4><p>执行结果：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Inside Circle::draw() method.</span><br><span class="line">Inside Rectangle::draw() method.</span><br><span class="line">Inside Square::draw() method.</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Design Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-多态</title>
     <url>/2019/04/12/Java-%E5%A4%9A%E6%80%81/</url>
     <content><![CDATA[<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>多态是同一个行为具有多个不同表现形式或形态的能力。</p>
@@ -2096,6 +2037,63 @@
       </tags>
   </entry>
   <entry>
+    <title>Java-工厂模式</title>
+    <url>/2019/04/22/Java-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><p>Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。</p>
+<p>在工厂模式中，我们在创建对象的时候不会对客户端暴露创建逻辑，并且通过使用一个公用的接口来指向新创建的对象。</p>
+<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><strong>目的：</strong>定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。</p>
+<p><strong>主要解决：</strong>主要解决接口选择的问题。</p>
+<p><strong>何时使用：</strong>我们明确地计划不同条件下创建不同实例时。</p>
+<p><strong>如何解决：</strong>让其子类实现工厂类接口，返回的也是一个抽象的产品。</p>
+<p><strong>关键代码：</strong>创建过程在其子类执行。</p>
+<p><strong>应用实例：</strong>您需要一辆汽车，可以直接从工厂里面提货，而不用去管这辆汽车是怎么做出来的，以及这个汽车里面的具体实现。 2、Hibernate 换数据库只需换方言和驱动就可以。</p>
+<p><strong>优点：</strong></p>
+<ol>
+<li>一个调用者想创建一个对象，只要知道其名称就可以了。</li>
+<li>扩展性高，如果想增加一个产品，只要扩展一个工厂类就可以。</li>
+<li>屏蔽产品的具体实现，调用者只关心产品的接口。</li>
+</ol>
+<p><strong>缺点：</strong>每次增加一个产品时，都需要增加一个具体类和对象实现工厂，使得系统中类的个数成倍增加，在一个程度上增加了系统的复杂度，同时也增加了系统具体的依赖。</p>
+<p><strong>使用场景：</strong></p>
+<ol>
+<li>日志记录器：记录可能记录到本机硬盘、系统事件、远程服务器等，用户可以选择记录日志到什么地方。</li>
+<li>数据库访问，当用户不知道最后系统采用哪一类数据库，以及数据库可能变化时。</li>
+<li>设计一个连接服务器的框架，需要三个协议，“POP3”、“IMAP”、“HTTP”，可以把三个作为产品类，共同实现一个接口。</li>
+</ol>
+<p><strong>注意事项：</strong>作为一种创建类模式，在任何需要生成复杂对象的地方，都可以使用工厂方法模式。有一点需要注意的地方是复杂对象适合使用工厂模式，而简单对象，特别是只需要通过 new 就可以完成创建的对象，无需使用工厂模式。如果使用工厂模式，就需要引入一个工厂类，会增加系统的复杂度。</p>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>创建一个Shape 接口和实现 Shape接口的实体类。下一步是定义工厂类ShapeFactory 。</p>
+<p>FactoryPatternDemo，我们演示类使用ShapeFactory 来获取 Shape 对象。它将向 ShapeFactory 传递信息，以便获取它所需对象的类型。</p>
+<img src="/2019/04/22/Java-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/20190422-1.jpg">
+
+<h4 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤 1"></a>步骤 1</h4><p>创建一个接口：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> inteface Shape &#123;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="步骤-2"><a href="#步骤-2" class="headerlink" title="步骤 2"></a>步骤 2</h4><p>创建实现接口的实体类：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//三角类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Inside Rectangle :: draw() method.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//正方形</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Square</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Inside Square :: draw() method.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//圆形</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Circle</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">    <span class="meta">@override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out/println(<span class="string">&quot;Inside Circle :: draw() method.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="步骤-3"><a href="#步骤-3" class="headerlink" title="步骤 3"></a>步骤 3</h4><p>创建一个工厂，生产基于给定信息的实体类的对象。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ShapeFactory</span> </span>&#123;</span><br><span class="line">    <span class="comment">//使用 getShape 方法获取形状类型的对象</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Shape <span class="title">getShape</span><span class="params">(String shapeType)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(shapeType == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> nunll;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(shapeType.equalsIgnoreCase(<span class="string">&quot;CIRCLE&quot;</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Circle();</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span> (shapeType.equalsIgnoreCase(<span class="string">&quot;RECTANGLE&quot;</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Rectangle();</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(shapeType.equalsIgnoreCase(<span class="string">&quot;SQUARE&quot;</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Square();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="步骤-4"><a href="#步骤-4" class="headerlink" title="步骤 4"></a>步骤 4</h4><p>使用该工厂，通过传递类型信息来获取实体类的对象。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FactoryPatternDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">        ShapeFactory shapeFactory = <span class="keyword">new</span> ShapeFactory();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//获取 Circle 对象，并调用他的draw方法</span></span><br><span class="line">        Shape shape1 = shapeFactory.getShape(<span class="string">&quot;CIRCLE&quot;</span>);</span><br><span class="line">    	</span><br><span class="line">    	<span class="comment">//调用 Circle 的 draw 方法</span></span><br><span class="line">        shape1.draw():</span><br><span class="line">        </span><br><span class="line">      	<span class="comment">//获取 Rectangle 的对象，并调用它的 draw 方法</span></span><br><span class="line">     	 Shape shape2 = shapeFactory.getShape(<span class="string">&quot;RECTANGLE&quot;</span>);</span><br><span class="line"> </span><br><span class="line">      	<span class="comment">//调用 Rectangle 的 draw 方法</span></span><br><span class="line">     	 shape2.draw();</span><br><span class="line"> </span><br><span class="line">      	<span class="comment">//获取 Square 的对象，并调用它的 draw 方法</span></span><br><span class="line">      	Shape shape3 = shapeFactory.getShape(<span class="string">&quot;SQUARE&quot;</span>);</span><br><span class="line"> </span><br><span class="line">     	 <span class="comment">//调用 Square 的 draw 方法</span></span><br><span class="line">      	shape3.draw();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="步骤-5"><a href="#步骤-5" class="headerlink" title="步骤 5"></a>步骤 5</h4><p>执行结果：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Inside Circle::draw() method.</span><br><span class="line">Inside Rectangle::draw() method.</span><br><span class="line">Inside Square::draw() method.</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Design Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java-循环结构、条件判断和选择</title>
     <url>/2019/04/09/Java-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E5%92%8C%E9%80%89%E6%8B%A9/</url>
     <content><![CDATA[<h2 id="Java-循环结构"><a href="#Java-循环结构" class="headerlink" title="Java 循环结构"></a>Java 循环结构</h2><p>顺序结构的程序语句只能被执行一次。如果你想要同样的操作执行多次，就需要使用循环结构。</p>
@@ -2153,6 +2151,64 @@
 <li>switch 语句可以包含一个 default 分支，该分支一般是 switch 语句的最后一个分支。default 可以在任何位置，不过建议在最后。只有在case 语句的值和变量值都不相等时，才会执行default 语句。default 语句不需要break 语句。</li>
 </ul>
 <p><strong>switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。</strong></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-抽象类</title>
+    <url>/2019/04/12/Java-%E6%8A%BD%E8%B1%A1%E7%B1%BB/</url>
+    <content><![CDATA[<h2 id="Java-抽象类"><a href="#Java-抽象类" class="headerlink" title="Java 抽象类"></a>Java 抽象类</h2><p>在面向对象的概念中，所有的对象都是通过类来描绘的，但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。</p>
+<p>抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。</p>
+<p>由于抽象类不能实例化对象，所以抽象类必须被继承，才能被使用。也是因为这个原因，通常在设计阶段决定要不要设计抽象类。</p>
+<p>父类包含了子类集合的常见的方法，但是由于父类本身是抽象的，所以不能使用这些方法。</p>
+<p>在Java中抽象类表示的是一种继承关系，一个类只能继承一个抽象类，而一个类却可以实现多个接口。</p>
+<h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><p>在 Java 中 使用 abstract class 定义抽象类。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : Employee.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> String name;</span><br><span class="line">   <span class="keyword">private</span> String address;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">int</span> number;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(String name, String address, <span class="keyword">int</span> number)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Constructing an Employee&quot;</span>);</span><br><span class="line">      <span class="keyword">this</span>.name = name;</span><br><span class="line">      <span class="keyword">this</span>.address = address;</span><br><span class="line">      <span class="keyword">this</span>.number = number;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">     System.out.println(<span class="string">&quot;Inside Employee computePay&quot;</span>);</span><br><span class="line">     <span class="keyword">return</span> <span class="number">0.0</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mailCheck</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Mailing a check to &quot;</span> + <span class="keyword">this</span>.name</span><br><span class="line">       + <span class="string">&quot; &quot;</span> + <span class="keyword">this</span>.address);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> name + <span class="string">&quot; &quot;</span> + address + <span class="string">&quot; &quot;</span> + number;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> name;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getAddress</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> address;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAddress</span><span class="params">(String newAddress)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      address = newAddress;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getNumber</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">     <span class="keyword">return</span> number;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意到该 Employee 类没有什么不同，尽管该类是抽象类，但是它仍然有 3 个成员变量，7 个成员方法和 1 个构造方法。 现在如果你尝试如下的例子：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : AbstractDemo.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="comment">/* 以下是不允许的，会引发错误 */</span></span><br><span class="line">      Employee e = <span class="keyword">new</span> Employee(<span class="string">&quot;George W.&quot;</span>, <span class="string">&quot;Houston, TX&quot;</span>, <span class="number">43</span>);</span><br><span class="line"> </span><br><span class="line">      System.out.println(<span class="string">&quot;\n Call mailCheck using Employee reference--&quot;</span>);</span><br><span class="line">      e.mailCheck();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当你尝试编译 AbstractDemo 类时，会产生如下错误：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Employee.java:<span class="number">46</span>: Employee is <span class="keyword">abstract</span>; cannot be instantiated</span><br><span class="line">      Employee e = <span class="keyword">new</span> Employee(<span class="string">&quot;George W.&quot;</span>, <span class="string">&quot;Houston, TX&quot;</span>, <span class="number">43</span>);</span><br><span class="line">                   ^</span><br><span class="line"><span class="number">1</span> error</span><br></pre></td></tr></table></figure>
+
+<p><strong>分析：</strong>抽象类不能实例化。</p>
+<h3 id="继承抽象类"><a href="#继承抽象类" class="headerlink" title="继承抽象类"></a>继承抽象类</h3><p>我们能通过一般的方法继承Employee类：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : Salary.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Salary</span> <span class="keyword">extends</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">double</span> salary; <span class="comment">//Annual salary</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Salary</span><span class="params">(String name, String address, <span class="keyword">int</span> number, <span class="keyword">double</span></span></span></span><br><span class="line"><span class="function"><span class="params">      salary)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>(name, address, number);</span><br><span class="line">       setSalary(salary);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mailCheck</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       System.out.println(<span class="string">&quot;Within mailCheck of Salary class &quot;</span>);</span><br><span class="line">       System.out.println(<span class="string">&quot;Mailing check to &quot;</span> + getName()</span><br><span class="line">       + <span class="string">&quot; with salary &quot;</span> + salary);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getSalary</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> salary;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSalary</span><span class="params">(<span class="keyword">double</span> newSalary)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">if</span>(newSalary &gt;= <span class="number">0.0</span>)</span><br><span class="line">       &#123;</span><br><span class="line">          salary = newSalary;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Computing salary pay for &quot;</span> + getName());</span><br><span class="line">      <span class="keyword">return</span> salary/<span class="number">52</span>;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>尽管我们不能实例化一个 Employee 类的对象，但是如果我们实例化一个 Salary 类对象，该对象将从 Employee 类继承 7 个成员方法，且通过该方法可以设置或获取三个成员变量。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : AbstractDemo.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      Salary s = <span class="keyword">new</span> Salary(<span class="string">&quot;Mohd Mohtashim&quot;</span>, <span class="string">&quot;Ambehta, UP&quot;</span>, <span class="number">3</span>, <span class="number">3600.00</span>);</span><br><span class="line">      Employee e = <span class="keyword">new</span> Salary(<span class="string">&quot;John Adams&quot;</span>, <span class="string">&quot;Boston, MA&quot;</span>, <span class="number">2</span>, <span class="number">2400.00</span>);</span><br><span class="line"> </span><br><span class="line">      System.out.println(<span class="string">&quot;Call mailCheck using Salary reference --&quot;</span>);</span><br><span class="line">      s.mailCheck();</span><br><span class="line"> </span><br><span class="line">      System.out.println(<span class="string">&quot;\n Call mailCheck using Employee reference--&quot;</span>);</span><br><span class="line">      e.mailCheck();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>结果：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Constructing an Employee</span><br><span class="line">Constructing an Employee</span><br><span class="line">Call mailCheck using  Salary reference --</span><br><span class="line">Within mailCheck of Salary <span class="class"><span class="keyword">class</span></span></span><br><span class="line"><span class="class"><span class="title">Mailing</span> <span class="title">check</span> <span class="title">to</span> <span class="title">Mohd</span> <span class="title">Mohtashim</span> <span class="title">with</span> <span class="title">salary</span> 3600.0</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="title">Call</span> <span class="title">mailCheck</span> <span class="title">using</span> <span class="title">Employee</span> <span class="title">reference</span>--</span></span><br><span class="line"><span class="class"><span class="title">Within</span> <span class="title">mailCheck</span> <span class="title">of</span> <span class="title">Salary</span> <span class="title">class</span></span></span><br><span class="line"><span class="class"><span class="title">Mailing</span> <span class="title">check</span> <span class="title">to</span> <span class="title">John</span> <span class="title">Adams</span> <span class="title">with</span> <span class="title">salary</span> 2400.</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="抽象方法"><a href="#抽象方法" class="headerlink" title="抽象方法"></a>抽象方法</h3><p>如果你想设计这样一个类，该类包含一个特别的成员方法，该方法的具体实现由它的子类确定，那么你可以在父类中声明该方法为抽象方法。</p>
+<p>Abstract 关键字同样可以用来声明抽象方法，抽象方法只包含一个方法名，而没有方法体。</p>
+<p>抽象方法没有定义，方法名后面直接跟一个分号，而不是花括号。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> String name;</span><br><span class="line">   <span class="keyword">private</span> String address;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">int</span> number;</span><br><span class="line">   </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span>;</span><br><span class="line">   </span><br><span class="line">   <span class="comment">//其余代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>声明抽象方法会造成以下两个结果：</p>
+<ul>
+<li>如果一个类包含抽象方法，那么该类必须是抽象类。</li>
+<li>任何子类必须重写父类的抽象方法，或者声明自身为抽象类。</li>
+</ul>
+<p>继承抽象方法的子类必须重写该方法。否则，该子类也必须声明为抽象类。最终，必须有子类实现该抽象方法，否则从最初的父类到最终的子类都不能用来实例化对象。</p>
+<p>如果Salary类继承了Employee类，那么它必须实现computePay()方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : Salary.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Salary</span> <span class="keyword">extends</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">double</span> salary; <span class="comment">// Annual salary</span></span><br><span class="line">  </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Computing salary pay for &quot;</span> + getName());</span><br><span class="line">      <span class="keyword">return</span> salary/<span class="number">52</span>;</span><br><span class="line">   &#125;</span><br><span class="line"> </span><br><span class="line">   <span class="comment">//其余代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="抽象类总结规定"><a href="#抽象类总结规定" class="headerlink" title="抽象类总结规定"></a>抽象类总结规定</h3><ol>
+<li><strong>抽象类不能被实例化，编译会报错</strong>。只有抽象类的非抽象子类才能实例化。</li>
+<li><strong>抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类</strong>。</li>
+<li><strong>抽象类中的抽象方法只是声明，不包含方法体</strong>，就是不给出方法的具体实现。</li>
+<li><strong>构造方法，类方法（用static 修饰的方法）不能声明为抽象方法。</strong></li>
+<li><strong>抽象类的子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类</strong>。</li>
+</ol>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>​    对于第五点的分析，构造方法是类实例化时的构造过程，抽象类是可以有构造方法的。不存在什么抽象构造方法，抽象就是用来给子类继承的。子类用super 就可以调用父类构造方法了。</p>
+<p>​    对象有两种，一种是实例对象，一种是静态对象。一个类可以有多个实例对象，但只有一个静态对象，也就是类本身。类是可以被继承的，但是静态对象只有一个，不能被继承，静态方法也是不能被继承的。抽象方法是需要继承实现的，而静态方法根本不能被继承，所以这与抽象相矛盾。</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -2266,64 +2322,6 @@
       <tags>
         <tag>Java</tag>
         <tag>Interface</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-抽象类</title>
-    <url>/2019/04/12/Java-%E6%8A%BD%E8%B1%A1%E7%B1%BB/</url>
-    <content><![CDATA[<h2 id="Java-抽象类"><a href="#Java-抽象类" class="headerlink" title="Java 抽象类"></a>Java 抽象类</h2><p>在面向对象的概念中，所有的对象都是通过类来描绘的，但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。</p>
-<p>抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。</p>
-<p>由于抽象类不能实例化对象，所以抽象类必须被继承，才能被使用。也是因为这个原因，通常在设计阶段决定要不要设计抽象类。</p>
-<p>父类包含了子类集合的常见的方法，但是由于父类本身是抽象的，所以不能使用这些方法。</p>
-<p>在Java中抽象类表示的是一种继承关系，一个类只能继承一个抽象类，而一个类却可以实现多个接口。</p>
-<h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><p>在 Java 中 使用 abstract class 定义抽象类。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : Employee.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> String name;</span><br><span class="line">   <span class="keyword">private</span> String address;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">int</span> number;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(String name, String address, <span class="keyword">int</span> number)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Constructing an Employee&quot;</span>);</span><br><span class="line">      <span class="keyword">this</span>.name = name;</span><br><span class="line">      <span class="keyword">this</span>.address = address;</span><br><span class="line">      <span class="keyword">this</span>.number = number;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">     System.out.println(<span class="string">&quot;Inside Employee computePay&quot;</span>);</span><br><span class="line">     <span class="keyword">return</span> <span class="number">0.0</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mailCheck</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Mailing a check to &quot;</span> + <span class="keyword">this</span>.name</span><br><span class="line">       + <span class="string">&quot; &quot;</span> + <span class="keyword">this</span>.address);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> name + <span class="string">&quot; &quot;</span> + address + <span class="string">&quot; &quot;</span> + number;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> name;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getAddress</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> address;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAddress</span><span class="params">(String newAddress)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      address = newAddress;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getNumber</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">     <span class="keyword">return</span> number;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意到该 Employee 类没有什么不同，尽管该类是抽象类，但是它仍然有 3 个成员变量，7 个成员方法和 1 个构造方法。 现在如果你尝试如下的例子：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : AbstractDemo.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      <span class="comment">/* 以下是不允许的，会引发错误 */</span></span><br><span class="line">      Employee e = <span class="keyword">new</span> Employee(<span class="string">&quot;George W.&quot;</span>, <span class="string">&quot;Houston, TX&quot;</span>, <span class="number">43</span>);</span><br><span class="line"> </span><br><span class="line">      System.out.println(<span class="string">&quot;\n Call mailCheck using Employee reference--&quot;</span>);</span><br><span class="line">      e.mailCheck();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>当你尝试编译 AbstractDemo 类时，会产生如下错误：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Employee.java:<span class="number">46</span>: Employee is <span class="keyword">abstract</span>; cannot be instantiated</span><br><span class="line">      Employee e = <span class="keyword">new</span> Employee(<span class="string">&quot;George W.&quot;</span>, <span class="string">&quot;Houston, TX&quot;</span>, <span class="number">43</span>);</span><br><span class="line">                   ^</span><br><span class="line"><span class="number">1</span> error</span><br></pre></td></tr></table></figure>
-
-<p><strong>分析：</strong>抽象类不能实例化。</p>
-<h3 id="继承抽象类"><a href="#继承抽象类" class="headerlink" title="继承抽象类"></a>继承抽象类</h3><p>我们能通过一般的方法继承Employee类：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : Salary.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Salary</span> <span class="keyword">extends</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">double</span> salary; <span class="comment">//Annual salary</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Salary</span><span class="params">(String name, String address, <span class="keyword">int</span> number, <span class="keyword">double</span></span></span></span><br><span class="line"><span class="function"><span class="params">      salary)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>(name, address, number);</span><br><span class="line">       setSalary(salary);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mailCheck</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       System.out.println(<span class="string">&quot;Within mailCheck of Salary class &quot;</span>);</span><br><span class="line">       System.out.println(<span class="string">&quot;Mailing check to &quot;</span> + getName()</span><br><span class="line">       + <span class="string">&quot; with salary &quot;</span> + salary);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getSalary</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> salary;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSalary</span><span class="params">(<span class="keyword">double</span> newSalary)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">if</span>(newSalary &gt;= <span class="number">0.0</span>)</span><br><span class="line">       &#123;</span><br><span class="line">          salary = newSalary;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Computing salary pay for &quot;</span> + getName());</span><br><span class="line">      <span class="keyword">return</span> salary/<span class="number">52</span>;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>尽管我们不能实例化一个 Employee 类的对象，但是如果我们实例化一个 Salary 类对象，该对象将从 Employee 类继承 7 个成员方法，且通过该方法可以设置或获取三个成员变量。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : AbstractDemo.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractDemo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] args)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      Salary s = <span class="keyword">new</span> Salary(<span class="string">&quot;Mohd Mohtashim&quot;</span>, <span class="string">&quot;Ambehta, UP&quot;</span>, <span class="number">3</span>, <span class="number">3600.00</span>);</span><br><span class="line">      Employee e = <span class="keyword">new</span> Salary(<span class="string">&quot;John Adams&quot;</span>, <span class="string">&quot;Boston, MA&quot;</span>, <span class="number">2</span>, <span class="number">2400.00</span>);</span><br><span class="line"> </span><br><span class="line">      System.out.println(<span class="string">&quot;Call mailCheck using Salary reference --&quot;</span>);</span><br><span class="line">      s.mailCheck();</span><br><span class="line"> </span><br><span class="line">      System.out.println(<span class="string">&quot;\n Call mailCheck using Employee reference--&quot;</span>);</span><br><span class="line">      e.mailCheck();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>结果：</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Constructing an Employee</span><br><span class="line">Constructing an Employee</span><br><span class="line">Call mailCheck using  Salary reference --</span><br><span class="line">Within mailCheck of Salary <span class="class"><span class="keyword">class</span></span></span><br><span class="line"><span class="class"><span class="title">Mailing</span> <span class="title">check</span> <span class="title">to</span> <span class="title">Mohd</span> <span class="title">Mohtashim</span> <span class="title">with</span> <span class="title">salary</span> 3600.0</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="title">Call</span> <span class="title">mailCheck</span> <span class="title">using</span> <span class="title">Employee</span> <span class="title">reference</span>--</span></span><br><span class="line"><span class="class"><span class="title">Within</span> <span class="title">mailCheck</span> <span class="title">of</span> <span class="title">Salary</span> <span class="title">class</span></span></span><br><span class="line"><span class="class"><span class="title">Mailing</span> <span class="title">check</span> <span class="title">to</span> <span class="title">John</span> <span class="title">Adams</span> <span class="title">with</span> <span class="title">salary</span> 2400.</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="抽象方法"><a href="#抽象方法" class="headerlink" title="抽象方法"></a>抽象方法</h3><p>如果你想设计这样一个类，该类包含一个特别的成员方法，该方法的具体实现由它的子类确定，那么你可以在父类中声明该方法为抽象方法。</p>
-<p>Abstract 关键字同样可以用来声明抽象方法，抽象方法只包含一个方法名，而没有方法体。</p>
-<p>抽象方法没有定义，方法名后面直接跟一个分号，而不是花括号。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> String name;</span><br><span class="line">   <span class="keyword">private</span> String address;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">int</span> number;</span><br><span class="line">   </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span>;</span><br><span class="line">   </span><br><span class="line">   <span class="comment">//其余代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>声明抽象方法会造成以下两个结果：</p>
-<ul>
-<li>如果一个类包含抽象方法，那么该类必须是抽象类。</li>
-<li>任何子类必须重写父类的抽象方法，或者声明自身为抽象类。</li>
-</ul>
-<p>继承抽象方法的子类必须重写该方法。否则，该子类也必须声明为抽象类。最终，必须有子类实现该抽象方法，否则从最初的父类到最终的子类都不能用来实例化对象。</p>
-<p>如果Salary类继承了Employee类，那么它必须实现computePay()方法：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 文件名 : Salary.java */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Salary</span> <span class="keyword">extends</span> <span class="title">Employee</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">double</span> salary; <span class="comment">// Annual salary</span></span><br><span class="line">  </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">computePay</span><span class="params">()</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Computing salary pay for &quot;</span> + getName());</span><br><span class="line">      <span class="keyword">return</span> salary/<span class="number">52</span>;</span><br><span class="line">   &#125;</span><br><span class="line"> </span><br><span class="line">   <span class="comment">//其余代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="抽象类总结规定"><a href="#抽象类总结规定" class="headerlink" title="抽象类总结规定"></a>抽象类总结规定</h3><ol>
-<li><strong>抽象类不能被实例化，编译会报错</strong>。只有抽象类的非抽象子类才能实例化。</li>
-<li><strong>抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类</strong>。</li>
-<li><strong>抽象类中的抽象方法只是声明，不包含方法体</strong>，就是不给出方法的具体实现。</li>
-<li><strong>构造方法，类方法（用static 修饰的方法）不能声明为抽象方法。</strong></li>
-<li><strong>抽象类的子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类</strong>。</li>
-</ol>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>​    对于第五点的分析，构造方法是类实例化时的构造过程，抽象类是可以有构造方法的。不存在什么抽象构造方法，抽象就是用来给子类继承的。子类用super 就可以调用父类构造方法了。</p>
-<p>​    对象有两种，一种是实例对象，一种是静态对象。一个类可以有多个实例对象，但只有一个静态对象，也就是类本身。类是可以被继承的，但是静态对象只有一个，不能被继承，静态方法也是不能被继承的。抽象方法是需要继承实现的，而静态方法根本不能被继承，所以这与抽象相矛盾。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -4099,6 +4097,48 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
+    <title>Oracle-Char字段和Long字段对比</title>
+    <url>/2020/10/09/Oracle-Char%E5%AD%97%E6%AE%B5%E5%92%8CLong%E5%AD%97%E6%AE%B5%E5%AF%B9%E6%AF%94/</url>
+    <content><![CDATA[<h3 id="数据库设计中char和long两种类型的对比"><a href="#数据库设计中char和long两种类型的对比" class="headerlink" title="数据库设计中char和long两种类型的对比"></a>数据库设计中char和long两种类型的对比</h3><p>如果用char，问题非常多：</p>
+<ol>
+<li><p>可能浪费空间，除非正好放满。</p>
+</li>
+<li><p>会导致程序员在字段前使用trunc等截掉尾部空格的函数，要优化必须建立一些函数索引。写程序还要用rpad之类的函数。</p>
+</li>
+<li><p>如果char很大，很可能导致索引无法建立。</p>
+</li>
+<li><p>长度一变，经常要修改程序。</p>
+</li>
+<li><p>导致程序使用大量的非绑定变量。这个可能更开发语言有关，例子：  c_id=‘1212’ 可以查询到结果  如果使用绑定：c_id=:a这个要看各种开发语言，因为不会补全尾部的空格，可能查询结果为空。</p>
+</li>
+<li><p>CHAR/NCHAR类型还会带来混乱（很多应用存储了信息之后却无法“找到”所存储的数据）。还有：CHAR/NCHAR实际上只是伪装的VARCHAR2/NVARCHAR2，基于这一点，所以我认为其实只需要考虑这两种字符串类型：VARCHAR和NVARCHAR2。</p>
+</li>
+</ol>
+<p>Oracle的LONG类型可谓“臭名昭著”，<strong>由于LONG类型的限制太多，以至于Oracle很少去提LONG类型有哪些限制条件，而一般都是通过说明在哪些情况下，可以使用LONG类型</strong>。正是这些限制阻止了LONG的使用，Oracle也在推出了大对象类型——LOB之后，<strong>强烈建议用户不要在使用LONG类型</strong>。限制：</p>
+<ol>
+<li>一个表中只能包含一个LONG类型的列。</li>
+<li>不能索引LONG类型列。</li>
+<li>不能将含有LONG类型列的表作聚簇。</li>
+<li>不能在SQL*Plus中将LONG类型列的数值插入到另一个表格中,如 insertinto …select。</li>
+<li>不能在SQL*Plus中通过查询其他表的方式来创建LONG类型列,如createtable as select。</li>
+<li>不能对LONG类型列加约束条件（NULL、NOTNULL、DEFAULT除外），如：关键字列(PRIMARYKEY)不能是LONG数据类型。</li>
+<li>LONG类型列不能用在Select的以下子句中：where、groupby、orderby，以及带有distinct的select语句中。</li>
+<li>LONG类型列不能用于分布查询。</li>
+</ol>
+<h3 id="对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的："><a href="#对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的：" class="headerlink" title="对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的："></a>对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的：</h3><img src="/2020/10/09/Oracle-Char%E5%AD%97%E6%AE%B5%E5%92%8CLong%E5%AD%97%E6%AE%B5%E5%AF%B9%E6%AF%94/20210115223411.png" style="zoom:67%;">
+
+<img src="/2020/10/09/Oracle-Char%E5%AD%97%E6%AE%B5%E5%92%8CLong%E5%AD%97%E6%AE%B5%E5%AF%B9%E6%AF%94/20210115223423.png" style="zoom:67%;">
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Sql</tag>
+        <tag>Oracle</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Oracle中 Datatype格式转换</title>
     <url>/2020/04/02/Oracle-Datatype%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</url>
     <content><![CDATA[<h2 id="一、隐式数据类型转换"><a href="#一、隐式数据类型转换" class="headerlink" title="一、隐式数据类型转换"></a>一、隐式数据类型转换</h2><table>
@@ -4164,48 +4204,6 @@ JSP用来处理Servlet转发过来的响应数据
       </categories>
       <tags>
         <tag>Sql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Oracle-Char字段和Long字段对比</title>
-    <url>/2020/10/09/Oracle-Char%E5%AD%97%E6%AE%B5%E5%92%8CLong%E5%AD%97%E6%AE%B5%E5%AF%B9%E6%AF%94/</url>
-    <content><![CDATA[<h3 id="数据库设计中char和long两种类型的对比"><a href="#数据库设计中char和long两种类型的对比" class="headerlink" title="数据库设计中char和long两种类型的对比"></a>数据库设计中char和long两种类型的对比</h3><p>如果用char，问题非常多：</p>
-<ol>
-<li><p>可能浪费空间，除非正好放满。</p>
-</li>
-<li><p>会导致程序员在字段前使用trunc等截掉尾部空格的函数，要优化必须建立一些函数索引。写程序还要用rpad之类的函数。</p>
-</li>
-<li><p>如果char很大，很可能导致索引无法建立。</p>
-</li>
-<li><p>长度一变，经常要修改程序。</p>
-</li>
-<li><p>导致程序使用大量的非绑定变量。这个可能更开发语言有关，例子：  c_id=‘1212’ 可以查询到结果  如果使用绑定：c_id=:a这个要看各种开发语言，因为不会补全尾部的空格，可能查询结果为空。</p>
-</li>
-<li><p>CHAR/NCHAR类型还会带来混乱（很多应用存储了信息之后却无法“找到”所存储的数据）。还有：CHAR/NCHAR实际上只是伪装的VARCHAR2/NVARCHAR2，基于这一点，所以我认为其实只需要考虑这两种字符串类型：VARCHAR和NVARCHAR2。</p>
-</li>
-</ol>
-<p>Oracle的LONG类型可谓“臭名昭著”，<strong>由于LONG类型的限制太多，以至于Oracle很少去提LONG类型有哪些限制条件，而一般都是通过说明在哪些情况下，可以使用LONG类型</strong>。正是这些限制阻止了LONG的使用，Oracle也在推出了大对象类型——LOB之后，<strong>强烈建议用户不要在使用LONG类型</strong>。限制：</p>
-<ol>
-<li>一个表中只能包含一个LONG类型的列。</li>
-<li>不能索引LONG类型列。</li>
-<li>不能将含有LONG类型列的表作聚簇。</li>
-<li>不能在SQL*Plus中将LONG类型列的数值插入到另一个表格中,如 insertinto …select。</li>
-<li>不能在SQL*Plus中通过查询其他表的方式来创建LONG类型列,如createtable as select。</li>
-<li>不能对LONG类型列加约束条件（NULL、NOTNULL、DEFAULT除外），如：关键字列(PRIMARYKEY)不能是LONG数据类型。</li>
-<li>LONG类型列不能用在Select的以下子句中：where、groupby、orderby，以及带有distinct的select语句中。</li>
-<li>LONG类型列不能用于分布查询。</li>
-</ol>
-<h3 id="对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的："><a href="#对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的：" class="headerlink" title="对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的："></a>对于PeopleCode中record的CopyFieldsTo方法，是可以复制LONG型字段到另一个record中的：</h3><img src="/2020/10/09/Oracle-Char%E5%AD%97%E6%AE%B5%E5%92%8CLong%E5%AD%97%E6%AE%B5%E5%AF%B9%E6%AF%94/20210115223411.png" style="zoom:67%;">
-
-<img src="/2020/10/09/Oracle-Char%E5%AD%97%E6%AE%B5%E5%92%8CLong%E5%AD%97%E6%AE%B5%E5%AF%B9%E6%AF%94/20210115223423.png" style="zoom:67%;">
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sql</tag>
-        <tag>Oracle</tag>
       </tags>
   </entry>
   <entry>
@@ -4355,21 +4353,6 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
-    <title>Oracle-按keys值分组后标序号</title>
-    <url>/2020/09/16/Oracle-%E6%8C%89keys%E5%80%BC%E5%88%86%E7%BB%84%E5%90%8E%E6%A0%87%E5%BA%8F%E5%8F%B7/</url>
-    <content><![CDATA[<p>以下代码会把数据分组后进行排序，然后再根据序号，可以取到对应的数据：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">ROW_NUMBER</span>() <span class="keyword">OVER</span>(<span class="keyword">PARTITION</span> <span class="keyword">BY</span> Q.EMPLID, Q.EMPL_RCD, Q.GP_PAYGROUP, Q.CAL_ID <span class="keyword">ORDER</span> <span class="keyword">BY</span> Q.EMPLID <span class="keyword">DESC</span>) <span class="keyword">AS</span> SEQ,</span><br><span class="line">       Q.SETID,</span><br><span class="line">       Q.EMPLID,</span><br><span class="line">       Q.DEPTID,</span><br><span class="line">       Q.POSITION_NBR,</span><br><span class="line">       Q.EMPL_RCD,</span><br><span class="line">       Q.GP_PAYGROUP,</span><br><span class="line">       Q.CAL_ID</span><br><span class="line">  <span class="keyword">FROM</span> PS_C_PI_QRY_VW Q</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>使用场景：进行单表拼串时，取每个分组的一条数据时，利用上述SQL，然后进行数据拼接；</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Oracle中 常用函数</title>
     <url>/2020/04/02/Oracle-%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<h3 id="CEIL-向上取整"><a href="#CEIL-向上取整" class="headerlink" title="CEIL 向上取整"></a>CEIL 向上取整</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">CEIL</span>(<span class="number">9.5</span>) <span class="keyword">FROM</span> DUAL;</span><br><span class="line"><span class="comment">-- 结果：10</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -4448,6 +4431,34 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
+    <title>Oracle-按keys值分组后标序号</title>
+    <url>/2020/09/16/Oracle-%E6%8C%89keys%E5%80%BC%E5%88%86%E7%BB%84%E5%90%8E%E6%A0%87%E5%BA%8F%E5%8F%B7/</url>
+    <content><![CDATA[<p>以下代码会把数据分组后进行排序，然后再根据序号，可以取到对应的数据：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">ROW_NUMBER</span>() <span class="keyword">OVER</span>(<span class="keyword">PARTITION</span> <span class="keyword">BY</span> Q.EMPLID, Q.EMPL_RCD, Q.GP_PAYGROUP, Q.CAL_ID <span class="keyword">ORDER</span> <span class="keyword">BY</span> Q.EMPLID <span class="keyword">DESC</span>) <span class="keyword">AS</span> SEQ,</span><br><span class="line">       Q.SETID,</span><br><span class="line">       Q.EMPLID,</span><br><span class="line">       Q.DEPTID,</span><br><span class="line">       Q.POSITION_NBR,</span><br><span class="line">       Q.EMPL_RCD,</span><br><span class="line">       Q.GP_PAYGROUP,</span><br><span class="line">       Q.CAL_ID</span><br><span class="line">  <span class="keyword">FROM</span> PS_C_PI_QRY_VW Q</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>使用场景：进行单表拼串时，取每个分组的一条数据时，利用上述SQL，然后进行数据拼接；</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Sql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Oracle-时间戳</title>
+    <url>/2021/06/20/Oracle-%E6%97%B6%E9%97%B4%E6%88%B3/</url>
+    <content><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">--时间戳是某一时间点距离1970年1月1日早上八点的毫秒数或者秒数</span></span><br><span class="line"><span class="keyword">SELECT</span> TO_NUMBER((TO_DATE(<span class="string">&#x27;2017-03-31&#x27;</span>, <span class="string">&#x27;YYYY-MM-DD HH24:MI:SS&#x27;</span>) <span class="operator">-</span></span><br><span class="line">                 TO_DATE(<span class="string">&#x27;1970-01-01 08:00:00&#x27;</span>, <span class="string">&#x27;YYYY-MM-DD HH24:MI:SS&#x27;</span>)) <span class="operator">*</span> <span class="number">24</span> <span class="operator">*</span> <span class="number">60</span> <span class="operator">*</span> <span class="number">60</span>,</span><br><span class="line">                 <span class="string">&#x27;FM9999999999&#x27;</span>)</span><br><span class="line">  <span class="keyword">FROM</span> DUAL;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> TO_CHAR(<span class="number">1490889600</span> <span class="operator">/</span> (<span class="number">60</span> <span class="operator">*</span> <span class="number">60</span> <span class="operator">*</span> <span class="number">24</span>) <span class="operator">+</span></span><br><span class="line">               TO_DATE(<span class="string">&#x27;1970-01-01 08:00:00&#x27;</span>, <span class="string">&#x27;YYYY-MM-DD HH24:MI:SS&#x27;</span>),</span><br><span class="line">               <span class="string">&#x27;YYYY-MM-DD&#x27;</span>)</span><br><span class="line">  <span class="keyword">FROM</span> DUAL;</span><br><span class="line">  </span><br><span class="line"><span class="comment">--单位是秒时时间戳是10位，</span></span><br><span class="line"><span class="comment">--单位是毫秒时时间戳是13位、to_number时注意！</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Sql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Oracle-数据库加解密函数（AES加解密示例）</title>
     <url>/2021/12/08/Oracle-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8A%A0%E8%A7%A3%E5%AF%86%E5%87%BD%E6%95%B0%EF%BC%88AES%E5%8A%A0%E8%A7%A3%E5%AF%86%E7%A4%BA%E4%BE%8B%EF%BC%89/</url>
     <content><![CDATA[<h2 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">su <span class="operator">-</span> oracle2 <span class="comment">--切换用户oracle2 </span></span><br><span class="line"></span><br><span class="line">sqlplus <span class="operator">/</span> <span class="keyword">as</span> sysdba  <span class="comment">--无用户/口令登陆数据库（以sysdba用户） </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">alter</span> session <span class="keyword">set</span> container <span class="operator">=</span> HR92DEV;  <span class="comment">--oracle12c的新特性, 把会话设置到hr92dev这个库。默认是cdb容器 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">execute</span> <span class="keyword">on</span> sys.dbms_crypto <span class="keyword">to</span> SYSADM; <span class="comment">-- 给SYSADM用户授权 sys.dbms_crypto 系统标准加密包  </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">execute</span> <span class="keyword">on</span> sys.utl_i18n <span class="keyword">to</span> SYSADM;  <span class="comment">--给SYSADM用户授权 sys.utl_i18n 系统标准加密包  </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -4469,19 +4480,6 @@ JSP用来处理Servlet转发过来的响应数据
       </categories>
       <tags>
         <tag>Oracle</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Oracle-时间戳</title>
-    <url>/2021/06/20/Oracle-%E6%97%B6%E9%97%B4%E6%88%B3/</url>
-    <content><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">--时间戳是某一时间点距离1970年1月1日早上八点的毫秒数或者秒数</span></span><br><span class="line"><span class="keyword">SELECT</span> TO_NUMBER((TO_DATE(<span class="string">&#x27;2017-03-31&#x27;</span>, <span class="string">&#x27;YYYY-MM-DD HH24:MI:SS&#x27;</span>) <span class="operator">-</span></span><br><span class="line">                 TO_DATE(<span class="string">&#x27;1970-01-01 08:00:00&#x27;</span>, <span class="string">&#x27;YYYY-MM-DD HH24:MI:SS&#x27;</span>)) <span class="operator">*</span> <span class="number">24</span> <span class="operator">*</span> <span class="number">60</span> <span class="operator">*</span> <span class="number">60</span>,</span><br><span class="line">                 <span class="string">&#x27;FM9999999999&#x27;</span>)</span><br><span class="line">  <span class="keyword">FROM</span> DUAL;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> TO_CHAR(<span class="number">1490889600</span> <span class="operator">/</span> (<span class="number">60</span> <span class="operator">*</span> <span class="number">60</span> <span class="operator">*</span> <span class="number">24</span>) <span class="operator">+</span></span><br><span class="line">               TO_DATE(<span class="string">&#x27;1970-01-01 08:00:00&#x27;</span>, <span class="string">&#x27;YYYY-MM-DD HH24:MI:SS&#x27;</span>),</span><br><span class="line">               <span class="string">&#x27;YYYY-MM-DD&#x27;</span>)</span><br><span class="line">  <span class="keyword">FROM</span> DUAL;</span><br><span class="line">  </span><br><span class="line"><span class="comment">--单位是秒时时间戳是10位，</span></span><br><span class="line"><span class="comment">--单位是毫秒时时间戳是13位、to_number时注意！</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sql</tag>
       </tags>
   </entry>
   <entry>
@@ -4622,28 +4620,6 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
-    <title>PeopleSoft-AE进程页面配置通用AE进程子页面</title>
-    <url>/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<h3 id="在组件的PostBuild中编写代码："><a href="#在组件的PostBuild中编写代码：" class="headerlink" title="在组件的PostBuild中编写代码："></a>在组件的PostBuild中编写代码：</h3><img src="/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/20201221152953.png">
-
-<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Component string &amp;PrcsName;</span><br><span class="line">If %Mode = <span class="string">&quot;A&quot;</span> Then</span><br><span class="line">   C_COST_INTC_RTL.C_GP_SORT = <span class="string">&quot;20&quot;</span>;</span><br><span class="line">End-If;</span><br><span class="line">C_COST_INTCA_WK.C_FLAG_DJ.Value = <span class="string">&quot;N&quot;</span>;</span><br><span class="line">&amp;PrcsName = <span class="string">&quot;C_CST_INT_AE&quot;</span>; <span class="comment">/*****进程名称，需要早组件初始化的时候赋值*****/</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。"><a href="#在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。" class="headerlink" title="在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。"></a>在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。</h3><img src="/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/20201221153628.png">
-
-<img src="/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/20201221153706.png">
-
-<h3 id="代码：-1"><a href="#代码：-1" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Component string &amp;PrcsName;</span><br><span class="line">Declare Function Refresh PeopleCode C_SYSAE_QRY.REFRESH_BTN FieldFormula;</span><br><span class="line">Refresh(&amp;PrcsName);</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft</tag>
-        <tag>PeopleCode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PeopleSoft-BI-Publisher-打印PDF证明</title>
     <url>/2020/04/28/PeopleSoft-BI-Publisher-%E6%89%93%E5%8D%B0PDF%E8%AF%81%E6%98%8E/</url>
     <content><![CDATA[<h3 id="安装Oracle的BI-Publisher工具"><a href="#安装Oracle的BI-Publisher工具" class="headerlink" title="安装Oracle的BI_Publisher工具"></a>安装Oracle的BI_Publisher工具</h3><p>根据使用系统选择对应版本下载，路径如图：</p>
@@ -4691,6 +4667,28 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
+    <title>PeopleSoft-AE进程页面配置通用AE进程子页面</title>
+    <url>/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<h3 id="在组件的PostBuild中编写代码："><a href="#在组件的PostBuild中编写代码：" class="headerlink" title="在组件的PostBuild中编写代码："></a>在组件的PostBuild中编写代码：</h3><img src="/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/20201221152953.png">
+
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Component string &amp;PrcsName;</span><br><span class="line">If %Mode = <span class="string">&quot;A&quot;</span> Then</span><br><span class="line">   C_COST_INTC_RTL.C_GP_SORT = <span class="string">&quot;20&quot;</span>;</span><br><span class="line">End-If;</span><br><span class="line">C_COST_INTCA_WK.C_FLAG_DJ.Value = <span class="string">&quot;N&quot;</span>;</span><br><span class="line">&amp;PrcsName = <span class="string">&quot;C_CST_INT_AE&quot;</span>; <span class="comment">/*****进程名称，需要早组件初始化的时候赋值*****/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。"><a href="#在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。" class="headerlink" title="在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。"></a>在组件上找到头部页面的”运行”字段-FieldDefault，编写代码。</h3><img src="/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/20201221153628.png">
+
+<img src="/2020/12/21/PeopleSoft-AE%E8%BF%9B%E7%A8%8B%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE%E9%80%9A%E7%94%A8AE%E8%BF%9B%E7%A8%8B%E5%AD%90%E9%A1%B5%E9%9D%A2/20201221153706.png">
+
+<h3 id="代码：-1"><a href="#代码：-1" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Component string &amp;PrcsName;</span><br><span class="line">Declare Function Refresh PeopleCode C_SYSAE_QRY.REFRESH_BTN FieldFormula;</span><br><span class="line">Refresh(&amp;PrcsName);</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft</tag>
+        <tag>PeopleCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PeopleSoft-Build表注意事项</title>
     <url>/2020/09/16/PeopleSoft-Build%E8%A1%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
     <content><![CDATA[<h3 id="delete字段不能迁移"><a href="#delete字段不能迁移" class="headerlink" title="delete字段不能迁移"></a>delete字段不能迁移</h3><p>迁移工程时，如果删除了表中的某些字段，虽然对比能够检视出变化的表，但是不会自动勾选，需要手动在upgrade中勾选delete的字段，才可以迁移。</p>
@@ -4714,36 +4712,6 @@ JSP用来处理Servlet转发过来的响应数据
       </categories>
       <tags>
         <tag>PeopleSoft</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PeopleSoft-Excel2CI的使用</title>
-    <url>/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="Excel2CI报表-通过CI-调用component（订单管理系统）"><a href="#Excel2CI报表-通过CI-调用component（订单管理系统）" class="headerlink" title="Excel2CI报表 通过CI  调用component（订单管理系统）"></a>Excel2CI报表 通过CI  调用component（订单管理系统）</h2><ol>
-<li>设置连接信息</li>
-<li>基于组件CI创建模板和新建输入表格</li>
-<li>输入数据与提交数据</li>
-<li>发布</li>
-</ol>
-<h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><p>1、打开Excel2CI ,设置好连接信息如图：</p>
-<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-5.png" style="zoom:67%;">
-
-<p>2、新建模版与输入表格：</p>
-<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-6.png">
-
-<p>3、输入数据</p>
-<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-7.png" style="zoom: 67%;">
-
-<p>4、发布</p>
-<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-8.png" style="zoom:67%;">
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft</tag>
-        <tag>Component Interface</tag>
       </tags>
   </entry>
   <entry>
@@ -4775,6 +4743,36 @@ JSP用来处理Servlet转发过来的响应数据
       <tags>
         <tag>PeopleSoft</tag>
         <tag>PeopleCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PeopleSoft-Excel2CI的使用</title>
+    <url>/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="Excel2CI报表-通过CI-调用component（订单管理系统）"><a href="#Excel2CI报表-通过CI-调用component（订单管理系统）" class="headerlink" title="Excel2CI报表 通过CI  调用component（订单管理系统）"></a>Excel2CI报表 通过CI  调用component（订单管理系统）</h2><ol>
+<li>设置连接信息</li>
+<li>基于组件CI创建模板和新建输入表格</li>
+<li>输入数据与提交数据</li>
+<li>发布</li>
+</ol>
+<h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><p>1、打开Excel2CI ,设置好连接信息如图：</p>
+<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-5.png" style="zoom:67%;">
+
+<p>2、新建模版与输入表格：</p>
+<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-6.png">
+
+<p>3、输入数据</p>
+<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-7.png" style="zoom: 67%;">
+
+<p>4、发布</p>
+<img src="/2019/03/27/PeopleSoft-Excel2CI%E7%9A%84%E4%BD%BF%E7%94%A8/20190327-8.png" style="zoom:67%;">
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft</tag>
+        <tag>Component Interface</tag>
       </tags>
   </entry>
   <entry>
@@ -4861,22 +4859,6 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
-    <title>PeopleSoft-PS调用外部接口</title>
-    <url>/2020/09/02/PeopleSoft-PS%E8%B0%83%E7%94%A8%E5%A4%96%E9%83%A8%E6%8E%A5%E5%8F%A3/</url>
-    <content><![CDATA[<p>通过对接外部提供的接口文档，将PS系统表中的数据处理完成后，拼接为json字符串推送给对应系统，代码如下：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">   /+ &amp;recC_EMPL_PRD_REQ as Record +/</span><br><span class="line">   /+ Returns String +/</span><br><span class="line">   </span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  分析JSON数据结构，创建需要的JSON对象或者数组；</span></span><br><span class="line"><span class="comment">  根据传入的表获取信息，拼接JSON串;</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">   Local string &amp;reqBody, &amp;rspBody;</span><br><span class="line">   <span class="comment">/* 创建一个请求json对象*/</span></span><br><span class="line">   Local JsonObject &amp;reqObj = CreateJsonObject();</span><br><span class="line">   <span class="comment">/*创建一个请求json数组的子对象*/</span></span><br><span class="line">   Local JsonObject &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   <span class="comment">/*创建一个请求json数组*/</span></span><br><span class="line">   Local JsonArray &amp;jArr = CreateJsonArray();</span><br><span class="line">   <span class="comment">/*json对象插入属性*/</span></span><br><span class="line">   &amp;reqObj.AddProperty(<span class="string">&quot;message&quot;</span>, &amp;reqObj1);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;method&quot;</span>, <span class="string">&quot;createRequest&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;workflowid&quot;</span>, <span class="string">&quot;750&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;requestname&quot;</span>, <span class="string">&quot;转正申请&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;requestlevel&quot;</span>, <span class="string">&quot;0&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;creator&quot;</span>, &amp;recC_EMPL_PRD_REQ.EMPLID.Value);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;isnextflow&quot;</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">   <span class="comment">/*json对象插入数组*/</span></span><br><span class="line">   &amp;reqObj1.AddJsonArray(<span class="string">&quot;main&quot;</span>, &amp;jArr);</span><br><span class="line">   <span class="comment">/*创建请求json数组的子对象*/</span></span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">  <span class="comment">/*将子对象插入json数组中*/</span></span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   <span class="comment">/*设置json数组子对象的属性*/</span></span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;bh&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;sqrq&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_DT.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;sqr1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.EMPLID.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;sqrbm1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.DEPTID.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;xm1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.EMPLID2.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzrq&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_PRO_PRD_DT.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;bm1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.DEPTID1.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;gw1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.POSITION_NBR.Value);</span><br><span class="line">   </span><br><span class="line">   Local string &amp;strC_POSN_GRDE_DESCR;</span><br><span class="line">   SQLExec(<span class="string">&quot;SELECT G.DESCR from PS_C_POSN_GRDE_VW G WHERE G.OPRID = :1  AND G.SETID = (SELECT P.SETID from ps_C_EMPL_PRD_REQ P WHERE P.C_SECTION_TYPE = &#x27;1000000003&#x27; AND P.C_APP_SEQ = :2 ) AND G.C_POSN_GRDE_ID = :3  AND G.EFFDT = (SELECT MAX(G1.EFFDT) from PS_C_POSN_GRDE_VW G1 WHERE G1.OPRID = G.OPRID AND G1.SETID = G.SETID AND G1.C_POSN_GRDE_ID = G.C_POSN_GRDE_ID AND G.EFFDT &lt;= SYSDATE )&quot;</span>, %OperatorId, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value, &amp;recC_EMPL_PRD_REQ.C_POSN_GRDE_ID.Value, &amp;strC_POSN_GRDE_DESCR);</span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;ygzj&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;strC_POSN_GRDE_DESCR);</span><br><span class="line">   </span><br><span class="line">   Local string &amp;strLOCATION_DESCR4;</span><br><span class="line">   SQLExec(<span class="string">&quot;SELECT L.DESCR from PS_LOCATION_TBL L WHERE L.SETID = (SELECT P.SETID from ps_C_EMPL_PRD_REQ P WHERE P.C_SECTION_TYPE = &#x27;1000000003&#x27; AND P.C_APP_SEQ = :1 ) AND L.LOCATION = :2  AND L.EFF_STATUS = &#x27;A&#x27; AND L.EFFDT = (SELECT MAX(L1.EFFDT) from PS_LOCATION_TBL L1 WHERE L1.SETID = L.SETID AND L1.LOCATION = L.LOCATION AND L1.EFFDT &lt;= SYSDATE) &quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value, &amp;recC_EMPL_PRD_REQ.LOCATION.Value, &amp;strLOCATION_DESCR4);</span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;gzdd&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;strLOCATION_DESCR4);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzrq&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_PRD_DT.Value);</span><br><span class="line"></span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzyy&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.ACT_REASON_SUB.Value);</span><br><span class="line">  </span><br><span class="line">   Local string &amp;strACT_REASON_SUB_DESCR;</span><br><span class="line">   SQLExec(<span class="string">&quot;SELECT RB.descr1 from PS_C_ACT_RES_SUB RB WHERE RB.action_reason = &#x27;PPD&#x27; AND RB.act_reason_sub = :1 &quot;</span>, &amp;recC_EMPL_PRD_REQ.ACT_REASON_SUB.Value, &amp;strACT_REASON_SUB_DESCR);</span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzyyms&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;strACT_REASON_SUB_DESCR);</span><br><span class="line">   </span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;bcsm&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.DESCR254.Value);</span><br><span class="line">   </span><br><span class="line">   </span><br><span class="line">   rem &amp;reqBody = &amp;reqObj.ToString();</span><br><span class="line">   <span class="comment">/* 接口地址; */</span></span><br><span class="line">   Local string &amp;sURL = <span class="string">&quot;http://oa.akucun.com/WorkflowCustomServiceServlet&quot;</span>;</span><br><span class="line">   Local string &amp;jsonBody;</span><br><span class="line">   <span class="comment">/*将json对象转为字符串*/</span></span><br><span class="line">   &amp;jsonBody = &amp;reqObj.ToString();</span><br><span class="line">   <span class="function">rem <span class="title">MessageBox</span><span class="params">(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;&amp;jsonBody==&quot;</span> | &amp;jsonBody)</span></span>;</span><br><span class="line">   <span class="function">rem <span class="title">WinMessage</span><span class="params">(<span class="string">&quot;&amp;jsonBody==&quot;</span> | &amp;jsonBody)</span></span>;</span><br><span class="line">   <span class="comment">/*创建httpclient对象*/</span></span><br><span class="line">   Local JavaObject &amp;jHttp = CreateJavaObject(<span class="string">&quot;org.apache.commons.httpclient.HttpClient&quot;</span>);</span><br><span class="line">   rem &amp;jHttp.getHttpConnectionManager().getParams().setConnectionTimeout(<span class="number">20000</span>);</span><br><span class="line">    <span class="comment">/*创建postMethod信息对象，包含一些必须的参数，例如：字符集等；*/</span></span><br><span class="line">   Local JavaObject &amp;jMethod = CreateJavaObject(<span class="string">&quot;org.apache.commons.httpclient.methods.PostMethod&quot;</span>, &amp;sURL);</span><br><span class="line">    <span class="comment">/*设置postMethod信息对象的setFollowRedirects参数*/</span></span><br><span class="line">   &amp;jMethod.setFollowRedirects( False);</span><br><span class="line">   <span class="comment">/*设置postMethod信息对象的setRequestHeader参数*/</span></span><br><span class="line">   &amp;jMethod.setRequestHeader(<span class="string">&quot;Content-Type&quot;</span>, <span class="string">&quot;application/json;charset=UTF-8&quot;</span>);</span><br><span class="line">   </span><br><span class="line">   <span class="comment">/* get some abritrary JSON from HTML Area in this case because it is easy */</span></span><br><span class="line">   <span class="comment">/* JSON in PeopleTools is painful */</span></span><br><span class="line">   Local number &amp;i;</span><br><span class="line">   <span class="comment">/*</span></span><br><span class="line"><span class="comment">   For &amp;i = 1 To &amp;headername.Len</span></span><br><span class="line"><span class="comment">      &amp;jMethod.setRequestHeader(&amp;headername [&amp;i], &amp;headevalue [&amp;i]);</span></span><br><span class="line"><span class="comment">   End-For;</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">   <span class="comment">/*设置postMethod对象的setRequestBody参数,把拼接好的json字符串传入*/</span></span><br><span class="line">   &amp;jMethod.setRequestBody(&amp;jsonBody);</span><br><span class="line">  <span class="comment">/*httpclient对象调用执行方法，传入配置好的postMethod对象*/</span></span><br><span class="line">   &amp;jHttp.executeMethod(&amp;jMethod);</span><br><span class="line"><span class="comment">/*******************************  begin 解析回传的JSON  ****************************************/</span></span><br><span class="line"><span class="comment">/*解析Json*/</span></span><br><span class="line">Local JsonParser &amp;JsonParser = CreateJsonParser();</span><br><span class="line">Local <span class="keyword">boolean</span> &amp;JsonParserStatus = &amp;JsonParser.Parse(&amp;responseBody);</span><br><span class="line">If &amp;JsonParserStatus = False Then</span><br><span class="line">   <span class="keyword">throw</span> CreateException(<span class="number">10003</span>, - <span class="number">1</span>, <span class="string">&quot;Json解析错误&quot;</span>);</span><br><span class="line">End-If;</span><br><span class="line"><span class="comment">/*取请求报文参数*/</span></span><br><span class="line">Local JsonObject &amp;jObj = &amp;JsonParser.GetRootObject();</span><br><span class="line">Local string &amp;strCode = &amp;jObj.GetProperty(<span class="string">&quot;code&quot;</span>);</span><br><span class="line">rem Local string &amp;strMsg = &amp;jObj.GetProperty(<span class="string">&quot;msg&quot;</span>); 	</span><br><span class="line">If &amp;strCode &lt;&gt; <span class="string">&quot;0&quot;</span> Then</span><br><span class="line">   C_EMPL_TRA_REQ.C_APPLI_RS.Value = <span class="number">5</span>;</span><br><span class="line">End-If;</span><br><span class="line">If &amp;responseStatus = <span class="number">0</span> Then</span><br><span class="line">   MessageBox(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;提交成功!&quot;</span>);</span><br><span class="line">Else</span><br><span class="line">   MessageBox(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;提交失败!原因:&quot;</span> | &amp;strMsg);</span><br><span class="line">End-If;</span><br><span class="line"><span class="comment">/*******************************  end 解析回传的JSON  ****************************************/</span></span><br><span class="line">   rem 获取返回结果;</span><br><span class="line">   Local string &amp;responseBody = &amp;jMethod.getResponseBodyAsString();</span><br><span class="line">   Local string &amp;responseStatus = &amp;jMethod.getStatusLine().getStatusCode();</span><br><span class="line">   <span class="function">rem <span class="title">MessageBox</span><span class="params">(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, &amp;responseBody | <span class="string">&quot;==&quot;</span> | &amp;responseStatus)</span></span>;</span><br><span class="line">   rem &amp;responseBody = CreateJavaObject(<span class="string">&quot;java.lang.String&quot;</span>, CreateJavaObject(<span class="string">&quot;java.lang.String&quot;</span>, &amp;responseBody).getBytes(<span class="string">&quot;ISO8859-1&quot;</span>), <span class="string">&quot;UTF-8&quot;</span>).toString();</span><br><span class="line">   &amp;jMethod.releaseConnection();</span><br><span class="line">   rem 如果网络状态为<span class="number">200</span>，并且返回的接口编码为：<span class="number">0</span>，表示接口成功接收到推送的数据；否则，表示推送失败，需要把员工转正申请单中的数据删除;</span><br><span class="line">   Local string &amp;strReturn = <span class="string">&quot;&quot;</span>;</span><br><span class="line">   If &amp;responseStatus = <span class="string">&quot;200&quot;</span> And</span><br><span class="line">         (Substitute(&amp;responseBody, <span class="string">&quot;&quot;</span><span class="string">&quot;code&quot;</span><span class="string">&quot;:&quot;</span><span class="string">&quot;0&quot;</span><span class="string">&quot;&quot;</span>, <span class="string">&quot;&quot;</span>) &lt;&gt; &amp;responseBody) Then</span><br><span class="line">      &amp;strReturn = <span class="string">&quot;&quot;</span>;</span><br><span class="line">   Else</span><br><span class="line">      SQLExec(<span class="string">&quot; DELETE FROM ps_C_EMPL_PRD_REQ p WHERE p.c_app_seq = :1 and  p.C_SECTION_TYPE = &#x27;1000000003&#x27; &quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value);</span><br><span class="line">      SQLExec(<span class="string">&quot; COMMIT &quot;</span>);</span><br><span class="line">      &amp;strReturn = <span class="string">&quot;接口失败：&quot;</span> | &amp;responseBody;</span><br><span class="line">   End-If;</span><br><span class="line">   <span class="function">rem <span class="title">MessageBox</span><span class="params">(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;OA接口的结果&amp;strReturn：&quot;</span> | &amp;strReturn)</span></span>;</span><br><span class="line">   Return &amp;strReturn;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft</tag>
-        <tag>Interface</tag>
-        <tag>PeopleCode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PeopleSoft-PS系统布置HTML页面</title>
     <url>/2020/12/29/PeopleSoft-PS%E7%B3%BB%E7%BB%9F%E5%B8%83%E7%BD%AEHTML%E9%A1%B5%E9%9D%A2/</url>
     <content><![CDATA[<h3 id="先创建HTML页面"><a href="#先创建HTML页面" class="headerlink" title="先创建HTML页面"></a>先创建HTML页面</h3><img src="/2020/12/29/PeopleSoft-PS%E7%B3%BB%E7%BB%9F%E5%B8%83%E7%BD%AEHTML%E9%A1%B5%E9%9D%A2/20201229174923.png">
@@ -4899,6 +4881,22 @@ JSP用来处理Servlet转发过来的响应数据
         <tag>PeopleSoft</tag>
         <tag>PeopleCode</tag>
         <tag>Html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PeopleSoft-PS调用外部接口</title>
+    <url>/2020/09/02/PeopleSoft-PS%E8%B0%83%E7%94%A8%E5%A4%96%E9%83%A8%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<p>通过对接外部提供的接口文档，将PS系统表中的数据处理完成后，拼接为json字符串推送给对应系统，代码如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">   /+ &amp;recC_EMPL_PRD_REQ as Record +/</span><br><span class="line">   /+ Returns String +/</span><br><span class="line">   </span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  分析JSON数据结构，创建需要的JSON对象或者数组；</span></span><br><span class="line"><span class="comment">  根据传入的表获取信息，拼接JSON串;</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">   Local string &amp;reqBody, &amp;rspBody;</span><br><span class="line">   <span class="comment">/* 创建一个请求json对象*/</span></span><br><span class="line">   Local JsonObject &amp;reqObj = CreateJsonObject();</span><br><span class="line">   <span class="comment">/*创建一个请求json数组的子对象*/</span></span><br><span class="line">   Local JsonObject &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   <span class="comment">/*创建一个请求json数组*/</span></span><br><span class="line">   Local JsonArray &amp;jArr = CreateJsonArray();</span><br><span class="line">   <span class="comment">/*json对象插入属性*/</span></span><br><span class="line">   &amp;reqObj.AddProperty(<span class="string">&quot;message&quot;</span>, &amp;reqObj1);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;method&quot;</span>, <span class="string">&quot;createRequest&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;workflowid&quot;</span>, <span class="string">&quot;750&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;requestname&quot;</span>, <span class="string">&quot;转正申请&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;requestlevel&quot;</span>, <span class="string">&quot;0&quot;</span>);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;creator&quot;</span>, &amp;recC_EMPL_PRD_REQ.EMPLID.Value);</span><br><span class="line">   &amp;reqObj1.AddProperty(<span class="string">&quot;isnextflow&quot;</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">   <span class="comment">/*json对象插入数组*/</span></span><br><span class="line">   &amp;reqObj1.AddJsonArray(<span class="string">&quot;main&quot;</span>, &amp;jArr);</span><br><span class="line">   <span class="comment">/*创建请求json数组的子对象*/</span></span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">  <span class="comment">/*将子对象插入json数组中*/</span></span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   <span class="comment">/*设置json数组子对象的属性*/</span></span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;bh&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;sqrq&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_DT.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;sqr1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.EMPLID.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;sqrbm1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.DEPTID.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;xm1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.EMPLID2.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzrq&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_PRO_PRD_DT.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;bm1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.DEPTID1.Value);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;gw1&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.POSITION_NBR.Value);</span><br><span class="line">   </span><br><span class="line">   Local string &amp;strC_POSN_GRDE_DESCR;</span><br><span class="line">   SQLExec(<span class="string">&quot;SELECT G.DESCR from PS_C_POSN_GRDE_VW G WHERE G.OPRID = :1  AND G.SETID = (SELECT P.SETID from ps_C_EMPL_PRD_REQ P WHERE P.C_SECTION_TYPE = &#x27;1000000003&#x27; AND P.C_APP_SEQ = :2 ) AND G.C_POSN_GRDE_ID = :3  AND G.EFFDT = (SELECT MAX(G1.EFFDT) from PS_C_POSN_GRDE_VW G1 WHERE G1.OPRID = G.OPRID AND G1.SETID = G.SETID AND G1.C_POSN_GRDE_ID = G.C_POSN_GRDE_ID AND G.EFFDT &lt;= SYSDATE )&quot;</span>, %OperatorId, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value, &amp;recC_EMPL_PRD_REQ.C_POSN_GRDE_ID.Value, &amp;strC_POSN_GRDE_DESCR);</span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;ygzj&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;strC_POSN_GRDE_DESCR);</span><br><span class="line">   </span><br><span class="line">   Local string &amp;strLOCATION_DESCR4;</span><br><span class="line">   SQLExec(<span class="string">&quot;SELECT L.DESCR from PS_LOCATION_TBL L WHERE L.SETID = (SELECT P.SETID from ps_C_EMPL_PRD_REQ P WHERE P.C_SECTION_TYPE = &#x27;1000000003&#x27; AND P.C_APP_SEQ = :1 ) AND L.LOCATION = :2  AND L.EFF_STATUS = &#x27;A&#x27; AND L.EFFDT = (SELECT MAX(L1.EFFDT) from PS_LOCATION_TBL L1 WHERE L1.SETID = L.SETID AND L1.LOCATION = L.LOCATION AND L1.EFFDT &lt;= SYSDATE) &quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value, &amp;recC_EMPL_PRD_REQ.LOCATION.Value, &amp;strLOCATION_DESCR4);</span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;gzdd&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;strLOCATION_DESCR4);</span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzrq&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.C_PRD_DT.Value);</span><br><span class="line"></span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzyy&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.ACT_REASON_SUB.Value);</span><br><span class="line">  </span><br><span class="line">   Local string &amp;strACT_REASON_SUB_DESCR;</span><br><span class="line">   SQLExec(<span class="string">&quot;SELECT RB.descr1 from PS_C_ACT_RES_SUB RB WHERE RB.action_reason = &#x27;PPD&#x27; AND RB.act_reason_sub = :1 &quot;</span>, &amp;recC_EMPL_PRD_REQ.ACT_REASON_SUB.Value, &amp;strACT_REASON_SUB_DESCR);</span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;zzyyms&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;strACT_REASON_SUB_DESCR);</span><br><span class="line">   </span><br><span class="line">   </span><br><span class="line">   &amp;reqObjSub = CreateJsonObject();</span><br><span class="line">   &amp;jArr.AddJsonObjectElement(<span class="string">&quot;&quot;</span>, &amp;reqObjSub);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldname&quot;</span>, <span class="string">&quot;bcsm&quot;</span>);</span><br><span class="line">   &amp;reqObjSub.AddProperty(<span class="string">&quot;fieldvalue&quot;</span>, &amp;recC_EMPL_PRD_REQ.DESCR254.Value);</span><br><span class="line">   </span><br><span class="line">   </span><br><span class="line">   rem &amp;reqBody = &amp;reqObj.ToString();</span><br><span class="line">   <span class="comment">/* 接口地址; */</span></span><br><span class="line">   Local string &amp;sURL = <span class="string">&quot;http://oa.akucun.com/WorkflowCustomServiceServlet&quot;</span>;</span><br><span class="line">   Local string &amp;jsonBody;</span><br><span class="line">   <span class="comment">/*将json对象转为字符串*/</span></span><br><span class="line">   &amp;jsonBody = &amp;reqObj.ToString();</span><br><span class="line">   <span class="function">rem <span class="title">MessageBox</span><span class="params">(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;&amp;jsonBody==&quot;</span> | &amp;jsonBody)</span></span>;</span><br><span class="line">   <span class="function">rem <span class="title">WinMessage</span><span class="params">(<span class="string">&quot;&amp;jsonBody==&quot;</span> | &amp;jsonBody)</span></span>;</span><br><span class="line">   <span class="comment">/*创建httpclient对象*/</span></span><br><span class="line">   Local JavaObject &amp;jHttp = CreateJavaObject(<span class="string">&quot;org.apache.commons.httpclient.HttpClient&quot;</span>);</span><br><span class="line">   rem &amp;jHttp.getHttpConnectionManager().getParams().setConnectionTimeout(<span class="number">20000</span>);</span><br><span class="line">    <span class="comment">/*创建postMethod信息对象，包含一些必须的参数，例如：字符集等；*/</span></span><br><span class="line">   Local JavaObject &amp;jMethod = CreateJavaObject(<span class="string">&quot;org.apache.commons.httpclient.methods.PostMethod&quot;</span>, &amp;sURL);</span><br><span class="line">    <span class="comment">/*设置postMethod信息对象的setFollowRedirects参数*/</span></span><br><span class="line">   &amp;jMethod.setFollowRedirects( False);</span><br><span class="line">   <span class="comment">/*设置postMethod信息对象的setRequestHeader参数*/</span></span><br><span class="line">   &amp;jMethod.setRequestHeader(<span class="string">&quot;Content-Type&quot;</span>, <span class="string">&quot;application/json;charset=UTF-8&quot;</span>);</span><br><span class="line">   </span><br><span class="line">   <span class="comment">/* get some abritrary JSON from HTML Area in this case because it is easy */</span></span><br><span class="line">   <span class="comment">/* JSON in PeopleTools is painful */</span></span><br><span class="line">   Local number &amp;i;</span><br><span class="line">   <span class="comment">/*</span></span><br><span class="line"><span class="comment">   For &amp;i = 1 To &amp;headername.Len</span></span><br><span class="line"><span class="comment">      &amp;jMethod.setRequestHeader(&amp;headername [&amp;i], &amp;headevalue [&amp;i]);</span></span><br><span class="line"><span class="comment">   End-For;</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">   <span class="comment">/*设置postMethod对象的setRequestBody参数,把拼接好的json字符串传入*/</span></span><br><span class="line">   &amp;jMethod.setRequestBody(&amp;jsonBody);</span><br><span class="line">  <span class="comment">/*httpclient对象调用执行方法，传入配置好的postMethod对象*/</span></span><br><span class="line">   &amp;jHttp.executeMethod(&amp;jMethod);</span><br><span class="line"><span class="comment">/*******************************  begin 解析回传的JSON  ****************************************/</span></span><br><span class="line"><span class="comment">/*解析Json*/</span></span><br><span class="line">Local JsonParser &amp;JsonParser = CreateJsonParser();</span><br><span class="line">Local <span class="keyword">boolean</span> &amp;JsonParserStatus = &amp;JsonParser.Parse(&amp;responseBody);</span><br><span class="line">If &amp;JsonParserStatus = False Then</span><br><span class="line">   <span class="keyword">throw</span> CreateException(<span class="number">10003</span>, - <span class="number">1</span>, <span class="string">&quot;Json解析错误&quot;</span>);</span><br><span class="line">End-If;</span><br><span class="line"><span class="comment">/*取请求报文参数*/</span></span><br><span class="line">Local JsonObject &amp;jObj = &amp;JsonParser.GetRootObject();</span><br><span class="line">Local string &amp;strCode = &amp;jObj.GetProperty(<span class="string">&quot;code&quot;</span>);</span><br><span class="line">rem Local string &amp;strMsg = &amp;jObj.GetProperty(<span class="string">&quot;msg&quot;</span>); 	</span><br><span class="line">If &amp;strCode &lt;&gt; <span class="string">&quot;0&quot;</span> Then</span><br><span class="line">   C_EMPL_TRA_REQ.C_APPLI_RS.Value = <span class="number">5</span>;</span><br><span class="line">End-If;</span><br><span class="line">If &amp;responseStatus = <span class="number">0</span> Then</span><br><span class="line">   MessageBox(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;提交成功!&quot;</span>);</span><br><span class="line">Else</span><br><span class="line">   MessageBox(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;提交失败!原因:&quot;</span> | &amp;strMsg);</span><br><span class="line">End-If;</span><br><span class="line"><span class="comment">/*******************************  end 解析回传的JSON  ****************************************/</span></span><br><span class="line">   rem 获取返回结果;</span><br><span class="line">   Local string &amp;responseBody = &amp;jMethod.getResponseBodyAsString();</span><br><span class="line">   Local string &amp;responseStatus = &amp;jMethod.getStatusLine().getStatusCode();</span><br><span class="line">   <span class="function">rem <span class="title">MessageBox</span><span class="params">(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, &amp;responseBody | <span class="string">&quot;==&quot;</span> | &amp;responseStatus)</span></span>;</span><br><span class="line">   rem &amp;responseBody = CreateJavaObject(<span class="string">&quot;java.lang.String&quot;</span>, CreateJavaObject(<span class="string">&quot;java.lang.String&quot;</span>, &amp;responseBody).getBytes(<span class="string">&quot;ISO8859-1&quot;</span>), <span class="string">&quot;UTF-8&quot;</span>).toString();</span><br><span class="line">   &amp;jMethod.releaseConnection();</span><br><span class="line">   rem 如果网络状态为<span class="number">200</span>，并且返回的接口编码为：<span class="number">0</span>，表示接口成功接收到推送的数据；否则，表示推送失败，需要把员工转正申请单中的数据删除;</span><br><span class="line">   Local string &amp;strReturn = <span class="string">&quot;&quot;</span>;</span><br><span class="line">   If &amp;responseStatus = <span class="string">&quot;200&quot;</span> And</span><br><span class="line">         (Substitute(&amp;responseBody, <span class="string">&quot;&quot;</span><span class="string">&quot;code&quot;</span><span class="string">&quot;:&quot;</span><span class="string">&quot;0&quot;</span><span class="string">&quot;&quot;</span>, <span class="string">&quot;&quot;</span>) &lt;&gt; &amp;responseBody) Then</span><br><span class="line">      &amp;strReturn = <span class="string">&quot;&quot;</span>;</span><br><span class="line">   Else</span><br><span class="line">      SQLExec(<span class="string">&quot; DELETE FROM ps_C_EMPL_PRD_REQ p WHERE p.c_app_seq = :1 and  p.C_SECTION_TYPE = &#x27;1000000003&#x27; &quot;</span>, &amp;recC_EMPL_PRD_REQ.C_APP_SEQ.Value);</span><br><span class="line">      SQLExec(<span class="string">&quot; COMMIT &quot;</span>);</span><br><span class="line">      &amp;strReturn = <span class="string">&quot;接口失败：&quot;</span> | &amp;responseBody;</span><br><span class="line">   End-If;</span><br><span class="line">   <span class="function">rem <span class="title">MessageBox</span><span class="params">(<span class="number">0</span>, <span class="string">&quot;&quot;</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">&quot;OA接口的结果&amp;strReturn：&quot;</span> | &amp;strReturn)</span></span>;</span><br><span class="line">   Return &amp;strReturn;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft</tag>
+        <tag>Interface</tag>
+        <tag>PeopleCode</tag>
       </tags>
   </entry>
   <entry>
@@ -5181,6 +5179,27 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
+    <title>PeopleSoft-Record类</title>
+    <url>/2020/09/02/PeopleSoft-Record%E7%B1%BB/</url>
+    <content><![CDATA[<h3 id="创建一个空的record"><a href="#创建一个空的record" class="headerlink" title="创建一个空的record"></a>创建一个空的record</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//根据表创建一个record放在缓冲区;</span></span><br><span class="line">local record &amp;rec = createRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//将缓冲区的数据写入数据库中；</span></span><br><span class="line">&amp;rec.insert();</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取Page页面的record"><a href="#获取Page页面的record" class="headerlink" title="获取Page页面的record"></a>获取Page页面的record</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">local record &amp;rec = getRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//将缓冲区的数据更新到数据库中；</span></span><br><span class="line">&amp;rec.update();</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取record中某个字段的值"><a href="#获取record中某个字段的值" class="headerlink" title="获取record中某个字段的值"></a>获取record中某个字段的值</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取record中的某个字段的值；</span></span><br><span class="line">&amp;rec.getfield(field.name).vlaue ;</span><br></pre></td></tr></table></figure>
+
+<h3 id="增、删、改record的一条数据"><a href="#增、删、改record的一条数据" class="headerlink" title="增、删、改record的一条数据"></a>增、删、改record的一条数据</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//根据表创建一个record放在缓冲区;</span></span><br><span class="line">local record &amp;rec = createRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//将缓冲区的数据新增写入数据库中；</span></span><br><span class="line">&amp;rec.insert();</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据缓冲区的数据删除数据库中的数据；</span></span><br><span class="line">&amp;rec.delete();</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据缓冲区的数据修改数据库中的数据；</span></span><br><span class="line">&amp;rec.update();</span><br></pre></td></tr></table></figure>
+
+<h3 id="根据KEYS获取对应的record记录"><a href="#根据KEYS获取对应的record记录" class="headerlink" title="根据KEYS获取对应的record记录"></a>根据KEYS获取对应的record记录</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//根据表创建一个record放在缓冲区;</span></span><br><span class="line">local record &amp;rec = createRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.key1.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.key2.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//根据缓冲区的key值，获取数据库中的对应的数据，如果获取到了，则返回true,否则返回false；</span></span><br><span class="line">&amp;ret = &amp;rec.SelectByKey();</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PeopleSoft-RowSet类</title>
     <url>/2020/09/02/PeopleSoft-RowSet%E7%B1%BB/</url>
     <content><![CDATA[<h3 id="创建rowset"><a href="#创建rowset" class="headerlink" title="创建rowset"></a>创建rowset</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//根据表创建一个空的rowset；</span></span><br><span class="line">Local Rowset &amp;rs = CreateRowset(Record.C_PI_QRY_VW);</span><br><span class="line"></span><br><span class="line"><span class="comment">//填充方法，调用方法将数据填充进rowset中；</span></span><br><span class="line">Local number &amp;num_count = &amp;rs.Fill(<span class="string">&quot;where 1=1 &quot;</span>);</span><br></pre></td></tr></table></figure>
@@ -5205,27 +5224,6 @@ JSP用来处理Servlet转发过来的响应数据
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//下列四种写法效果相同；</span></span><br><span class="line">&amp;ROW = GetRowset().GetRow(<span class="number">5</span>);</span><br><span class="line">&amp;ROW = GetRowset()(<span class="number">5</span>);</span><br><span class="line">&amp;ROW = &amp;ROWSET.GetRow(<span class="number">5</span>);</span><br><span class="line">&amp;ROW = &amp;ROWSET(<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
 
 <h3 id="对Rowset进行排序"><a href="#对Rowset进行排序" class="headerlink" title="对Rowset进行排序"></a>对Rowset进行排序</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//按指定字段组合</span></span><br><span class="line">&amp;rs.sort(table.filed1, <span class="string">&quot;A&quot;</span>, table.field2,<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	参数为数组，可以多字段组合排序；A为升序，D为降序；</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PeopleSoft-Record类</title>
-    <url>/2020/09/02/PeopleSoft-Record%E7%B1%BB/</url>
-    <content><![CDATA[<h3 id="创建一个空的record"><a href="#创建一个空的record" class="headerlink" title="创建一个空的record"></a>创建一个空的record</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//根据表创建一个record放在缓冲区;</span></span><br><span class="line">local record &amp;rec = createRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//将缓冲区的数据写入数据库中；</span></span><br><span class="line">&amp;rec.insert();</span><br></pre></td></tr></table></figure>
-
-<h3 id="获取Page页面的record"><a href="#获取Page页面的record" class="headerlink" title="获取Page页面的record"></a>获取Page页面的record</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">local record &amp;rec = getRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//将缓冲区的数据更新到数据库中；</span></span><br><span class="line">&amp;rec.update();</span><br></pre></td></tr></table></figure>
-
-<h3 id="获取record中某个字段的值"><a href="#获取record中某个字段的值" class="headerlink" title="获取record中某个字段的值"></a>获取record中某个字段的值</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取record中的某个字段的值；</span></span><br><span class="line">&amp;rec.getfield(field.name).vlaue ;</span><br></pre></td></tr></table></figure>
-
-<h3 id="增、删、改record的一条数据"><a href="#增、删、改record的一条数据" class="headerlink" title="增、删、改record的一条数据"></a>增、删、改record的一条数据</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//根据表创建一个record放在缓冲区;</span></span><br><span class="line">local record &amp;rec = createRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.field.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//将缓冲区的数据新增写入数据库中；</span></span><br><span class="line">&amp;rec.insert();</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据缓冲区的数据删除数据库中的数据；</span></span><br><span class="line">&amp;rec.delete();</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据缓冲区的数据修改数据库中的数据；</span></span><br><span class="line">&amp;rec.update();</span><br></pre></td></tr></table></figure>
-
-<h3 id="根据KEYS获取对应的record记录"><a href="#根据KEYS获取对应的record记录" class="headerlink" title="根据KEYS获取对应的record记录"></a>根据KEYS获取对应的record记录</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//根据表创建一个record放在缓冲区;</span></span><br><span class="line">local record &amp;rec = createRecord(record.table);</span><br><span class="line"><span class="comment">//对字段赋值</span></span><br><span class="line">&amp;rec.key1.value = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">&amp;rec.key2.value = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//根据缓冲区的key值，获取数据库中的对应的数据，如果获取到了，则返回true,否则返回false；</span></span><br><span class="line">&amp;ret = &amp;rec.SelectByKey();</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>学习</category>
@@ -5306,21 +5304,6 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
-    <title>PeopleSoft-下拉值权限控制</title>
-    <url>/2020/09/16/PeopleSoft-%E4%B8%8B%E6%8B%89%E5%80%BC%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</url>
-    <content><![CDATA[<p>如果要对一个下拉值字段进行对应的权限控制，思路：先清空原有的下拉值，然后根据权限添加对应的下拉值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 按权限显示字段translate value ; */</span></span><br><span class="line">Local string &amp;strC_Sched_Type;</span><br><span class="line">Local string &amp;strXLATLONGNAME;</span><br><span class="line">Local string &amp;isFlag;</span><br><span class="line">&amp;FLD = GetRecord(Record.C_DATA_LOAD).GetField(Field.C_SCHED_TYPE);</span><br><span class="line"><span class="comment">/* 清空字段默认translate value;*/</span></span><br><span class="line">&amp;FLD.ClearDropDownList();</span><br><span class="line">Local number &amp;SEQ_NUM = <span class="number">1</span>;</span><br><span class="line"><span class="comment">/* 如果权限表中没有进行授权，则在字段translate value 中插入NULL; */</span></span><br><span class="line">SQLExec(<span class="string">&quot;select &#x27;X&#x27; FROM ps_c_data_auth_tbl WHERE emplid = :1 AND ROWNUM = 1 &quot;</span>, %EmployeeId, &amp;isFlag);</span><br><span class="line">If &amp;isFlag = <span class="string">&quot;X&quot;</span> Then</span><br><span class="line">   Local SQL &amp;sql = CreateSQL(<span class="string">&quot;SELECT d.c_sched_type from ps_c_data_auth_tbl d WHERE d.emplid = :1 ORDER BY C_SEQ ASC; &quot;</span>, %EmployeeId);</span><br><span class="line">   While &amp;sql.Fetch(&amp;strC_Sched_Type)</span><br><span class="line">      SQLExec(<span class="string">&quot;SELECT XLATLONGNAME  from psxlatitem    WHERE  FIELDNAME  =  &#x27;C_SCHED_TYPE&#x27; AND  FIELDVALUE = :1 &quot;</span>, &amp;strC_Sched_Type, &amp;strXLATLONGNAME);</span><br><span class="line">      If &amp;SEQ_NUM &lt; <span class="number">10</span> Then</span><br><span class="line">         &amp;FLD.AddDropDownItem(&amp;strC_Sched_Type, <span class="string">&quot;0&quot;</span> | &amp;SEQ_NUM | <span class="string">&quot;.&quot;</span> | &amp;strXLATLONGNAME);</span><br><span class="line">      Else</span><br><span class="line">         &amp;FLD.AddDropDownItem(&amp;strC_Sched_Type, &amp;SEQ_NUM | <span class="string">&quot;.&quot;</span> | &amp;strXLATLONGNAME);</span><br><span class="line">      End-If;</span><br><span class="line">      &amp;SEQ_NUM = &amp;SEQ_NUM + <span class="number">1</span>;</span><br><span class="line">   End-While;</span><br><span class="line">Else</span><br><span class="line">   &amp;FLD.AddDropDownItem(<span class="string">&quot;&quot;</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">End-If;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft</tag>
-        <tag>PeopleCode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PeopleSoft-函数、方法的声明引用</title>
     <url>/2020/10/28/PeopleSoft-%E5%87%BD%E6%95%B0%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84%E5%A3%B0%E6%98%8E%E5%BC%95%E7%94%A8/</url>
     <content><![CDATA[<h3 id="引用表-字段上的函数方法"><a href="#引用表-字段上的函数方法" class="headerlink" title="引用表-字段上的函数方法"></a>引用表-字段上的函数方法</h3><h4 id="定义方法"><a href="#定义方法" class="headerlink" title="定义方法"></a>定义方法</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/******************************************************</span></span><br><span class="line"><span class="comment"> Function   : Format_NID</span></span><br><span class="line"><span class="comment"> Purpose    : Convert National_ID from National_ID_Format into National_ID</span></span><br><span class="line"><span class="comment">		without special characters and viceversa </span></span><br><span class="line"><span class="comment"> Version    : 3.3.99</span></span><br><span class="line"><span class="comment"> Parameters : COUNTRY,NID_TYPE,INPUT,DIRECTION</span></span><br><span class="line"><span class="comment"> Returns    : STRING</span></span><br><span class="line"><span class="comment">******************************************************/</span></span><br><span class="line"><span class="function">Function <span class="title">Format_NID</span><span class="params">(&amp;COUNTRY, &amp;NID_TYPE, &amp;INPUT, &amp;DIRECTION)</span> Returns string</span>;</span><br><span class="line"> 	<span class="comment">/*方法体*/</span></span><br><span class="line">End-Function;</span><br></pre></td></tr></table></figure>
@@ -5360,10 +5343,10 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
-    <title>PeopleSoft-利用PS系统对密文加密</title>
-    <url>/2020/12/21/PeopleSoft-%E5%88%A9%E7%94%A8PS%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%AF%86%E6%96%87%E5%8A%A0%E5%AF%86/</url>
-    <content><![CDATA[<h3 id="密文加密功能"><a href="#密文加密功能" class="headerlink" title="密文加密功能"></a>密文加密功能</h3><p>需要登录网关账号才能看到的；administrator/******</p>
-<img src="/2020/12/21/PeopleSoft-%E5%88%A9%E7%94%A8PS%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%AF%86%E6%96%87%E5%8A%A0%E5%AF%86/20210617195316.png">
+    <title>PeopleSoft-下拉值权限控制</title>
+    <url>/2020/09/16/PeopleSoft-%E4%B8%8B%E6%8B%89%E5%80%BC%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</url>
+    <content><![CDATA[<p>如果要对一个下拉值字段进行对应的权限控制，思路：先清空原有的下拉值，然后根据权限添加对应的下拉值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 按权限显示字段translate value ; */</span></span><br><span class="line">Local string &amp;strC_Sched_Type;</span><br><span class="line">Local string &amp;strXLATLONGNAME;</span><br><span class="line">Local string &amp;isFlag;</span><br><span class="line">&amp;FLD = GetRecord(Record.C_DATA_LOAD).GetField(Field.C_SCHED_TYPE);</span><br><span class="line"><span class="comment">/* 清空字段默认translate value;*/</span></span><br><span class="line">&amp;FLD.ClearDropDownList();</span><br><span class="line">Local number &amp;SEQ_NUM = <span class="number">1</span>;</span><br><span class="line"><span class="comment">/* 如果权限表中没有进行授权，则在字段translate value 中插入NULL; */</span></span><br><span class="line">SQLExec(<span class="string">&quot;select &#x27;X&#x27; FROM ps_c_data_auth_tbl WHERE emplid = :1 AND ROWNUM = 1 &quot;</span>, %EmployeeId, &amp;isFlag);</span><br><span class="line">If &amp;isFlag = <span class="string">&quot;X&quot;</span> Then</span><br><span class="line">   Local SQL &amp;sql = CreateSQL(<span class="string">&quot;SELECT d.c_sched_type from ps_c_data_auth_tbl d WHERE d.emplid = :1 ORDER BY C_SEQ ASC; &quot;</span>, %EmployeeId);</span><br><span class="line">   While &amp;sql.Fetch(&amp;strC_Sched_Type)</span><br><span class="line">      SQLExec(<span class="string">&quot;SELECT XLATLONGNAME  from psxlatitem    WHERE  FIELDNAME  =  &#x27;C_SCHED_TYPE&#x27; AND  FIELDVALUE = :1 &quot;</span>, &amp;strC_Sched_Type, &amp;strXLATLONGNAME);</span><br><span class="line">      If &amp;SEQ_NUM &lt; <span class="number">10</span> Then</span><br><span class="line">         &amp;FLD.AddDropDownItem(&amp;strC_Sched_Type, <span class="string">&quot;0&quot;</span> | &amp;SEQ_NUM | <span class="string">&quot;.&quot;</span> | &amp;strXLATLONGNAME);</span><br><span class="line">      Else</span><br><span class="line">         &amp;FLD.AddDropDownItem(&amp;strC_Sched_Type, &amp;SEQ_NUM | <span class="string">&quot;.&quot;</span> | &amp;strXLATLONGNAME);</span><br><span class="line">      End-If;</span><br><span class="line">      &amp;SEQ_NUM = &amp;SEQ_NUM + <span class="number">1</span>;</span><br><span class="line">   End-While;</span><br><span class="line">Else</span><br><span class="line">   &amp;FLD.AddDropDownItem(<span class="string">&quot;&quot;</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">End-If;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -5371,17 +5354,16 @@ JSP用来处理Servlet转发过来的响应数据
       </categories>
       <tags>
         <tag>PeopleSoft</tag>
+        <tag>PeopleCode</tag>
       </tags>
   </entry>
   <entry>
-    <title>PeopleSoft-员工ID溢出处理</title>
-    <url>/2020/12/22/PeopleSoft-%E5%91%98%E5%B7%A5ID%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<p><strong>员工ID长度</strong></p>
-<img src="/2020/12/22/PeopleSoft-%E5%91%98%E5%B7%A5ID%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/20201222110728.png">
+    <title>PeopleSoft-利用PS系统对密文加密</title>
+    <url>/2020/12/21/PeopleSoft-%E5%88%A9%E7%94%A8PS%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%AF%86%E6%96%87%E5%8A%A0%E5%AF%86/</url>
+    <content><![CDATA[<h3 id="密文加密功能"><a href="#密文加密功能" class="headerlink" title="密文加密功能"></a>密文加密功能</h3><p>需要登录网关账号才能看到的；administrator/******</p>
+<img src="/2020/12/21/PeopleSoft-%E5%88%A9%E7%94%A8PS%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%AF%86%E6%96%87%E5%8A%A0%E5%AF%86/20210617195316.png">
 
-<p><strong>员工ID溢出，编码开始</strong></p>
-<img src="/2020/12/22/PeopleSoft-%E5%91%98%E5%B7%A5ID%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/20201222110552.png">
-**注意：如果当前系统中已经存在上次指定员工ID之后的员工ID值，那么系统会自动跳过该ID值。**]]></content>
+]]></content>
       <categories>
         <category>学习</category>
       </categories>
@@ -6105,6 +6087,22 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
+    <title>PeopleSoft-员工ID溢出处理</title>
+    <url>/2020/12/22/PeopleSoft-%E5%91%98%E5%B7%A5ID%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<p><strong>员工ID长度</strong></p>
+<img src="/2020/12/22/PeopleSoft-%E5%91%98%E5%B7%A5ID%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/20201222110728.png">
+
+<p><strong>员工ID溢出，编码开始</strong></p>
+<img src="/2020/12/22/PeopleSoft-%E5%91%98%E5%B7%A5ID%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/20201222110552.png">
+**注意：如果当前系统中已经存在上次指定员工ID之后的员工ID值，那么系统会自动跳过该ID值。**]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PeopleSoft-基础用户授权-Excel2CI需要授权CI_WEB库</title>
     <url>/2021/01/15/PeopleSoft-%E5%9F%BA%E7%A1%80%E7%94%A8%E6%88%B7%E6%8E%88%E6%9D%83-Excel2CI%E9%9C%80%E8%A6%81%E6%8E%88%E6%9D%83CI-WEB%E5%BA%93/</url>
     <content><![CDATA[<h3 id="对于基础用户，如果仅仅授权组件CI的权限，是不能进行正常的导入操作的，还需要授权额外的CI-WEB库"><a href="#对于基础用户，如果仅仅授权组件CI的权限，是不能进行正常的导入操作的，还需要授权额外的CI-WEB库" class="headerlink" title="对于基础用户，如果仅仅授权组件CI的权限，是不能进行正常的导入操作的，还需要授权额外的CI_WEB库"></a>对于基础用户，如果仅仅授权组件CI的权限，是不能进行正常的导入操作的，还需要授权额外的CI_WEB库</h3><img src="/2021/01/15/PeopleSoft-%E5%9F%BA%E7%A1%80%E7%94%A8%E6%88%B7%E6%8E%88%E6%9D%83-Excel2CI%E9%9C%80%E8%A6%81%E6%8E%88%E6%9D%83CI-WEB%E5%BA%93/20210115222150.png">]]></content>
@@ -6716,52 +6714,6 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
-    <title>PeopleSoft-服务器清理缓存</title>
-    <url>/2020/12/26/PeopleSoft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98/</url>
-    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//首先需要授权给psadm2用户</span></span><br><span class="line">su - psadm2</span><br><span class="line"><span class="comment">//然后进入到缓存文件存放的路径（web服务）</span></span><br><span class="line">cd /home/psadm2/psft/pt/<span class="number">8.57</span>/webserv/peoplesoft/applications/peoplesoft/PORTAL.war/ps/cache</span><br><span class="line"><span class="comment">//缓存文件存放的路径（应用服务）</span></span><br><span class="line">cd /home/psadm2/psft/pt/<span class="number">8.57</span>/appserv/APPDOM/CACHE</span><br><span class="line"><span class="comment">//缓存文件存放的路径（进程服务）</span></span><br><span class="line">cd /home/psadm2/psft/pt/<span class="number">8.57</span>/appserv/prcs/PRCSDOM/CACHE</span><br><span class="line"><span class="comment">//最后进行清理操作（确认一下当前所在路径）</span></span><br><span class="line">rm -rf *</span><br><span class="line"></span><br><span class="line"><span class="comment">//注意：这里的清理操作一定不要打错了，不然会把整个系统给删掉的。那就真的是删库跑路了。</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PeopleSoft-查询视图配置</title>
-    <url>/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h2 id="级联搜索视图"><a href="#级联搜索视图" class="headerlink" title="级联搜索视图"></a>级联搜索视图</h2><h3 id="效果示例"><a href="#效果示例" class="headerlink" title="效果示例"></a>效果示例</h3><img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161810774.png" style="zoom: 67%;">
-
-<h3 id="级联搜索视图-表设计"><a href="#级联搜索视图-表设计" class="headerlink" title="级联搜索视图/表设计"></a>级联搜索视图/表设计</h3><p>第一级设计：</p>
-<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161810774.png" style="zoom:67%;">
-
-<p>搜索视图的key是当前表（页面引用表）。注意：该级视图字段名需要和页面表一致，否则点击下级搜索视图的时候对应的上级字段不会自动赋值的。</p>
-<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161943346.png" style="zoom:67%;">
-
-<p>第二级设计：</p>
-<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161988766.png" style="zoom:67%;">
-
-<p>比上级搜索视图多了一个key值。这样，通过选择上级搜索视图的字段后，会自动赋值给该级搜索视图。注意：该级视图字段名需要和页面表一致。</p>
-<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591162028872.png" style="zoom:67%;">
-
-<p>第三级设计：</p>
-<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591162065250.png" style="zoom:67%;">
-
-<p>比上级搜索视图多了一个key值。这样，通过选择上级搜索视图的字段后，会自动赋值给该级搜索视图。注意：该级视图字段名需要和页面表一致。</p>
-<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591162111295.png" style="zoom:67%;">
-
-<h3 id="重中之重"><a href="#重中之重" class="headerlink" title="重中之重"></a>重中之重</h3><p><strong>一定要注意，查询视图中的字段名和查询该视图的字段名一定要相同！！！还有需要注意设置searchKeys，如果不设置的话，会导致搜索弹框无任何内容！！</strong></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PeopleSoft-服务器技术</title>
     <url>/2020/06/22/PeopleSoft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF/</url>
     <content><![CDATA[<h2 id="PeopleSoft服务器技术"><a href="#PeopleSoft服务器技术" class="headerlink" title="PeopleSoft服务器技术"></a>PeopleSoft服务器技术</h2><h3 id="快速重启-关闭服务指令"><a href="#快速重启-关闭服务指令" class="headerlink" title="快速重启/关闭服务指令"></a>快速重启/关闭服务指令</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*********************************psadmin命令***************************************/</span></span><br><span class="line"><span class="comment">--Web</span></span><br><span class="line">psadmin <span class="operator">-</span>w <span class="keyword">start</span> <span class="operator">-</span>d HR92DEV     Starts the peoplesoft domain.</span><br><span class="line">psadmin <span class="operator">-</span>w shutdown <span class="operator">-</span>d HR92DEV Stops the peoplesoft domain.</span><br><span class="line">psadmin <span class="operator">-</span>w shutdown<span class="operator">!</span> <span class="operator">-</span>d HR92DEV  Performs a forced shutdown <span class="keyword">of</span> the peoplesoft domain.</span><br><span class="line">psadmin <span class="operator">-</span>w status <span class="operator">-</span>d HR92DEV  Displays the status <span class="keyword">of</span> the domain (started, stopped, <span class="keyword">and</span> so <span class="keyword">on</span>).</span><br><span class="line">psadmin <span class="operator">-</span>w status <span class="operator">-</span>d HR92DEV  Displays the status <span class="keyword">of</span> the domain (started, stopped, <span class="keyword">and</span> so <span class="keyword">on</span>).</span><br><span class="line">psadmin <span class="operator">-</span>w remove <span class="operator">-</span>d HR92DEV   Deletes the domain.</span><br><span class="line"></span><br><span class="line"><span class="comment">--Application Server</span></span><br><span class="line">psadmin <span class="operator">-</span>c boot <span class="operator">-</span>d HR92DEV  启动应用程序服务器域名为HRDEV</span><br><span class="line">psadmin <span class="operator">-</span>c parallelboot <span class="operator">-</span>d HR92DEV  并行启动</span><br><span class="line">psadmin <span class="operator">-</span>c configure <span class="operator">-</span>d HR92DEV 重新加载域配置</span><br><span class="line">psadmin <span class="operator">-</span>c pslist <span class="operator">-</span>d HR92DEV  进程列表，包括系统ID</span><br><span class="line">psadmin <span class="operator">-</span>c shutdown <span class="operator">-</span>d HR92DEV 正常关闭</span><br><span class="line">psadmin <span class="operator">-</span>c shutdown <span class="operator">!</span> <span class="operator">-</span>d HR92DEV 强制关闭</span><br><span class="line">psadmin <span class="operator">-</span>c sstatus <span class="operator">-</span>d HR92DEV 显示Tuxedo进程和进程</span><br><span class="line">psadmin <span class="operator">-</span>c cstatus <span class="operator">-</span>d HR92DEV 显示当前连接的用户</span><br><span class="line">psadmin <span class="operator">-</span>c qstatus <span class="operator">-</span>d HR92DEV  显示队列状态</span><br><span class="line">psadmin <span class="operator">-</span>c preload <span class="operator">-</span>d HR92DEV 预加载服务器缓存</span><br><span class="line">psadmin <span class="operator">-</span>c purge <span class="operator">-</span>d HR92DEV 清除缓存</span><br><span class="line"></span><br><span class="line"><span class="comment">--Process Scheduler</span></span><br><span class="line">psadmin <span class="operator">-</span>p <span class="keyword">start</span> <span class="operator">-</span>d HR92DEV 启动进程</span><br><span class="line">psadmin <span class="operator">-</span>p stop <span class="operator">-</span>d HR92DEV 停止进程</span><br><span class="line">psadmin <span class="operator">-</span>pconfigure <span class="operator">-</span>d HR92DEV 配置进程</span><br><span class="line">psadmin <span class="operator">-</span>p status<span class="operator">-</span>d HR92DEV 进程状态</span><br><span class="line">psadmin <span class="operator">-</span>p cleanipc <span class="operator">-</span>d HR92DEV 清除指定IPC</span><br><span class="line">psadmin <span class="operator">-</span>p kill <span class="operator">-</span>d HR92DEV 强制关闭进程</span><br></pre></td></tr></table></figure>
@@ -6994,7 +6946,7 @@ JSP用来处理Servlet转发过来的响应数据
 <p>其次，清理APP、PRCS缓存</p>
 <p>如果是由于缓存引起的，清理掉服务系统的缓存（含APP、PRCS、WEB服务），处理方式如下：</p>
 <p>先按顺序关闭PeopleSoft服务系统，参考如上。再进行服务系统缓存清理，参考如下：</p>
-<p><a href="%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98">https://gek96.top/2020/12/26/PeopleSoft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98/?highlight=%E7%BC%93%E5%AD%98</a></p>
+<p><a href="https://gek96.top/2020/12/26/PeopleSoft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98/">PeopleSoft-服务器清理缓存 | Gek’Blog (gek96.top)</a></p>
 <p>最后重启APP、PRCS服务时，重新加载domain的配置文件：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*解决方式*/</span></span><br><span class="line"><span class="number">1</span>) Open PSADMIN menu, choose the application server domain.</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) Choose configure <span class="keyword">this</span> domain.</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) Choose Reload the configuration.</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) Reboot the domain to resolve the issue.</span><br><span class="line"></span><br><span class="line">If <span class="keyword">this</span> doesn<span class="string">&#x27;t help, you need to recreate the domain.</span></span><br><span class="line"><span class="string">/*重新加载一下domain的配置文件；*/</span></span><br></pre></td></tr></table></figure>
 
@@ -7007,6 +6959,52 @@ JSP用来处理Servlet转发过来的响应数据
       <tags>
         <tag>PeopleSoft</tag>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PeopleSoft-服务器清理缓存</title>
+    <url>/2020/12/26/PeopleSoft-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98/</url>
+    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//首先需要授权给psadm2用户</span></span><br><span class="line">su - psadm2</span><br><span class="line"><span class="comment">//然后进入到缓存文件存放的路径（web服务）</span></span><br><span class="line">cd /home/psadm2/psft/pt/<span class="number">8.57</span>/webserv/peoplesoft/applications/peoplesoft/PORTAL.war/ps/cache</span><br><span class="line"><span class="comment">//缓存文件存放的路径（应用服务）</span></span><br><span class="line">cd /home/psadm2/psft/pt/<span class="number">8.57</span>/appserv/APPDOM/CACHE</span><br><span class="line"><span class="comment">//缓存文件存放的路径（进程服务）</span></span><br><span class="line">cd /home/psadm2/psft/pt/<span class="number">8.57</span>/appserv/prcs/PRCSDOM/CACHE</span><br><span class="line"><span class="comment">//最后进行清理操作（确认一下当前所在路径）</span></span><br><span class="line">rm -rf *</span><br><span class="line"></span><br><span class="line"><span class="comment">//注意：这里的清理操作一定不要打错了，不然会把整个系统给删掉的。那就真的是删库跑路了。</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PeopleSoft-查询视图配置</title>
+    <url>/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h2 id="级联搜索视图"><a href="#级联搜索视图" class="headerlink" title="级联搜索视图"></a>级联搜索视图</h2><h3 id="效果示例"><a href="#效果示例" class="headerlink" title="效果示例"></a>效果示例</h3><img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161810774.png" style="zoom: 67%;">
+
+<h3 id="级联搜索视图-表设计"><a href="#级联搜索视图-表设计" class="headerlink" title="级联搜索视图/表设计"></a>级联搜索视图/表设计</h3><p>第一级设计：</p>
+<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161810774.png" style="zoom:67%;">
+
+<p>搜索视图的key是当前表（页面引用表）。注意：该级视图字段名需要和页面表一致，否则点击下级搜索视图的时候对应的上级字段不会自动赋值的。</p>
+<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161943346.png" style="zoom:67%;">
+
+<p>第二级设计：</p>
+<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591161988766.png" style="zoom:67%;">
+
+<p>比上级搜索视图多了一个key值。这样，通过选择上级搜索视图的字段后，会自动赋值给该级搜索视图。注意：该级视图字段名需要和页面表一致。</p>
+<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591162028872.png" style="zoom:67%;">
+
+<p>第三级设计：</p>
+<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591162065250.png" style="zoom:67%;">
+
+<p>比上级搜索视图多了一个key值。这样，通过选择上级搜索视图的字段后，会自动赋值给该级搜索视图。注意：该级视图字段名需要和页面表一致。</p>
+<img src="/2020/07/05/PeopleSoft-%E6%9F%A5%E8%AF%A2%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE/1591162111295.png" style="zoom:67%;">
+
+<h3 id="重中之重"><a href="#重中之重" class="headerlink" title="重中之重"></a>重中之重</h3><p><strong>一定要注意，查询视图中的字段名和查询该视图的字段名一定要相同！！！还有需要注意设置searchKeys，如果不设置的话，会导致搜索弹框无任何内容！！</strong></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft</tag>
       </tags>
   </entry>
   <entry>
@@ -7334,6 +7332,30 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
+    <title>PeopleSoft-设置字段默认值或初始值</title>
+    <url>/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/</url>
+    <content><![CDATA[<h2 id="字段赋默认值"><a href="#字段赋默认值" class="headerlink" title="字段赋默认值"></a>字段赋默认值</h2><h3 id="默认赋值（写死）"><a href="#默认赋值（写死）" class="headerlink" title="默认赋值（写死）"></a>默认赋值（写死）</h3><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164695247.png" style="zoom:67%;">
+
+<h3 id="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"><a href="#根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）" class="headerlink" title="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"></a>根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）</h3><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164784448.png" style="zoom:67%;">
+
+<h3 id="注意：组件搜索视图的默认赋值。"><a href="#注意：组件搜索视图的默认赋值。" class="headerlink" title="注意：组件搜索视图的默认赋值。"></a>注意：组件搜索视图的默认赋值。</h3><p>这里不能使用在表上的默认赋值或者根据绑定的安全性赋值，应该通过代码在组件搜索视图上进行默认值赋值。</p>
+<img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480303522.png" style="zoom:67%;">
+
+<p>代码需要写在搜索视图的SearchInit上。</p>
+<img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480325462.png" style="zoom:67%;">
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Declare Function getDefalutSetIdByPriPlst PeopleCode C_FUNC_DWK.SETID FieldFormula;</span><br><span class="line">Declare Function getDefalutBUByPriPlst PeopleCode C_FUNC_DWK.BUSINESS_UNIT FieldFormula;</span><br><span class="line"></span><br><span class="line">SetSearchDialogBehavior(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">SetSearchEdit(C_STD_POSN_VW1.SETID);</span><br><span class="line">SetSearchDefault(C_STD_POSN_VW1.SETID);</span><br><span class="line"></span><br><span class="line">SetSearchEdit(C_STD_POSN_VW1.BUSINESS_UNIT);</span><br><span class="line">SetSearchDefault(C_STD_POSN_VW1.BUSINESS_UNIT);</span><br><span class="line"></span><br><span class="line">C_STD_POSN_VW1.SETID.Value = getDefalutSetIdByPriPlst();</span><br><span class="line">C_STD_POSN_VW1.BUSINESS_UNIT.Value = getDefalutBUByPriPlst();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PeopleSoft</tag>
+        <tag>PeopleCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PeopleSoft-迁移工程注意事项</title>
     <url>/2020/09/16/PeopleSoft-%E8%BF%81%E7%A7%BB%E5%B7%A5%E7%A8%8B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
     <content><![CDATA[<h3 id="组件迁移"><a href="#组件迁移" class="headerlink" title="组件迁移"></a>组件迁移</h3><ul>
@@ -7369,30 +7391,6 @@ JSP用来处理Servlet转发过来的响应数据
       </categories>
       <tags>
         <tag>PeopleSoft</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PeopleSoft-设置字段默认值或初始值</title>
-    <url>/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/</url>
-    <content><![CDATA[<h2 id="字段赋默认值"><a href="#字段赋默认值" class="headerlink" title="字段赋默认值"></a>字段赋默认值</h2><h3 id="默认赋值（写死）"><a href="#默认赋值（写死）" class="headerlink" title="默认赋值（写死）"></a>默认赋值（写死）</h3><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164695247.png" style="zoom:67%;">
-
-<h3 id="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"><a href="#根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）" class="headerlink" title="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"></a>根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）</h3><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164784448.png" style="zoom:67%;">
-
-<h3 id="注意：组件搜索视图的默认赋值。"><a href="#注意：组件搜索视图的默认赋值。" class="headerlink" title="注意：组件搜索视图的默认赋值。"></a>注意：组件搜索视图的默认赋值。</h3><p>这里不能使用在表上的默认赋值或者根据绑定的安全性赋值，应该通过代码在组件搜索视图上进行默认值赋值。</p>
-<img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480303522.png" style="zoom:67%;">
-
-<p>代码需要写在搜索视图的SearchInit上。</p>
-<img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480325462.png" style="zoom:67%;">
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Declare Function getDefalutSetIdByPriPlst PeopleCode C_FUNC_DWK.SETID FieldFormula;</span><br><span class="line">Declare Function getDefalutBUByPriPlst PeopleCode C_FUNC_DWK.BUSINESS_UNIT FieldFormula;</span><br><span class="line"></span><br><span class="line">SetSearchDialogBehavior(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">SetSearchEdit(C_STD_POSN_VW1.SETID);</span><br><span class="line">SetSearchDefault(C_STD_POSN_VW1.SETID);</span><br><span class="line"></span><br><span class="line">SetSearchEdit(C_STD_POSN_VW1.BUSINESS_UNIT);</span><br><span class="line">SetSearchDefault(C_STD_POSN_VW1.BUSINESS_UNIT);</span><br><span class="line"></span><br><span class="line">C_STD_POSN_VW1.SETID.Value = getDefalutSetIdByPriPlst();</span><br><span class="line">C_STD_POSN_VW1.BUSINESS_UNIT.Value = getDefalutBUByPriPlst();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>PeopleSoft</tag>
-        <tag>PeopleCode</tag>
       </tags>
   </entry>
   <entry>
@@ -8039,6 +8037,21 @@ JSP用来处理Servlet转发过来的响应数据
       </tags>
   </entry>
   <entry>
+    <title>Tomcat-主页访问404</title>
+    <url>/2020/07/05/Tomcat-%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE404/</url>
+    <content><![CDATA[<p>配置Tomcat后，启动后访问<a href="http://localhost:8080主页显示404，主要问题是以下问题：">http://localhost:8080主页显示404，主要问题是以下问题：</a></p>
+<img src="/2020/07/05/Tomcat-%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE404/1552545741805.png">
+
+<p>在eclipse正常启动Tomcat，却不能正常通过<a href="http://localhost:8080访问Tomcat主页的问题。如图在eclipse中的server中设置，需要启动服务器以后才能设置。">http://localhost:8080访问Tomcat主页的问题。如图在eclipse中的server中设置，需要启动服务器以后才能设置。</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>系统安装-Redhat7.9安装PS8.57</title>
     <url>/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/</url>
     <content><![CDATA[<h2 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h2><p>在桌面右击,打开命令行Terminal</p>
@@ -8194,21 +8207,6 @@ JSP用来处理Servlet转发过来的响应数据
       </categories>
       <tags>
         <tag>系统安装</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tomcat-主页访问404</title>
-    <url>/2020/07/05/Tomcat-%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE404/</url>
-    <content><![CDATA[<p>配置Tomcat后，启动后访问<a href="http://localhost:8080主页显示404，主要问题是以下问题：">http://localhost:8080主页显示404，主要问题是以下问题：</a></p>
-<img src="/2020/07/05/Tomcat-%E4%B8%BB%E9%A1%B5%E8%AE%BF%E9%97%AE404/1552545741805.png">
-
-<p>在eclipse正常启动Tomcat，却不能正常通过<a href="http://localhost:8080访问Tomcat主页的问题。如图在eclipse中的server中设置，需要启动服务器以后才能设置。">http://localhost:8080访问Tomcat主页的问题。如图在eclipse中的server中设置，需要启动服务器以后才能设置。</a></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Tomcat</tag>
       </tags>
   </entry>
   <entry>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-mine.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-mine.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-mine.png">
+  <link rel="mask-icon" href="/images/favicon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.8.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_header":"pulse","post_body":"bounce"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
+<meta name="description" content="摘要：介绍如何在Redhat7.9Linux系统下安装PeopleSoft系统(版本8.57)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="系统安装-Redhat7.9安装PS8.57">
+<meta property="og:url" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/index.html">
+<meta property="og:site_name" content="Gek&#39;Blog">
+<meta property="og:description" content="摘要：介绍如何在Redhat7.9Linux系统下安装PeopleSoft系统(版本8.57)">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171345136.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171345621.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171346512.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171347172.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171347451.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171348058.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171348980.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349647.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349640.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/选择安装PS的路径.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349109.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349224.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350528.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350912.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350556.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350608.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351802.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351351.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351639.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351667.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171353403.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/2022年5月22日_01.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171353976.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354562.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354339.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354915.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354876.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355857.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355860.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355438.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355843.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356331.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356604.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356036.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356398.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171357758.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171358760.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171358422.png">
+<meta property="og:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171358107.png">
+<meta property="article:published_time" content="2022-01-17T05:08:25.000Z">
+<meta property="article:modified_time" content="2022-05-21T21:43:17.941Z">
+<meta property="article:author" content="Gek">
+<meta property="article:tag" content="系统安装">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171345136.png">
+
+
+<link rel="canonical" href="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/","path":"2022/01/17/系统安装-Redhat7.9安装PS8.57/","title":"系统安装-Redhat7.9安装PS8.57"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>系统安装-Redhat7.9安装PS8.57 | Gek'Blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Gek'Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">安装流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Redhat-Linux-7-9%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">使用Redhat Linux 7.9安装过程中出现的问题：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%951%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">解决方法1：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%952%EF%BC%9A"><span class="nav-number">2.2.</span> <span class="nav-text">解决方法2：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Oracle-Linux-7-9%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">使用Oracle Linux 7.9出现的问题：</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Gek"
+      src="https://gitee.com/gek7777/cdn.io/raw/master/head.jpg">
+  <p class="site-author-name" itemprop="name">Gek</p>
+  <div class="site-description" itemprop="description">自律是最强者的本能    -- 萧伯纳</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">144</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com//Gek7777" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;&#x2F;Gek7777" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:gek7777@126.com" title="E-Mail → mailto:gek7777@126.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gitee.com/gek7777/cdn.io/raw/master/head.jpg">
+      <meta itemprop="name" content="Gek">
+      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gek'Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          系统安装-Redhat7.9安装PS8.57
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-01-17 13:08:25" itemprop="dateCreated datePublished" datetime="2022-01-17T13:08:25+08:00">2022-01-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-05-22 05:43:17" itemprop="dateModified" datetime="2022-05-22T05:43:17+08:00">2022-05-22</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2022/01/17/系统安装-Redhat7.9安装PS8.57/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">摘要：介绍如何在Redhat7.9Linux系统下安装PeopleSoft系统(版本8.57)</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h2><p>在桌面右击,打开命令行Terminal</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171345136.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>输入: ifconfig</p>
+<p>拿到Linux系统的IP地址</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171345621.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>使用Xshell 连接上Linux</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171346512.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>输入命令:df -Th 查看空,PS8.57安装需要200G,所以装在/home/ 路径下;</p>
+<p>输入命令:date 检查时区时间,确定为亚洲上海时区;</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171347172.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>然后使用Xftp功能将PS安装包传到/home/路径下</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171347451.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>传输完毕以后开始参考[安装文档-爱库存HCM实施项目Peoplesoft安装文档v1.1]开始安装</p>
+<p>进入压缩包所在位置/home/</p>
+<p>输入命令: unzip V986454-01_1of4.zip </p>
+<p><strong>注意:在这里使用VM的快照功能,进行一个快照存档.可以为后面的重新多次安装做准备.</strong></p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171348058.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>解压该压缩包后,会出现一个setup文件夹</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171348980.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>进入以后,有一个 psft-dpk-setup.sh 的文件</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349647.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>输入命令: ./psft-dpk-setup.sh 运行会解压所有的压缩包,需要等待一会.</p>
+<p>输入:Y</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349640.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>选择一个目录问PS的基础安装路径,保证有足够的权限(root用户),保证有足够的空间(超过200G)</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/选择安装PS的路径.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>输入:Y</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349109.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>参照安装文档在对应位置输入：</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171349224.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350528.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>正常情况下，后面都是自动安装好的。</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350912.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+
+
+<h2 id="使用Redhat-Linux-7-9安装过程中出现的问题："><a href="#使用Redhat-Linux-7-9安装过程中出现的问题：" class="headerlink" title="使用Redhat Linux 7.9安装过程中出现的问题："></a>使用Redhat Linux 7.9安装过程中出现的问题：</h2><p>问题1：</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350556.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>此处通过查看日志：</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171350608.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>原因：未知的host name; 这是因为在装Linux系统时，没有指定host name 。</p>
+<h3 id="解决方法1："><a href="#解决方法1：" class="headerlink" title="解决方法1："></a>解决方法1：</h3><p>重新安装Linux；（这个就完全参照前面的步骤做，特别注意提示的重要步骤）；</p>
+<h3 id="解决方法2："><a href="#解决方法2：" class="headerlink" title="解决方法2："></a>解决方法2：</h3><p>修改host name和hosts。这种方法有个麻烦点，后面还有一堆文件等着改呢。。</p>
+<p>输入命令：cat /etc/hostsname </p>
+<p>发现当前hsot name 为localhost。这个不行，导致了安装数据库的时候识别不了。</p>
+<p>使用vi命令把它改为自己想要的，我这里改为gek，然后wq!保存退出；</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351802.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>输入命令：cat /etc/hosts</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351351.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>查看是否没有将Linux系统的IP地址映射为gek，没有的话，需要添加一条；</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351639.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>完成映射后，输入命令：reboot 重启Linux系统；</p>
+<p>然后再次回到 /home/ps/setup/ 目录下，输入命令： ./psft-dpk-setup.sh 进行脚本化安装。</p>
+<p>这样就可以解决上面这个安装PeopleSoft Database的报错问题；</p>
+<p>但是，后面还有，等安装到最后一个 【共享服务】功能时，会安装失败，不过不影响使用，可以忽略。</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171351667.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>其实到这里也可以算是安装成功；如果不报这个错误，我们直接在浏览器键入Linux的IP地址，应该可以直接进入页面了。但是，我们会发现应用是被关闭的，尝试手动启动，会失败。因为前面安装Linux系统时没有指定host name ，导致后面这些问题的出现；</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171353403.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>报错：无法使用PS登陆PSHR数据库（我指定的数据库实例名为PSHR）</p>
+<p>这里就是因为监听的.ora文件、和TNS连接的.ora文件里的host配置的不正确，导致监听无法正常启停；</p>
+<p>数据库服务就无法正常使用；例如：切换orale2用户，输入sqlplus /as sysdba 会报以下错误</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/2022年5月22日_01.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>未正确指定网络服务名称</p>
+<p>解决方法：修改tnsnames.ora 、lnsrctl.ora等文件；</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171353976.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>改完tnsnames.ora文件，可以使用去启动数据库了。以下图片来源博客《服务器技术中的DB启动步骤》</p>
+<p>以Oracle用户登录服务器，执行sqlplus / as sysdba 进入；</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354562.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>输入“startup;”，回车。（注意：后面符号带上。）</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354339.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>看到database opened，DB服务器已经启动了。（注意：如果是12c以上的容器数据库，这步只是启动了容器，需要再启动PDB数据。）</p>
+<p>输入“alter session set container = pshr;”，回车。（注意：pshr为数据库实例名。）</p>
+<p>输入“startup;”，回车，启动数据库；</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354915.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>看到Pluggable Database opened，表示DB已经启动了。</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171354876.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>运行成功！</p>
+<p>使用tnsping pshr 数据库；发现没有启用的监听，需要启用（如果不启用监听，那么prcs进程启动的会报错）；</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355857.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>~/.bashrc 文件添加export ORACLE_SID=CDBHCM  （这里不知道是干嘛的）</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355860.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>启用监听超时，host地址为空，所以需要修改listener.ora文件</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355438.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>然后启用监听，发现Oracle2已经自动重启了一个监听，导致了重复无法启动监听；需要把它关闭。</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171355843.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>处理方法：</p>
+<p>1.ps -ef | grep -i listener （查看监听）</p>
+<p>2.kill -9 进程号 (杀掉自动重启的进程)</p>
+<p>3.lsnrctl start （启动监听）</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356331.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>处理完成后，再次tnsping pshr </p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356604.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>Ok，成功了。</p>
+<p>后面就是正常的的应用、进程、web的启停了；参考《服务器技术》博客；</p>
+<p>应用-进程-web都启动以后，就可以访问页面。</p>
+<p>但是这个时候，页面是空白的。因为防火墙还没关。</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356036.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>关闭防火墙的步骤为：</p>
+<p>1、关闭Linux的防火墙</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171356398.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>2、关闭Windows的防火墙</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171357758.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<p>再次访问页面，成功啦！</p>
+<h2 id="使用Oracle-Linux-7-9出现的问题："><a href="#使用Oracle-Linux-7-9出现的问题：" class="headerlink" title="使用Oracle Linux 7.9出现的问题："></a>使用Oracle Linux 7.9出现的问题：</h2><p>这个Linux问题很多，即使安装了GUI图形化，还是会报lib缺失；</p>
+<p>同时，它会在安装PS应用服务时失败。报错信息如下：</p>
+<p>所以，这个版本非常不建议使用！大佬在这里都浪费了3小时。最后也是放弃了。</p>
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171358760.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171358422.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+<img src="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-Redhat7.9%E5%AE%89%E8%A3%85PS8.57/202201171358107.png" style=" BORDER-RIGHT:#000a11 2px solid; BORDER-TOP: #000a11 2px solid; BORDER-LEFT:#000a11 2px solid; BORDER-BOTTOM: #000a11 2px solid; ">
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" rel="tag"><i class="fa fa-tag"></i> 系统安装</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/01/17/PeopleSoft-%E9%A1%B5%E9%9D%A2%E5%AD%97%E6%AE%B5%E7%9A%84%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E5%8A%9F%E8%83%BD%E5%BC%80%E5%90%AF%E4%B8%8E%E5%85%B3%E9%97%AD/" rel="prev" title="PeopleSoft-页面字段的自动填充功能开启与关闭">
+                  <i class="fa fa-chevron-left"></i> PeopleSoft-页面字段的自动填充功能开启与关闭
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/01/17/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85-VM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85Linux%E7%B3%BB%E7%BB%9F/" rel="next" title="系统安装-VM虚拟机安装Linux系统">
+                  系统安装-VM虚拟机安装Linux系统 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="SOHUCS"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Gek</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">380k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">5:46</span>
+  </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+<script class="next-config" data-name="changyan" type="application/json">{"enable":true,"appid":"cyvLJxnez","appkey":"907665899d781c168b19fabfef6d6dea"}</script>
+<script src="/js/third-party/comments/changyan.js"></script>
+
+</body>
+</html>

@@ -34,7 +34,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480303522.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480325462.png">
 <meta property="article:published_time" content="2020-07-05T10:16:24.000Z">
-<meta property="article:modified_time" content="2022-05-22T10:42:31.357Z">
+<meta property="article:modified_time" content="2022-05-25T17:55:35.034Z">
 <meta property="article:author" content="Gek">
 <meta property="article:tag" content="PeopleSoft">
 <meta property="article:tag" content="PeopleCode">
@@ -154,7 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E6%AE%B5%E8%B5%8B%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="nav-number">1.</span> <span class="nav-text">字段赋默认值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E8%B5%8B%E5%80%BC%EF%BC%88%E5%86%99%E6%AD%BB%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">默认赋值（写死）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E7%94%A8%E6%88%B7%E6%89%80%E7%BB%91%E5%AE%9A%E7%9A%84%E5%91%98%E5%B7%A5%E5%B1%9E%E4%BA%8E%E7%9A%84%E9%9B%86%E5%90%88ID%EF%BC%8C%E8%B5%8B%E4%BA%88%E9%BB%98%E8%AE%A4%E5%80%BC%E3%80%82%EF%BC%88%E5%8A%A8%E6%80%81%E7%9A%84%EF%BC%8C%E6%A0%B9%E6%8D%AE%E4%B8%8D%E5%90%8C%E7%9A%84%E9%9B%86%E5%90%88ID%E7%9A%84%E5%91%98%E5%B7%A5%EF%BC%8C%E8%B5%8B%E4%BA%88%E7%9A%84%E5%80%BC%E4%B8%8D%E4%B8%80%E6%A0%B7%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%9A%E7%BB%84%E4%BB%B6%E6%90%9C%E7%B4%A2%E8%A7%86%E5%9B%BE%E7%9A%84%E9%BB%98%E8%AE%A4%E8%B5%8B%E5%80%BC%E3%80%82"><span class="nav-number">1.3.</span> <span class="nav-text">注意：组件搜索视图的默认赋值。</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E6%AE%B5%E8%B5%8B%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="nav-number">1.</span> <span class="nav-text">字段赋默认值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E7%94%A8%E6%88%B7%E6%89%80%E7%BB%91%E5%AE%9A%E7%9A%84%E5%91%98%E5%B7%A5%E5%B1%9E%E4%BA%8E%E7%9A%84%E9%9B%86%E5%90%88ID%EF%BC%8C%E8%B5%8B%E4%BA%88%E9%BB%98%E8%AE%A4%E5%80%BC%E3%80%82%EF%BC%88%E5%8A%A8%E6%80%81%E7%9A%84%EF%BC%8C%E6%A0%B9%E6%8D%AE%E4%B8%8D%E5%90%8C%E7%9A%84%E9%9B%86%E5%90%88ID%E7%9A%84%E5%91%98%E5%B7%A5%EF%BC%8C%E8%B5%8B%E4%BA%88%E7%9A%84%E5%80%BC%E4%B8%8D%E4%B8%80%E6%A0%B7%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%9A%E7%BB%84%E4%BB%B6%E6%90%9C%E7%B4%A2%E8%A7%86%E5%9B%BE%E7%9A%84%E9%BB%98%E8%AE%A4%E8%B5%8B%E5%80%BC%E3%80%82"><span class="nav-number">1.2.</span> <span class="nav-text">注意：组件搜索视图的默认赋值。</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -258,7 +258,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-05-22 18:42:31" itemprop="dateModified" datetime="2022-05-22T18:42:31+08:00">2022-05-22</time>
+        <time title="修改时间：2022-05-26 01:55:35" itemprop="dateModified" datetime="2022-05-26T01:55:35+08:00">2022-05-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -276,7 +276,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>637</span>
+      <span>629</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -295,12 +295,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="字段赋默认值"><a href="#字段赋默认值" class="headerlink" title="字段赋默认值"></a>字段赋默认值</h2><h3 id="默认赋值（写死）"><a href="#默认赋值（写死）" class="headerlink" title="默认赋值（写死）"></a>默认赋值（写死）</h3><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164695247.png" style="zoom:67%;">
+        <h2 id="字段赋默认值"><a href="#字段赋默认值" class="headerlink" title="字段赋默认值"></a>字段赋默认值</h2><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164695247.png" style="zoom:67%;border-width: 2px; border-style: solid; border-color: rgb(0, 10, 17);">
 
-<h3 id="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"><a href="#根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）" class="headerlink" title="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"></a>根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）</h3><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164784448.png" style="zoom:67%;">
+<h3 id="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"><a href="#根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）" class="headerlink" title="根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）"></a>根据用户所绑定的员工属于的集合ID，赋予默认值。（动态的，根据不同的集合ID的员工，赋予的值不一样）</h3><img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1591164784448.png" style="zoom:67%;border-width: 2px; border-style: solid; border-color: rgb(0, 10, 17);">
 
 <h3 id="注意：组件搜索视图的默认赋值。"><a href="#注意：组件搜索视图的默认赋值。" class="headerlink" title="注意：组件搜索视图的默认赋值。"></a>注意：组件搜索视图的默认赋值。</h3><p>这里不能使用在表上的默认赋值或者根据绑定的安全性赋值，应该通过代码在组件搜索视图上进行默认值赋值。</p>
-<img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480303522.png" style="zoom:67%;">
+<img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480303522.png" style="zoom:67%;border-width: 2px; border-style: solid; border-color: rgb(0, 10, 17);">
 
 <p>代码需要写在搜索视图的SearchInit上。</p>
 <img src="/2020/07/05/PeopleSoft-%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%AE%B5%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E5%88%9D%E5%A7%8B%E5%80%BC/1593480325462.png" style="zoom:67%;">
@@ -363,13 +363,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">387k</span>
+    <span title="站点总字数">386k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5:52</span>
+    <span title="站点阅读时长">5:51</span>
   </span>
 </div>
 

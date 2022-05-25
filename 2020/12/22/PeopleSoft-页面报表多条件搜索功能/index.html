@@ -31,7 +31,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/2020/12/22/PeopleSoft-%E9%A1%B5%E9%9D%A2%E6%8A%A5%E8%A1%A8%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/20210115224726.png">
 <meta property="article:published_time" content="2020-12-22T10:00:16.000Z">
-<meta property="article:modified_time" content="2022-05-22T10:43:30.214Z">
+<meta property="article:modified_time" content="2022-05-25T17:27:06.618Z">
 <meta property="article:author" content="Gek">
 <meta property="article:tag" content="PeopleSoft">
 <meta property="article:tag" content="PeopleCode">
@@ -255,7 +255,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-05-22 18:43:30" itemprop="dateModified" datetime="2022-05-22T18:43:30+08:00">2022-05-22</time>
+        <time title="修改时间：2022-05-26 01:27:06" itemprop="dateModified" datetime="2022-05-26T01:27:06+08:00">2022-05-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -296,7 +296,7 @@
 
 <h3 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ScrollFlush(Record.C_PRH_SER_VW);</span><br><span class="line"></span><br><span class="line">&amp;strWhere = <span class="string">&quot;WHERE 1 = 1 &quot;</span>;</span><br><span class="line">rem 默认出待入职的;</span><br><span class="line">&amp;strWhere = &amp;strWhere | <span class="string">&quot; AND C_PRH_STATUS = &#x27;10&#x27; &quot;</span>;</span><br><span class="line">&amp;strWhere = &amp;strWhere | <span class="string">&quot; AND OPRID = &#x27;&quot;</span> | %OperatorId | <span class="string">&quot;&#x27;&quot;</span>;</span><br><span class="line"></span><br><span class="line">ScrollSelect(<span class="number">1</span>, Record.C_PRH_SER_VW, Record.C_PRH_SER_VW, &amp;strWhere);</span><br></pre></td></tr></table></figure>
 
-<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><h4 id="在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；"><a href="#在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；" class="headerlink" title="在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；"></a>在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；</h4><img src="/2020/12/22/PeopleSoft-%E9%A1%B5%E9%9D%A2%E6%8A%A5%E8%A1%A8%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/20210115224726.png">
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><h4 id="在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；"><a href="#在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；" class="headerlink" title="在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；"></a>在使用Rowset的Fill方法时，需要注意，不要为Rowset定义别名，否则会查不出数据的；</h4><img src="/2020/12/22/PeopleSoft-%E9%A1%B5%E9%9D%A2%E6%8A%A5%E8%A1%A8%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/20210115224726.png" style="zoom:; border-width: 2px; border-style: solid; border-color: rgb(0, 10, 17);">
 
 <h4 id="捕获错误"><a href="#捕获错误" class="headerlink" title="捕获错误"></a>捕获错误</h4><p>原表中有datetime类型，使用视图SQL时；原表中的datetime可以正常在视图中使用；</p>
 <p>但是，如果该视图在页面中被作为Rowset使用，那么使用Rowset的select /fill/scrollselect 等（即第一种方式）；</p>
@@ -361,13 +361,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">387k</span>
+    <span title="站点总字数">386k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5:52</span>
+    <span title="站点阅读时长">5:51</span>
   </span>
 </div>
 

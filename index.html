@@ -86,9 +86,9 @@
 <nav class="site-nav">
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">33</span></a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">34</span></a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">147</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">151</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -159,7 +159,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">147</span>
+          <span class="site-state-item-count">151</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -170,7 +170,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-count">34</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -216,6 +216,386 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/10/21/Oracle-%E6%A0%91%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B1%82%E6%AC%A1%E6%9F%A5%E8%AF%A2%EF%BC%89%E6%88%96%E5%A4%9A%E5%88%97%E8%BD%AC%E8%A1%8Csys-connect-by-path/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gek96.top/head.jpg">
+      <meta itemprop="name" content="Gek">
+      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gek'Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/10/21/Oracle-%E6%A0%91%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B1%82%E6%AC%A1%E6%9F%A5%E8%AF%A2%EF%BC%89%E6%88%96%E5%A4%9A%E5%88%97%E8%BD%AC%E8%A1%8Csys-connect-by-path/" class="post-title-link" itemprop="url">Oracle-树查询（层次查询）或多列转行sys_connect_by_path</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-10-21 14:55:27 / 修改时间：15:07:50" itemprop="dateCreated datePublished" datetime="2022-10-21T14:55:27+08:00">2022-10-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>摘要：如何使用Oracle系统标准函数，拼接组织路径，审批链，上下级关系等。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/10/21/Oracle-%E6%A0%91%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B1%82%E6%AC%A1%E6%9F%A5%E8%AF%A2%EF%BC%89%E6%88%96%E5%A4%9A%E5%88%97%E8%BD%AC%E8%A1%8Csys-connect-by-path/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/10/21/PeopleSoft-PeopleCode%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E8%96%AA%E8%B5%84%E8%AE%A1%E7%AE%97AE%E3%80%81Job%E5%92%8C%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gek96.top/head.jpg">
+      <meta itemprop="name" content="Gek">
+      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gek'Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/10/21/PeopleSoft-PeopleCode%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E8%96%AA%E8%B5%84%E8%AE%A1%E7%AE%97AE%E3%80%81Job%E5%92%8C%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">PeopleSoft-PeopleCode代码调用薪资计算AE、Job和处理结果记录</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-10-21 14:28:07 / 修改时间：14:34:58" itemprop="dateCreated datePublished" datetime="2022-10-21T14:28:07+08:00">2022-10-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>8.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>8 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>摘要：如何使用PS的代码调用薪酬计算进程，并且将薪酬计算的结果存入对应的日志表,便于后续将结果同步给其余系统等处理。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/10/21/PeopleSoft-PeopleCode%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E8%96%AA%E8%B5%84%E8%AE%A1%E7%AE%97AE%E3%80%81Job%E5%92%8C%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E8%AE%B0%E5%BD%95/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/10/21/PeopleSoft-%E8%BF%9B%E7%A8%8B%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gek96.top/head.jpg">
+      <meta itemprop="name" content="Gek">
+      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gek'Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/10/21/PeopleSoft-%E8%BF%9B%E7%A8%8B%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/" class="post-title-link" itemprop="url">PeopleSoft-进程报告发布失败问题分析</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-10-21 14:15:37 / 修改时间：14:23:28" itemprop="dateCreated datePublished" datetime="2022-10-21T14:15:37+08:00">2022-10-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>182</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>摘要：在网络运维对网络进行调整时，可能出现进程报告发布失败的情况，可以检查PS的配置页面，报告节点是否配置正确。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/10/21/PeopleSoft-%E8%BF%9B%E7%A8%8B%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/10/21/PeopleSoft-COBOL%E8%BF%9B%E7%A8%8B%E6%B7%BB%E5%8A%A0TRACE%E6%97%A5%E5%BF%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gek96.top/head.jpg">
+      <meta itemprop="name" content="Gek">
+      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gek'Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/10/21/PeopleSoft-COBOL%E8%BF%9B%E7%A8%8B%E6%B7%BB%E5%8A%A0TRACE%E6%97%A5%E5%BF%97/" class="post-title-link" itemprop="url">PeopleSoft-COBOL进程添加TRACE日志</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-10-21 14:01:31 / 修改时间：14:10:10" itemprop="dateCreated datePublished" datetime="2022-10-21T14:01:31+08:00">2022-10-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>202</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>摘要：遇到薪资计算进程报错时，需要添加日志进行排查问题</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/10/21/PeopleSoft-COBOL%E8%BF%9B%E7%A8%8B%E6%B7%BB%E5%8A%A0TRACE%E6%97%A5%E5%BF%97/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/10/21/PeopleSoft-DataMove/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -241,7 +621,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-10-21 11:14:11 / 修改时间：11:27:28" itemprop="dateCreated datePublished" datetime="2022-10-21T11:14:11+08:00">2022-10-21</time>
+      <time title="创建时间：2022-10-21 11:14:11 / 修改时间：13:50:51" itemprop="dateCreated datePublished" datetime="2022-10-21T11:14:11+08:00">2022-10-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -259,7 +639,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>649</span>
+      <span>679</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -2816,412 +3196,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/06/20/Oracle-%E6%97%B6%E9%97%B4%E6%88%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gek96.top/head.jpg">
-      <meta itemprop="name" content="Gek">
-      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Gek'Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/20/Oracle-%E6%97%B6%E9%97%B4%E6%88%B3/" class="post-title-link" itemprop="url">Oracle-时间戳</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-06-20 16:33:01" itemprop="dateCreated datePublished" datetime="2021-06-20T16:33:01+08:00">2021-06-20</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-05-22 18:39:55" itemprop="dateModified" datetime="2022-05-22T18:39:55+08:00">2022-05-22</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>437</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>时间戳是某一时间点距离1970年1月1日早上八点的毫秒数或者秒数。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/20/Oracle-%E6%97%B6%E9%97%B4%E6%88%B3/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/06/17/PeopleSoft-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86%E6%96%B9%E6%B3%95-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%94%9F%E6%88%90%E7%BC%96%E7%A0%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gek96.top/head.jpg">
-      <meta itemprop="name" content="Gek">
-      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Gek'Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/17/PeopleSoft-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86%E6%96%B9%E6%B3%95-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%94%9F%E6%88%90%E7%BC%96%E7%A0%81/" class="post-title-link" itemprop="url">PeopleSoft-系统标准方法-按顺序生成编码</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-06-17 20:23:38" itemprop="dateCreated datePublished" datetime="2021-06-17T20:23:38+08:00">2021-06-17</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-05-26 01:21:49" itemprop="dateModified" datetime="2022-05-26T01:21:49+08:00">2022-05-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>619</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>如果需要生成流水号，并且需要保证该流水号不会被重复生成使用，那么需要使用PeopleSoft系统标准的方法。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/PeopleSoft-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86%E6%96%B9%E6%B3%95-%E6%8C%89%E9%A1%BA%E5%BA%8F%E7%94%9F%E6%88%90%E7%BC%96%E7%A0%81/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/06/17/PeopleSoft-%E9%A1%B5%E9%9D%A2%E6%97%A0%E6%90%9C%E7%B4%A2%E8%A7%86%E5%9B%BE%E6%89%80%E9%9C%80Key%E5%80%BC%E6%97%B6%EF%BC%8C%E9%9C%80%E6%9B%BF%E6%8D%A2key%E5%80%BC%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%9A%E5%91%98%E5%B7%A5%E7%B1%BB%E5%9E%8B-EMPL-CLAASS%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gek96.top/head.jpg">
-      <meta itemprop="name" content="Gek">
-      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Gek'Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/17/PeopleSoft-%E9%A1%B5%E9%9D%A2%E6%97%A0%E6%90%9C%E7%B4%A2%E8%A7%86%E5%9B%BE%E6%89%80%E9%9C%80Key%E5%80%BC%E6%97%B6%EF%BC%8C%E9%9C%80%E6%9B%BF%E6%8D%A2key%E5%80%BC%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%9A%E5%91%98%E5%B7%A5%E7%B1%BB%E5%9E%8B-EMPL-CLAASS%EF%BC%89/" class="post-title-link" itemprop="url">PeopleSoft-页面无搜索视图所需Key值时，需替换key值（示例：员工类型-EMPL-CLAASS）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-06-17 20:02:37" itemprop="dateCreated datePublished" datetime="2021-06-17T20:02:37+08:00">2021-06-17</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-05-26 01:22:16" itemprop="dateModified" datetime="2022-05-26T01:22:16+08:00">2022-05-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>74</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>在PeopleSoft页面设计中，可能会出现一种情况：某个字段的搜索视图是级联Key值，但是上一级的Key值因为页面不存在，这时可以通过配置替换Key值来实现关联搜索。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/PeopleSoft-%E9%A1%B5%E9%9D%A2%E6%97%A0%E6%90%9C%E7%B4%A2%E8%A7%86%E5%9B%BE%E6%89%80%E9%9C%80Key%E5%80%BC%E6%97%B6%EF%BC%8C%E9%9C%80%E6%9B%BF%E6%8D%A2key%E5%80%BC%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%9A%E5%91%98%E5%B7%A5%E7%B1%BB%E5%9E%8B-EMPL-CLAASS%EF%BC%89/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/06/17/PeopleSoft-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%84%E7%90%86%E5%91%98%E5%B7%A5%EF%BC%88%E5%88%A0%E6%94%B9%EF%BC%89%E5%8A%9F%E8%83%BD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gek96.top/head.jpg">
-      <meta itemprop="name" content="Gek">
-      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Gek'Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/17/PeopleSoft-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%84%E7%90%86%E5%91%98%E5%B7%A5%EF%BC%88%E5%88%A0%E6%94%B9%EF%BC%89%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">PeopleSoft-数据库处理员工（删改）功能</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-06-17 19:56:11" itemprop="dateCreated datePublished" datetime="2021-06-17T19:56:11+08:00">2021-06-17</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-05-26 01:22:36" itemprop="dateModified" datetime="2022-05-26T01:22:36+08:00">2022-05-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>24</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>在PeopleCode中，如何彻底删除一个员工，设计到将所有设计员工的表记录都清空。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/PeopleSoft-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%84%E7%90%86%E5%91%98%E5%B7%A5%EF%BC%88%E5%88%A0%E6%94%B9%EF%BC%89%E5%8A%9F%E8%83%BD/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 </div>
@@ -3244,13 +3220,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">392k</span>
+    <span title="站点总字数">404k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5:57</span>
+    <span title="站点阅读时长">6:07</span>
   </span>
 </div>
 

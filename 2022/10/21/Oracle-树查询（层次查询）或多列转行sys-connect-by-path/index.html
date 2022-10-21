@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-mine.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-mine.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-mine.png">
+  <link rel="mask-icon" href="/images/favicon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.8.1","exturl":false,"sidebar":{"position":"right","width":280,"display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_header":"pulse","post_body":"bounce"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
+<meta name="description" content="摘要：如何使用Oracle系统标准函数，拼接组织路径，审批链，上下级关系等。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle-树查询（层次查询）或多列转行sys_connect_by_path">
+<meta property="og:url" content="http://yoursite.com/2022/10/21/Oracle-%E6%A0%91%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B1%82%E6%AC%A1%E6%9F%A5%E8%AF%A2%EF%BC%89%E6%88%96%E5%A4%9A%E5%88%97%E8%BD%AC%E8%A1%8Csys-connect-by-path/index.html">
+<meta property="og:site_name" content="Gek&#39;Blog">
+<meta property="og:description" content="摘要：如何使用Oracle系统标准函数，拼接组织路径，审批链，上下级关系等。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-10-21T06:55:27.000Z">
+<meta property="article:modified_time" content="2022-10-21T07:07:50.737Z">
+<meta property="article:author" content="Gek">
+<meta property="article:tag" content="Sql">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yoursite.com/2022/10/21/Oracle-%E6%A0%91%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B1%82%E6%AC%A1%E6%9F%A5%E8%AF%A2%EF%BC%89%E6%88%96%E5%A4%9A%E5%88%97%E8%BD%AC%E8%A1%8Csys-connect-by-path/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/2022/10/21/Oracle-%E6%A0%91%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B1%82%E6%AC%A1%E6%9F%A5%E8%AF%A2%EF%BC%89%E6%88%96%E5%A4%9A%E5%88%97%E8%BD%AC%E8%A1%8Csys-connect-by-path/","path":"2022/10/21/Oracle-树查询（层次查询）或多列转行sys-connect-by-path/","title":"Oracle-树查询（层次查询）或多列转行sys_connect_by_path"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Oracle-树查询（层次查询）或多列转行sys_connect_by_path | Gek'Blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Gek'Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">34</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">151</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%90%91%E6%9F%A5%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">正向查：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E6%9F%A5"><span class="nav-number">2.</span> <span class="nav-text">反向查</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Gek"
+      src="https://gek96.top/head.jpg">
+  <p class="site-author-name" itemprop="name">Gek</p>
+  <div class="site-description" itemprop="description">自律是最强者的本能    -- 萧伯纳</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">151</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com//Gek7777" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;&#x2F;Gek7777" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:gek7777@126.com" title="E-Mail → mailto:gek7777@126.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/10/21/Oracle-%E6%A0%91%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B1%82%E6%AC%A1%E6%9F%A5%E8%AF%A2%EF%BC%89%E6%88%96%E5%A4%9A%E5%88%97%E8%BD%AC%E8%A1%8Csys-connect-by-path/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gek96.top/head.jpg">
+      <meta itemprop="name" content="Gek">
+      <meta itemprop="description" content="自律是最强者的本能    -- 萧伯纳">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gek'Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Oracle-树查询（层次查询）或多列转行sys_connect_by_path
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-10-21 14:55:27 / 修改时间：15:07:50" itemprop="dateCreated datePublished" datetime="2022-10-21T14:55:27+08:00">2022-10-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">摘要：如何使用Oracle系统标准函数，拼接组织路径，审批链，上下级关系等。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Oracle函数:sys_connect_by_path 主要用于树查询(层次查询) 以及 多列转行。其语法一般为：</span></span><br><span class="line"><span class="keyword">select</span> ... sys_connect_by_path(column_name,<span class="string">&#x27;connect_symbol&#x27;</span>) <span class="keyword">from</span> <span class="keyword">table</span> </span><br><span class="line"><span class="keyword">start</span> <span class="keyword">with</span> ... <span class="keyword">connect</span> <span class="keyword">by</span> ... prior</span><br></pre></td></tr></table></figure>
+
+<p>理解：对于数据库来说，根节点并不一定是在数据库中设计的顶级节点，而是start with开始的地方。sys_connect_by_path函数就是从start with开始的地方开始遍历，并记下其遍历到的节点，start with开始的地方被视为根节点，将遍历到的路径根据函数中的分隔符，组成一个新的字符串。sys_connect_by_path函数用connect by来寻找下一条记录，直到迭代找不到相应记录为止。概念与递归类似，connect by指定递归(连接)条件，如果条件不满足则递归结束。</p>
+<h2 id="正向查："><a href="#正向查：" class="headerlink" title="正向查："></a>正向查：</h2><p>根据顶级节点，逐层查询所有的子部门，并拼接组织路径：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> D.SETID,</span><br><span class="line">       D.TREE_NODE <span class="keyword">AS</span> DEPTID,</span><br><span class="line">       D.EFFDT,</span><br><span class="line">       D.EFF_STATUS,</span><br><span class="line">       D.DESCR,</span><br><span class="line">       D.DESCRSHORT,</span><br><span class="line">       LTRIM(SYS_CONNECT_BY_PATH(D.DESCR, <span class="string">&#x27;&gt;&#x27;</span>), <span class="string">&#x27;&gt;&#x27;</span>) FULL_DESCR</span><br><span class="line">  <span class="keyword">FROM</span> (<span class="keyword">SELECT</span> D.SETID,</span><br><span class="line">               D.TREE_NODE,</span><br><span class="line">               D.PARENT_NODE_NAME,     </span><br><span class="line">               P.EFFDT,</span><br><span class="line">               P.EFF_STATUS,</span><br><span class="line">               P.DESCR,</span><br><span class="line">               P.DESCRSHORT</span><br><span class="line">          <span class="keyword">FROM</span> PSTREENODE D, PSTREEDEFN T, PS_DEPT_TBL P </span><br><span class="line">         <span class="keyword">WHERE</span> T.TREE_NAME <span class="operator">=</span> <span class="string">&#x27;DEPT_SECURITY&#x27;</span></span><br><span class="line">           <span class="keyword">AND</span> T.SETID <span class="operator">=</span> <span class="string">&#x27;NH001&#x27;</span></span><br><span class="line">           <span class="keyword">AND</span> T.EFFDT <span class="operator">=</span> (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(T_ED.EFFDT)</span><br><span class="line">                            <span class="keyword">FROM</span> PSTREEDEFN T_ED</span><br><span class="line">                           <span class="keyword">WHERE</span> T_ED.SETID <span class="operator">=</span> T.SETID</span><br><span class="line">                             <span class="keyword">AND</span> T_ED.SETCNTRLVALUE <span class="operator">=</span> T.SETCNTRLVALUE</span><br><span class="line">                             <span class="keyword">AND</span> T_ED.TREE_NAME <span class="operator">=</span> T.TREE_NAME</span><br><span class="line">                             <span class="keyword">AND</span> T_ED.EFFDT <span class="operator">&lt;=</span> SYSDATE)</span><br><span class="line">           <span class="keyword">AND</span> D.SETID <span class="operator">=</span> T.SETID</span><br><span class="line">           <span class="keyword">AND</span> D.TREE_NAME <span class="operator">=</span> T.TREE_NAME</span><br><span class="line">           <span class="keyword">AND</span> D.SETCNTRLVALUE <span class="operator">=</span> T.SETCNTRLVALUE</span><br><span class="line">           <span class="keyword">AND</span> D.EFFDT <span class="operator">=</span> T.EFFDT</span><br><span class="line">           <span class="keyword">AND</span> T.EFF_STATUS <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span></span><br><span class="line">           <span class="keyword">AND</span> P.SETID <span class="operator">=</span> D.SETID</span><br><span class="line">           <span class="keyword">AND</span> P.DEPTID <span class="operator">=</span> D.TREE_NODE</span><br><span class="line">           <span class="keyword">AND</span> P.EFFDT <span class="operator">=</span> (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(P1.EFFDT)</span><br><span class="line">                            <span class="keyword">FROM</span> PS_DEPT_TBL P1</span><br><span class="line">                           <span class="keyword">WHERE</span> P1.DEPTID <span class="operator">=</span> P.DEPTID</span><br><span class="line">                             <span class="keyword">AND</span> P1.SETID <span class="operator">=</span> P.SETID</span><br><span class="line">                             <span class="keyword">AND</span> P1.EFFDT <span class="operator">&lt;=</span> SYSDATE)) D</span><br><span class="line"> <span class="keyword">START</span> <span class="keyword">WITH</span> D.PARENT_NODE_NAME <span class="operator">=</span> <span class="string">&#x27; &#x27;</span></span><br><span class="line"><span class="keyword">CONNECT</span> <span class="keyword">BY</span> NOCYCLE    PRIOR D.TREE_NODE <span class="operator">=</span>    D.PARENT_NODE_NAME</span><br></pre></td></tr></table></figure>
+
+<p>示例解析：</p>
+<p>PARENT_NODE_NAME = ‘ ‘ –选择一条数据为顶节点</p>
+<p>PRIOR D.TREE_NODE = D.PARENT_NODE_NAME –PRIOR 后面的字段应该为 顶节点数据中，与子数据有关联的字段，示例中看到TREE_NODE 是当前部门ID，PARENT_NODE_NAME是当前部门的父部门ID；这样就可以从定节点一条条向下遍历数据，然后对字段进行DESCR拼接。所以，等价于 D.PARENT_NODE_NAME = PRIOR D.TREE_NODE；主要是看 PRIOR 字段放在那里。</p>
+<h2 id="反向查"><a href="#反向查" class="headerlink" title="反向查"></a>反向查</h2><p>由末级节点反查到根节点，下面这个例子就是查找父部门（同样可以查询审批链、上下级关系），一直到根节点：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> D.SETID,</span><br><span class="line">       D.TREE_NODE <span class="keyword">AS</span> DEPTID,</span><br><span class="line">       D.EFFDT,</span><br><span class="line">       D.EFF_STATUS,</span><br><span class="line">       D.DESCR,</span><br><span class="line">       D.DESCRSHORT,</span><br><span class="line">       LTRIM(SYS_CONNECT_BY_PATH(D.DESCR, <span class="string">&#x27;&gt;&#x27;</span>), <span class="string">&#x27;&gt;&#x27;</span>) FULL_DESCR</span><br><span class="line">  <span class="keyword">FROM</span> (<span class="keyword">SELECT</span> D.SETID,</span><br><span class="line">               D.TREE_NODE,</span><br><span class="line">               D.PARENT_NODE_NAME,     </span><br><span class="line">               P.EFFDT,</span><br><span class="line">               P.EFF_STATUS,</span><br><span class="line">               P.DESCR,</span><br><span class="line">               P.DESCRSHORT</span><br><span class="line">          <span class="keyword">FROM</span> PSTREENODE D, PSTREEDEFN T, PS_DEPT_TBL P </span><br><span class="line">         <span class="keyword">WHERE</span> T.TREE_NAME <span class="operator">=</span> <span class="string">&#x27;DEPT_SECURITY&#x27;</span></span><br><span class="line">           <span class="keyword">AND</span> T.SETID <span class="operator">=</span> <span class="string">&#x27;NH001&#x27;</span></span><br><span class="line">           <span class="keyword">AND</span> T.EFFDT <span class="operator">=</span> (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(T_ED.EFFDT)</span><br><span class="line">                            <span class="keyword">FROM</span> PSTREEDEFN T_ED</span><br><span class="line">                           <span class="keyword">WHERE</span> T_ED.SETID <span class="operator">=</span> T.SETID</span><br><span class="line">                             <span class="keyword">AND</span> T_ED.SETCNTRLVALUE <span class="operator">=</span> T.SETCNTRLVALUE</span><br><span class="line">                             <span class="keyword">AND</span> T_ED.TREE_NAME <span class="operator">=</span> T.TREE_NAME</span><br><span class="line">                             <span class="keyword">AND</span> T_ED.EFFDT <span class="operator">&lt;=</span> SYSDATE)</span><br><span class="line">           <span class="keyword">AND</span> D.SETID <span class="operator">=</span> T.SETID</span><br><span class="line">           <span class="keyword">AND</span> D.TREE_NAME <span class="operator">=</span> T.TREE_NAME</span><br><span class="line">           <span class="keyword">AND</span> D.SETCNTRLVALUE <span class="operator">=</span> T.SETCNTRLVALUE</span><br><span class="line">           <span class="keyword">AND</span> D.EFFDT <span class="operator">=</span> T.EFFDT</span><br><span class="line">           <span class="keyword">AND</span> T.EFF_STATUS <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span></span><br><span class="line">           <span class="keyword">AND</span> P.SETID <span class="operator">=</span> D.SETID</span><br><span class="line">           <span class="keyword">AND</span> P.DEPTID <span class="operator">=</span> D.TREE_NODE</span><br><span class="line">           <span class="keyword">AND</span> P.EFFDT <span class="operator">=</span> (<span class="keyword">SELECT</span> <span class="built_in">MAX</span>(P1.EFFDT)</span><br><span class="line">                            <span class="keyword">FROM</span> PS_DEPT_TBL P1</span><br><span class="line">                           <span class="keyword">WHERE</span> P1.DEPTID <span class="operator">=</span> P.DEPTID</span><br><span class="line">                             <span class="keyword">AND</span> P1.SETID <span class="operator">=</span> P.SETID</span><br><span class="line">                             <span class="keyword">AND</span> P1.EFFDT <span class="operator">&lt;=</span> SYSDATE)) D</span><br><span class="line"> <span class="keyword">START</span> <span class="keyword">WITH</span>  D.TREE_NODE <span class="operator">=</span> <span class="string">&#x27;1000003341&#x27;</span></span><br><span class="line"><span class="keyword">CONNECT</span> <span class="keyword">BY</span> NOCYCLE  D.TREE_NODE <span class="operator">=</span> PRIOR D.PARENT_NODE_NAME </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Sql/" rel="tag"><i class="fa fa-tag"></i> Sql</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/10/21/PeopleSoft-PeopleCode%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E8%96%AA%E8%B5%84%E8%AE%A1%E7%AE%97AE%E3%80%81Job%E5%92%8C%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E8%AE%B0%E5%BD%95/" rel="next" title="PeopleSoft-PeopleCode代码调用薪资计算AE、Job和处理结果记录">
+                  PeopleSoft-PeopleCode代码调用薪资计算AE、Job和处理结果记录 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Gek</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">404k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">6:07</span>
+  </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+
+  
+ </body>
+</html>

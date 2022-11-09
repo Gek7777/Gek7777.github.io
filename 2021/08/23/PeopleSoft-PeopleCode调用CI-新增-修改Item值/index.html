@@ -283,7 +283,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先判断有没有第一个Item，没有的话，用第一个；有的话，就新增一个；</span></span><br><span class="line">   Local ApiObject &amp;oBankCollectionItem;</span><br><span class="line">   &amp;oBankCollectionItem = &amp;oBankCollection.Item(<span class="number">1</span>);</span><br><span class="line">   <span class="function">If <span class="title">All</span><span class="params">(&amp;oBankCollectionItem)</span> Then</span></span><br><span class="line"><span class="function">     &amp;oBankCollectionItem </span>= &amp;oBankCollection.insertItem(&amp;oBankCollection.count());</span><br><span class="line">   End-If;</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据传入的参数获取对应的数据，如果没有的话，则新增一条数据；</span></span><br><span class="line">   Local ApiObject &amp;oBankCollectionItem;</span><br><span class="line">   &amp;oBankCollectionItem = &amp;oBankCollection.ItemByKeys(&amp;dtEffdt);</span><br><span class="line">   <span class="function">If <span class="title">NONE</span><span class="params">(&amp;oBankCollectionItem)</span> Then</span></span><br><span class="line"><span class="function">     &amp;oBankCollectionItem </span>= &amp;oBankCollection.insertItem(&amp;oBankCollection.count());</span><br><span class="line">   End-If;</span><br></pre></td></tr></table></figure>
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先判断有没有第一个Item，没有的话，用第一个；有的话，就新增一个；</span></span><br><span class="line">   Local ApiObject &amp;oBankCollectionItem;</span><br><span class="line">   &amp;oBankCollectionItem = &amp;oBankCollection.Item(<span class="number">1</span>);</span><br><span class="line">   If <span class="title function_">All</span><span class="params">(&amp;oBankCollectionItem)</span> Then</span><br><span class="line">     &amp;oBankCollectionItem = &amp;oBankCollection.insertItem(&amp;oBankCollection.count());</span><br><span class="line">   End-If;</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据传入的参数获取对应的数据，如果没有的话，则新增一条数据；</span></span><br><span class="line">   Local ApiObject &amp;oBankCollectionItem;</span><br><span class="line">   &amp;oBankCollectionItem = &amp;oBankCollection.ItemByKeys(&amp;dtEffdt);</span><br><span class="line">   If <span class="title function_">NONE</span><span class="params">(&amp;oBankCollectionItem)</span> Then</span><br><span class="line">     &amp;oBankCollectionItem = &amp;oBankCollection.insertItem(&amp;oBankCollection.count());</span><br><span class="line">   End-If;</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -341,13 +341,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">404k</span>
+    <span title="站点总字数">403k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6:07</span>
+    <span title="站点阅读时长">6:06</span>
   </span>
 </div>
 

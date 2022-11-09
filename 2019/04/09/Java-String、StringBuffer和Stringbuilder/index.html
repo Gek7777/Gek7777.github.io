@@ -291,15 +291,15 @@
     <div class="post-body" itemprop="articleBody">
         <h2 id="String-类"><a href="#String-类" class="headerlink" title="String 类"></a>String 类</h2><p>字符串广泛应用在 Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。</p>
 <h3 id="创建字符串的方式："><a href="#创建字符串的方式：" class="headerlink" title="创建字符串的方式："></a>创建字符串的方式：</h3><p>String 类有11种构造方法。下面举例三个：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//最简单的方式：</span></span><br><span class="line">String str1 = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种</span></span><br><span class="line">String str2 = <span class="keyword">new</span> String(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三种</span></span><br><span class="line"><span class="keyword">char</span>[] helloArray = &#123;<span class="string">&#x27;h&#x27;</span>,<span class="string">&#x27;e&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;o&#x27;</span>&#125;;</span><br><span class="line">String str3 = <span class="keyword">new</span> String(helloArray); </span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//最简单的方式：</span></span><br><span class="line"><span class="type">String</span> <span class="variable">str1</span> <span class="operator">=</span> <span class="string">&quot;hello&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种</span></span><br><span class="line"><span class="type">String</span> <span class="variable">str2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//第三种</span></span><br><span class="line"><span class="type">char</span>[] helloArray = &#123;<span class="string">&#x27;h&#x27;</span>,<span class="string">&#x27;e&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;o&#x27;</span>&#125;;</span><br><span class="line"><span class="type">String</span> <span class="variable">str3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(helloArray); </span><br></pre></td></tr></table></figure>
 
 <p><strong>注意：</strong>String 类是不可改变的，所以一旦创建了 String 对象，那么它的值就无法改变了。</p>
 <h3 id="字符串长度"><a href="#字符串长度" class="headerlink" title="字符串长度"></a>字符串长度</h3><p>用于获取有关对象的信息的方法称为访问器方法。</p>
 <p>String 类的一个访问器方法是 length() 方法，它返回字符串对象包含的字符数。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> len = str.length();</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">len</span> <span class="operator">=</span> str.length();</span><br></pre></td></tr></table></figure>
 
 <h3 id="连接字符串"><a href="#连接字符串" class="headerlink" title="连接字符串"></a>连接字符串</h3><p>String 类提供了连接两个字符串的方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String str = str1.concat(str2);<span class="comment">//返回连接好的新字符串</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> str1.concat(str2);<span class="comment">//返回连接好的新字符串</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="创建格式化字符串"><a href="#创建格式化字符串" class="headerlink" title="创建格式化字符串"></a>创建格式化字符串</h3><p>我们知道输出格式化数字可以使用 printf() 和 format() 方法。</p>
 <p>String 类使用静态方法 format() 返回一个 String 对象，而不是 PrintStream  对象。</p>
@@ -660,13 +660,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">404k</span>
+    <span title="站点总字数">403k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6:07</span>
+    <span title="站点阅读时长">6:06</span>
   </span>
 </div>
 

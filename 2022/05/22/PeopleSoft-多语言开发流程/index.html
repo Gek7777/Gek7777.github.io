@@ -387,7 +387,7 @@
 <p>把中文D:\peopletools\src\res\ZHS文件夹Copy一份修改名字为IDN,修改其pscfg.rc文件（前面是以ENG语言为例，这里是以ZHS为例，后面也都是使用ZHS，修改方式同上）。</p>
 <p>Use the MAKEALTL.BAT batch file to compile PSCFGENG.DLL. For example: makealtl ENG PSCFG Then copy the DLL file to the PS_HOME\bin\client\winx86 directory.</p>
 <p>使用 MAKEALTL.BAT 生成DLL文件。设置环境变量，新建批处理文件env.bat（PS_HOME的位置根据PS_HOME\bin\client\winx86找），bat文件内容如下（注释部分内容/**/，需要删除）：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">set VS140COMNTOOLS= C:\<span class="function">Program <span class="title">Files</span> <span class="params">(x86)</span>\Microsoft Visual Studio\2017\Community\Common7\Tools     <span class="comment">/*VS工具路径*/</span></span></span><br><span class="line"><span class="function">set PS_HOME</span>=D:\peopletools				<span class="comment">/*PT安装主路径*/</span></span><br><span class="line">set respath= C:\temp\RES				<span class="comment">/*临时文件路径/</span></span><br><span class="line"><span class="comment">set incdir=C:\temp\SRC\INC				/*INC文件路径，放在上面的temp下*/</span></span><br><span class="line">set vcinstall=C:\<span class="function">Program <span class="title">Files</span> <span class="params">(x86)</span>\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build     <span class="comment">/*VS工具路径*/</span></span></span><br><span class="line"><span class="function">set include</span>=%include%;%incdir%</span><br><span class="line">call <span class="string">&quot;%vcinstall%&quot;</span>\vcvarsall.bat x64</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">set VS140COMNTOOLS= C:\Program <span class="title function_">Files</span> <span class="params">(x86)</span>\Microsoft Visual Studio\<span class="number">2017</span>\Community\Common7\Tools     <span class="comment">/*VS工具路径*/</span></span><br><span class="line">set PS_HOME=D:\peopletools				<span class="comment">/*PT安装主路径*/</span></span><br><span class="line">set respath= C:\temp\RES				<span class="comment">/*临时文件路径/</span></span><br><span class="line"><span class="comment">set incdir=C:\temp\SRC\INC				/*INC文件路径，放在上面的temp下*/</span></span><br><span class="line">set vcinstall=C:\Program <span class="title function_">Files</span> <span class="params">(x86)</span>\Microsoft Visual Studio\<span class="number">2019</span>\Community\VC\Auxiliary\Build     <span class="comment">/*VS工具路径*/</span></span><br><span class="line">set include=%include%;%incdir%</span><br><span class="line">call <span class="string">&quot;%vcinstall%&quot;</span>\vcvarsall.bat x64</span><br></pre></td></tr></table></figure>
 
 <p><strong>注意：需要修改makealtl.bat 文件，运行makealtl需要在其路径下</strong></p>
 <p><img src="/2022/05/22/PeopleSoft-%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/image-20220523011708255.png"></p>
@@ -564,13 +564,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">404k</span>
+    <span title="站点总字数">403k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6:07</span>
+    <span title="站点阅读时长">6:06</span>
   </span>
 </div>
 

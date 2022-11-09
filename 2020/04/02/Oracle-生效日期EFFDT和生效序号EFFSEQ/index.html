@@ -270,7 +270,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>702</span>
+      <span>652</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -289,9 +289,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="查询生效日期最大的所有记录"><a href="#查询生效日期最大的所有记录" class="headerlink" title="查询生效日期最大的所有记录"></a>查询生效日期最大的所有记录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> SELECT J.EMPLID, J.EMPL_CD, J.EFFDT, J.EFFSEQ</span><br><span class="line">   FROM PS_JOB J</span><br><span class="line">  WHERE J.EFFDT &#x3D; (SELECT MAX(PJ.EFFDT)</span><br><span class="line">                     FROM PS_JOB PJ</span><br><span class="line">                    WHERE PJ.EMPLID &#x3D; J.EMPLID</span><br><span class="line">                      AND PJ.EMPL_CD &#x3D; 0</span><br><span class="line">                      AND PJ.EFFDT &lt; SYSDATE);</span><br><span class="line">-- 后半句语句，查询出当前表中所有的员工ID号所对应的记录中最大的生效日期，前半句语句，根据所有的最大的生效日期查询出所有的记录。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <h3 id="查询生效日期最大的所有记录"><a href="#查询生效日期最大的所有记录" class="headerlink" title="查询生效日期最大的所有记录"></a>查询生效日期最大的所有记录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> SELECT J.EMPLID, J.EMPL_CD, J.EFFDT, J.EFFSEQ</span><br><span class="line">   FROM PS_JOB J</span><br><span class="line">  WHERE J.EFFDT = (SELECT MAX(PJ.EFFDT)</span><br><span class="line">                     FROM PS_JOB PJ</span><br><span class="line">                    WHERE PJ.EMPLID = J.EMPLID</span><br><span class="line">                      AND PJ.EMPL_CD = 0</span><br><span class="line">                      AND PJ.EFFDT &lt; SYSDATE);</span><br><span class="line">-- 后半句语句，查询出当前表中所有的员工ID号所对应的记录中最大的生效日期，前半句语句，根据所有的最大的生效日期查询出所有的记录。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h3 id="查询生效日期最大，生效序号最大的，即最新的所有数据"><a href="#查询生效日期最大，生效序号最大的，即最新的所有数据" class="headerlink" title="查询生效日期最大，生效序号最大的，即最新的所有数据"></a>查询生效日期最大，生效序号最大的，即最新的所有数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">SELECT J.EMPLID, J.EMPL_CD, J.EFFDT, J.EFFSEQ</span><br><span class="line">  FROM PS_JOB J</span><br><span class="line"> WHERE J.EFFDT &#x3D; (SELECT MAX(PJ.EFFDT)</span><br><span class="line">                    FROM PS_JOB PJ</span><br><span class="line">                   WHERE PJ.EMPLID &#x3D; J.EMPLID</span><br><span class="line">                     AND PJ.EMPL_CD &#x3D; 0</span><br><span class="line">                     AND PJ.EFFDT &lt; SYSDATE)</span><br><span class="line">   AND J.EFFSEQ &#x3D; (SELECT MAX(PJ1.EFFSEQ)</span><br><span class="line">                     FROM PS_JOB PJ1</span><br><span class="line">                    WHERE PJ1.EMPLID &#x3D; J.EMPLID</span><br><span class="line">                      AND PJ1.EMPL_CD &#x3D; 0</span><br><span class="line">                      AND PJ1.EFFDT &#x3D; J.EFFDT);</span><br><span class="line">-- 后半句语句，查询出当前表中所有的员工ID号所对应的记录中最大的生效日期并且生效记录数值最大，前半句语句，根据所有的最大的生效日期和生效记录数值查询出所有的记录。且，生效日期小于系统日期。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="查询生效日期最大，生效序号最大的，即最新的所有数据"><a href="#查询生效日期最大，生效序号最大的，即最新的所有数据" class="headerlink" title="查询生效日期最大，生效序号最大的，即最新的所有数据"></a>查询生效日期最大，生效序号最大的，即最新的所有数据</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">SELECT J.EMPLID, J.EMPL_CD, J.EFFDT, J.EFFSEQ</span><br><span class="line">  FROM PS_JOB J</span><br><span class="line"> WHERE J.EFFDT = (SELECT MAX(PJ.EFFDT)</span><br><span class="line">                    FROM PS_JOB PJ</span><br><span class="line">                   WHERE PJ.EMPLID = J.EMPLID</span><br><span class="line">                     AND PJ.EMPL_CD = 0</span><br><span class="line">                     AND PJ.EFFDT &lt; SYSDATE)</span><br><span class="line">   AND J.EFFSEQ = (SELECT MAX(PJ1.EFFSEQ)</span><br><span class="line">                     FROM PS_JOB PJ1</span><br><span class="line">                    WHERE PJ1.EMPLID = J.EMPLID</span><br><span class="line">                      AND PJ1.EMPL_CD = 0</span><br><span class="line">                      AND PJ1.EFFDT = J.EFFDT);</span><br><span class="line">-- 后半句语句，查询出当前表中所有的员工ID号所对应的记录中最大的生效日期并且生效记录数值最大，前半句语句，根据所有的最大的生效日期和生效记录数值查询出所有的记录。且，生效日期小于系统日期。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -348,13 +348,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">404k</span>
+    <span title="站点总字数">403k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6:07</span>
+    <span title="站点阅读时长">6:06</span>
   </span>
 </div>
 

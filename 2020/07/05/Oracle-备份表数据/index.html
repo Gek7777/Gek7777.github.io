@@ -293,7 +293,7 @@
 
 <h3 id="如果备份表已经是存在的，从源表中拿到取数插入"><a href="#如果备份表已经是存在的，从源表中拿到取数插入" class="headerlink" title="如果备份表已经是存在的，从源表中拿到取数插入"></a>如果备份表已经是存在的，从源表中拿到取数插入</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--全部字段内容备份</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> backupsTBL <span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> sourceTBL;</span><br><span class="line"><span class="comment">--部分字段内容备份</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> backupsTBL(name,age) <span class="keyword">select</span> name,age <span class="keyword">from</span> sourceTBL;</span><br></pre></td></tr></table></figure>
 
-<h3 id="同一张表中，将某个字段A的值赋给字段B"><a href="#同一张表中，将某个字段A的值赋给字段B" class="headerlink" title="同一张表中，将某个字段A的值赋给字段B"></a>同一张表中，将某个字段A的值赋给字段B</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update table_name <span class="keyword">set</span> B <span class="operator">=</span>  A;</span><br></pre></td></tr></table></figure>
+<h3 id="同一张表中，将某个字段A的值赋给字段B"><a href="#同一张表中，将某个字段A的值赋给字段B" class="headerlink" title="同一张表中，将某个字段A的值赋给字段B"></a>同一张表中，将某个字段A的值赋给字段B</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> table_name <span class="keyword">set</span> B <span class="operator">=</span>  A;</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -350,13 +350,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">404k</span>
+    <span title="站点总字数">403k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6:07</span>
+    <span title="站点阅读时长">6:06</span>
   </span>
 </div>
 

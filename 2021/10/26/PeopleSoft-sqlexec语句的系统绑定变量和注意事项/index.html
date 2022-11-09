@@ -300,7 +300,7 @@
 
 <h3 id="2-如果字段内储存了英文的单引号-‘-在进行SQL拼接时，会出现SQL-ERROR。"><a href="#2-如果字段内储存了英文的单引号-‘-在进行SQL拼接时，会出现SQL-ERROR。" class="headerlink" title="2.如果字段内储存了英文的单引号 ‘   在进行SQL拼接时，会出现SQL ERROR。"></a>2.如果字段内储存了英文的单引号 ‘   在进行SQL拼接时，会出现SQL ERROR。</h3><p>解决方案：</p>
 <p>使用转移符号 ，即在英文的单引号前面加一个英文的单引号  ‘’</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&amp;name1 = C_PRH_SER_WK.NAME1.Value;</span><br><span class="line"><span class="function">If <span class="title">All</span><span class="params">(&amp;name1)</span> Then</span></span><br><span class="line"><span class="function">   rem 替换函数，讲一个英文单引号替换为两个英文单引号</span>;</span><br><span class="line">   &amp;name1 = Substitute(&amp;name1, <span class="string">&quot;&#x27;&quot;</span>, <span class="string">&quot;&#x27;&#x27;&quot;</span>);</span><br><span class="line">End-If;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&amp;name1 = C_PRH_SER_WK.NAME1.Value;</span><br><span class="line">If <span class="title function_">All</span><span class="params">(&amp;name1)</span> Then</span><br><span class="line">   rem 替换函数，讲一个英文单引号替换为两个英文单引号;</span><br><span class="line">   &amp;name1 = Substitute(&amp;name1, <span class="string">&quot;&#x27;&quot;</span>, <span class="string">&quot;&#x27;&#x27;&quot;</span>);</span><br><span class="line">End-If;</span><br></pre></td></tr></table></figure>
 
 
 
@@ -362,13 +362,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">404k</span>
+    <span title="站点总字数">403k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6:07</span>
+    <span title="站点阅读时长">6:06</span>
   </span>
 </div>
 

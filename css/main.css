@@ -2982,11 +2982,11 @@ body {
   background: rgba(255,255,255,0.7);
 }
 .popup {
-  opacity: 0.5;
+  opacity: 1;
 }
 .main-inner {
   background-color: rgba(255,255,255,0);
-  padding: 0px 40px 40px 40px;
+  padding: 0px 0px 0px 0px;
 }
 #SOHUCS #SOHU_MAIN .module-cmt-float-bar {
   display: none !important;

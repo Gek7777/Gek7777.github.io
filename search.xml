@@ -7343,6 +7343,7 @@ JSP用来处理Servlet转发过来的响应数据
 <p>   <strong>Feeds</strong><br>    PS_PTFP_FEED<br>    PS_PTFP_DATATYPE<br>    PS_PTFP_DTYPE_IBSO<br>    PS_PTFP_DTYPE_ATTR<br>    PS_PTFP_ATTRS<br>    PS_PTFP_SETTINGS<br>    PS_PTFP_PARMS<br>    PS_PTFP_SECURITY<br>    PS_PTFP_PVALS<br>    PS_PTFP_ADMN_PREF<br>    PS_PTFP_USER_PREF    </p>
 <p>   <strong>Integration Broker</strong><br>    PSMSGPARTS — Message Parts<br>    PSMSGVER — Message Version<br>    PSMSGREC — Message Record<br>    PSOPERATION — Operation<br>    PSOPRVERDFN — Operation Versions<br>    PSSERVICEOPR — Service Operations<br>    PSOPRHDLR — Operation Handlers<br>    PSIBRTNGDEFN — Routings<br>    PSMSGNODEDEFN — Message Nodes<br>    PSRTNGDFNPARM — Routing Parameters<br>    PSOPRVERDFNPARM<br>    PSQUEUEDEFN<br>    PSIBSCMADFN<br>    PSOPERATIONDMS</p>
 <p>   <strong>Message Catalog</strong>  消息目录<br>    PSMSGSETDEFN — Message Set — the header for that message set<br>    PSMSGCATDEFN — Individual messages inthe message catalog/message set<br>    SQR Strings<br>    PS_STRINGS_TBL — String definition (sqrtarns.sqc)<br>    PS_STRINGS_LNG_TBL — Translated String (sqrtarns.sqc)                     </p>
+<p>   <strong>Audit</strong> 系统审计表<br>    PSACCESSLOG - 用户登录审计表<br>    PS_AUDIT_OPRDEFN - 用户概要审计表<br>    PS_AUDIT_ROLEUSER - 用户角色授权审计表</p>
 ]]></content>
       <categories>
         <category>学习</category>
